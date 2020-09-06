@@ -1382,11 +1382,16 @@
         }
       },
       "2020-09-06": {
+        "delta": {
+          "confirmed": 9,
+          "recovered": 24,
+          "tested": 220
+        },
         "total": {
-          "confirmed": 1901,
+          "confirmed": 1910,
           "deceased": 5,
-          "recovered": 1347,
-          "tested": 43125
+          "recovered": 1371,
+          "tested": 43345
         }
       }
     },
@@ -3726,9 +3731,14 @@
             }
           },
           "2020-09-06": {
+            "delta": {
+              "confirmed": 9,
+              "recovered": 24
+            },
             "total": {
+              "confirmed": 9,
               "deceased": 2,
-              "recovered": 152
+              "recovered": 176
             }
           }
         }

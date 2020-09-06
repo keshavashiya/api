@@ -2122,12 +2122,18 @@
         }
       },
       "2020-09-06": {
+        "delta": {
+          "confirmed": 1537,
+          "deceased": 8,
+          "recovered": 1763,
+          "tested": 23336
+        },
         "total": {
-          "confirmed": 123923,
-          "deceased": 352,
+          "confirmed": 125460,
+          "deceased": 360,
           "other": 3,
-          "recovered": 95061,
-          "tested": 2471274
+          "recovered": 96824,
+          "tested": 2494610
         }
       }
     },
@@ -11416,11 +11422,15 @@
             }
           },
           "2020-09-06": {
+            "delta": {
+              "confirmed": 108,
+              "tested": 1118
+            },
             "total": {
-              "confirmed": 6922,
+              "confirmed": 7030,
               "deceased": 51,
               "recovered": 2409,
-              "tested": 92729
+              "tested": 93847
             }
           }
         }
@@ -15694,8 +15704,11 @@
             }
           },
           "2020-09-06": {
+            "delta": {
+              "confirmed": 125
+            },
             "total": {
-              "confirmed": 1521,
+              "confirmed": 1646,
               "deceased": 7,
               "recovered": 1160
             }
@@ -18992,8 +19005,11 @@
             }
           },
           "2020-09-06": {
+            "delta": {
+              "confirmed": 382
+            },
             "total": {
-              "confirmed": 32472,
+              "confirmed": 32854,
               "deceased": 75,
               "recovered": 14599
             }
@@ -32044,10 +32060,16 @@
             }
           },
           "2020-09-06": {
+            "delta": {
+              "confirmed": 922,
+              "deceased": 8,
+              "recovered": 1763
+            },
             "total": {
-              "confirmed": 37190,
+              "confirmed": 38112,
+              "deceased": 8,
               "other": 3,
-              "recovered": 49909
+              "recovered": 51672
             }
           }
         }
