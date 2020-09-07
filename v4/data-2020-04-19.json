@@ -74,6 +74,26 @@
       "recovered": 5,
       "tested": 465
     },
+    "districts": {
+      "Unknown": {
+        "delta": {
+          "recovered": 5,
+          "tested": 465
+        },
+        "meta": {
+          "tested": {
+            "last_updated": "2020-04-19",
+            "source": "https://twitter.com/nhm_assam/status/1251891980939825153/photo/1"
+          }
+        },
+        "total": {
+          "confirmed": 35,
+          "deceased": 1,
+          "recovered": 17,
+          "tested": 4865
+        }
+      }
+    },
     "meta": {
       "population": 34293000,
       "tested": {
@@ -224,6 +244,25 @@
     "delta": {
       "recovered": 1,
       "tested": 68
+    },
+    "districts": {
+      "Unknown": {
+        "delta": {
+          "recovered": 1,
+          "tested": 68
+        },
+        "meta": {
+          "tested": {
+            "last_updated": "2020-04-19",
+            "source": "https://twitter.com/DHS_Goa/status/1251858305669980160"
+          }
+        },
+        "total": {
+          "confirmed": 7,
+          "recovered": 7,
+          "tested": 826
+        }
+      }
     },
     "meta": {
       "population": 1540000,
@@ -449,6 +488,21 @@
     }
   },
   "MN": {
+    "districts": {
+      "Unknown": {
+        "meta": {
+          "tested": {
+            "last_updated": "2020-04-17",
+            "source": "http://nrhmmanipur.org/wp-content/uploads/2020/03/170420_status.jpg"
+          }
+        },
+        "total": {
+          "confirmed": 2,
+          "recovered": 1,
+          "tested": 311
+        }
+      }
+    },
     "meta": {
       "population": 3103000,
       "tested": {

@@ -42,6 +42,20 @@
     }
   },
   "AS": {
+    "districts": {
+      "Unknown": {
+        "meta": {
+          "tested": {
+            "last_updated": "2020-04-02",
+            "source": "https://twitter.com/nhm_assam/status/1245742375319691264/photo/1"
+          }
+        },
+        "total": {
+          "confirmed": 26,
+          "tested": 962
+        }
+      }
+    },
     "meta": {
       "population": 34293000,
       "tested": {
@@ -155,6 +169,20 @@
     }
   },
   "GA": {
+    "districts": {
+      "Unknown": {
+        "meta": {
+          "tested": {
+            "last_updated": "2020-04-02",
+            "source": "https://www.goa.gov.in/wp-content/uploads/2020/04/Media-Bulletin-02.04.2020.pdf"
+          }
+        },
+        "total": {
+          "confirmed": 7,
+          "tested": 220
+        }
+      }
+    },
     "meta": {
       "population": 1540000,
       "tested": {
@@ -335,6 +363,17 @@
   "MN": {
     "delta": {
       "recovered": 1
+    },
+    "districts": {
+      "Unknown": {
+        "delta": {
+          "recovered": 1
+        },
+        "total": {
+          "confirmed": 2,
+          "recovered": 1
+        }
+      }
     },
     "meta": {
       "population": 3103000

@@ -2839,14 +2839,30 @@
           "confirmed": 91723,
           "deceased": 1008,
           "other": 2,
-          "recovered": 69624
+          "recovered": 69624,
+          "tested": 720362
         },
         "total": {
           "confirmed": 4202562,
           "deceased": 71687,
           "other": 623,
           "recovered": 3247297,
-          "tested": 48831145
+          "tested": 49551507
+        }
+      },
+      "2020-09-07": {
+        "delta": {
+          "confirmed": 74215,
+          "deceased": 1122,
+          "other": -28,
+          "recovered": 73650
+        },
+        "total": {
+          "confirmed": 4276777,
+          "deceased": 72809,
+          "other": 595,
+          "recovered": 3320947,
+          "tested": 49551507
         }
       }
     }

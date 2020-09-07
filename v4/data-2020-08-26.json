@@ -783,405 +783,25 @@
       "tested": 36225
     },
     "districts": {
-      "Airport Quarantine": {
-        "total": {
-          "confirmed": 13,
-          "recovered": 13
-        }
-      },
-      "Baksa": {
-        "meta": {
-          "population": 953773
-        },
-        "total": {
-          "confirmed": 487,
-          "deceased": 4,
-          "recovered": 447
-        }
-      },
-      "Barpeta": {
-        "meta": {
-          "population": 1693190
-        },
-        "total": {
-          "confirmed": 1121,
-          "deceased": 3,
-          "recovered": 1024
-        }
-      },
-      "Biswanath": {
-        "meta": {
-          "population": 612491
-        },
-        "total": {
-          "confirmed": 467,
-          "recovered": 379
-        }
-      },
-      "Bongaigaon": {
-        "meta": {
-          "population": 732639
-        },
-        "total": {
-          "confirmed": 1113,
-          "deceased": 2,
-          "recovered": 834
-        }
-      },
-      "Cachar": {
-        "delta": {
-          "confirmed": 136,
-          "deceased": 2
-        },
-        "meta": {
-          "population": 1736319
-        },
-        "total": {
-          "confirmed": 5126,
-          "deceased": 26,
-          "recovered": 1498
-        }
-      },
-      "Charaideo": {
-        "total": {
-          "confirmed": 113,
-          "deceased": 2,
-          "recovered": 105
-        }
-      },
-      "Chirang": {
-        "meta": {
-          "population": 481818
-        },
-        "total": {
-          "confirmed": 280,
-          "recovered": 219
-        }
-      },
-      "Darrang": {
-        "meta": {
-          "population": 908090
-        },
-        "total": {
-          "confirmed": 1967,
-          "deceased": 8,
-          "recovered": 1730
-        }
-      },
-      "Dhemaji": {
-        "meta": {
-          "population": 688077
-        },
-        "total": {
-          "confirmed": 502,
-          "deceased": 1,
-          "recovered": 440
-        }
-      },
-      "Dhubri": {
-        "delta": {
-          "deceased": 1
-        },
-        "meta": {
-          "population": 1948632
-        },
-        "total": {
-          "confirmed": 1723,
-          "deceased": 4,
-          "recovered": 1215
-        }
-      },
-      "Dibrugarh": {
-        "delta": {
-          "confirmed": 152,
-          "tested": 3405
-        },
-        "meta": {
-          "population": 1327748,
-          "tested": {
-            "last_updated": "2020-08-26"
-          }
-        },
-        "total": {
-          "confirmed": 5758,
-          "deceased": 34,
-          "recovered": 2409,
-          "tested": 73156
-        }
-      },
-      "Dima Hasao": {
-        "meta": {
-          "population": 213529
-        },
-        "total": {
-          "confirmed": 237,
-          "recovered": 199
-        }
-      },
-      "Goalpara": {
-        "meta": {
-          "population": 1008959
-        },
-        "total": {
-          "confirmed": 658,
-          "deceased": 1,
-          "recovered": 568
-        }
-      },
-      "Golaghat": {
-        "delta": {
-          "deceased": 1
-        },
-        "meta": {
-          "population": 1058674
-        },
-        "total": {
-          "confirmed": 2387,
-          "deceased": 6,
-          "recovered": 1656
-        }
-      },
-      "Hailakandi": {
-        "meta": {
-          "population": 659260
-        },
-        "total": {
-          "confirmed": 1387,
-          "deceased": 6,
-          "recovered": 1116
-        }
-      },
-      "Hojai": {
-        "delta": {
-          "deceased": 1
-        },
-        "meta": {
-          "population": 931218
-        },
-        "total": {
-          "confirmed": 1345,
-          "deceased": 3,
-          "recovered": 1160
-        }
-      },
-      "Jorhat": {
-        "delta": {
-          "confirmed": 134
-        },
-        "meta": {
-          "population": 1091295
-        },
-        "total": {
-          "confirmed": 4004,
-          "deceased": 12,
-          "recovered": 1752
-        }
-      },
-      "Kamrup": {
-        "delta": {
-          "confirmed": 122
-        },
-        "meta": {
-          "population": 1517202
-        },
-        "total": {
-          "confirmed": 4216,
-          "deceased": 19,
-          "recovered": 2074
-        }
-      },
-      "Kamrup Metropolitan": {
-        "delta": {
-          "confirmed": 531,
-          "deceased": 1
-        },
-        "meta": {
-          "population": 1260419
-        },
-        "total": {
-          "confirmed": 26170,
-          "deceased": 62,
-          "recovered": 14599
-        }
-      },
-      "Karbi Anglong": {
-        "meta": {
-          "population": 965280
-        },
-        "total": {
-          "confirmed": 632,
-          "deceased": 8,
-          "recovered": 552
-        }
-      },
-      "Karimganj": {
-        "delta": {
-          "deceased": 2
-        },
-        "meta": {
-          "population": 1217002
-        },
-        "total": {
-          "confirmed": 1025,
-          "deceased": 18,
-          "recovered": 955
-        }
-      },
-      "Kokrajhar": {
-        "meta": {
-          "population": 886999
-        },
-        "total": {
-          "confirmed": 408,
-          "deceased": 6,
-          "recovered": 353
-        }
-      },
-      "Lakhimpur": {
-        "delta": {
-          "deceased": 1
-        },
-        "meta": {
-          "population": 1040644
-        },
-        "total": {
-          "confirmed": 1266,
-          "deceased": 2,
-          "recovered": 1135
-        }
-      },
-      "Majuli": {
-        "meta": {
-          "population": 167304
-        },
-        "total": {
-          "confirmed": 165,
-          "deceased": 1,
-          "recovered": 80
-        }
-      },
-      "Morigaon": {
-        "meta": {
-          "population": 957853
-        },
-        "total": {
-          "confirmed": 638,
-          "deceased": 2,
-          "recovered": 557
-        }
-      },
-      "Nagaon": {
-        "delta": {
-          "deceased": 1
-        },
-        "meta": {
-          "population": 2826006
-        },
-        "total": {
-          "confirmed": 4040,
-          "deceased": 8,
-          "recovered": 2506
-        }
-      },
-      "Nalbari": {
-        "delta": {
-          "deceased": 2
-        },
-        "meta": {
-          "population": 769919
-        },
-        "total": {
-          "confirmed": 948,
-          "deceased": 7,
-          "recovered": 828
-        }
-      },
-      "Other State": {
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
-        }
-      },
-      "Sivasagar": {
-        "delta": {
-          "deceased": 1
-        },
-        "meta": {
-          "population": 1150253
-        },
-        "total": {
-          "confirmed": 529,
-          "deceased": 4,
-          "recovered": 473
-        }
-      },
-      "Sonitpur": {
-        "meta": {
-          "population": 1925975
-        },
-        "total": {
-          "confirmed": 2351,
-          "deceased": 4,
-          "recovered": 1727
-        }
-      },
-      "South Salmara Mankachar": {
-        "meta": {
-          "population": 555114
-        },
-        "total": {
-          "confirmed": 51,
-          "recovered": 47
-        }
-      },
-      "Tinsukia": {
-        "delta": {
-          "deceased": 1
-        },
-        "meta": {
-          "population": 1316948
-        },
-        "total": {
-          "confirmed": 3366,
-          "deceased": 19,
-          "recovered": 1798
-        }
-      },
-      "Udalguri": {
-        "delta": {
-          "tested": 736
-        },
-        "meta": {
-          "population": 832769,
-          "tested": {
-            "last_updated": "2020-08-26"
-          }
-        },
-        "total": {
-          "confirmed": 758,
-          "deceased": 2,
-          "recovered": 666,
-          "tested": 22023
-        }
-      },
       "Unknown": {
         "delta": {
-          "confirmed": 1104,
-          "recovered": 2148
+          "confirmed": 2179,
+          "deceased": 14,
+          "recovered": 2148,
+          "tested": 36225
         },
-        "total": {
-          "confirmed": 21481,
-          "other": 3,
-          "recovered": 31811
-        }
-      },
-      "West Karbi Anglong": {
         "meta": {
-          "population": 300320
+          "tested": {
+            "last_updated": "2020-08-26",
+            "source": "https://twitter.com/himantabiswa/status/1298673656826957824?s=20"
+          }
         },
         "total": {
-          "confirmed": 39,
-          "recovered": 37
+          "confirmed": 96772,
+          "deceased": 274,
+          "other": 3,
+          "recovered": 76963,
+          "tested": 2071441
         }
       }
     },
@@ -2651,48 +2271,24 @@
       "tested": 2268
     },
     "districts": {
-      "North Goa": {
-        "delta": {
-          "confirmed": 152,
-          "deceased": 1
-        },
-        "meta": {
-          "population": 817761
-        },
-        "total": {
-          "confirmed": 2486,
-          "deceased": 55,
-          "recovered": 951
-        }
-      },
-      "Other State": {
-        "total": {
-          "confirmed": 197,
-          "recovered": 188
-        }
-      },
-      "South Goa": {
-        "delta": {
-          "confirmed": 58,
-          "deceased": 7
-        },
-        "meta": {
-          "population": 639962
-        },
-        "total": {
-          "confirmed": 3375,
-          "deceased": 110,
-          "recovered": 1403
-        }
-      },
       "Unknown": {
         "delta": {
-          "confirmed": 287,
-          "recovered": 287
+          "confirmed": 497,
+          "deceased": 8,
+          "recovered": 287,
+          "tested": 2268
+        },
+        "meta": {
+          "tested": {
+            "last_updated": "2020-08-26",
+            "source": "https://www.goa.gov.in/wp-content/uploads/2020/08/Media-Bulletin-26-Aug-2020.pdf"
+          }
         },
         "total": {
-          "confirmed": 8969,
-          "recovered": 8969
+          "confirmed": 15027,
+          "deceased": 165,
+          "recovered": 11511,
+          "tested": 187140
         }
       }
     },
@@ -6503,199 +6099,24 @@
       "tested": 3226
     },
     "districts": {
-      "Bishnupur": {
+      "Unknown": {
         "delta": {
-          "confirmed": 4
-        },
-        "meta": {
-          "population": 240363
-        },
-        "total": {
-          "confirmed": 189,
+          "confirmed": 141,
           "deceased": 1,
-          "recovered": 58
-        }
-      },
-      "CAPF Personnel": {
-        "delta": {
-          "confirmed": 25,
-          "recovered": 8
-        },
-        "total": {
-          "confirmed": 1085,
-          "deceased": 1,
-          "recovered": 516
-        }
-      },
-      "Chandel": {
-        "meta": {
-          "population": 144028
-        },
-        "total": {
-          "confirmed": 90,
-          "deceased": 3,
-          "recovered": 4
-        }
-      },
-      "Churachandpur": {
-        "delta": {
-          "confirmed": 3
+          "recovered": 17,
+          "tested": 3226
         },
         "meta": {
-          "population": 271274,
           "tested": {
-            "last_updated": "2020-08-07"
+            "last_updated": "2020-08-26",
+            "source": "https://twitter.com/DiprManipur/status/1298648851918622721?s=20"
           }
         },
         "total": {
-          "confirmed": 365,
-          "deceased": 1,
-          "recovered": 58,
-          "tested": 11280
-        }
-      },
-      "Imphal East": {
-        "delta": {
-          "confirmed": 32
-        },
-        "meta": {
-          "population": 452661
-        },
-        "total": {
-          "confirmed": 455,
-          "deceased": 3,
-          "recovered": 16
-        }
-      },
-      "Imphal West": {
-        "delta": {
-          "confirmed": 57,
-          "deceased": 1
-        },
-        "meta": {
-          "population": 514683
-        },
-        "total": {
-          "confirmed": 1149,
-          "deceased": 7,
-          "recovered": 52
-        }
-      },
-      "Jiribam": {
-        "meta": {
-          "population": 43818
-        },
-        "total": {
-          "confirmed": 114,
-          "recovered": 2
-        }
-      },
-      "Kakching": {
-        "delta": {
-          "confirmed": 1
-        },
-        "meta": {
-          "population": 135481
-        },
-        "total": {
-          "confirmed": 184,
-          "recovered": 27
-        }
-      },
-      "Kamjong": {
-        "meta": {
-          "population": 45616
-        },
-        "total": {
-          "confirmed": 159,
-          "recovered": 17
-        }
-      },
-      "Kangpokpi": {
-        "delta": {
-          "confirmed": 1
-        },
-        "total": {
-          "confirmed": 321,
-          "deceased": 2,
-          "recovered": 19
-        }
-      },
-      "Noney": {
-        "delta": {
-          "confirmed": 3
-        },
-        "total": {
-          "confirmed": 61,
-          "recovered": 18
-        }
-      },
-      "Pherzawl": {
-        "meta": {
-          "population": 47250
-        },
-        "total": {
-          "confirmed": 33,
-          "recovered": 15
-        }
-      },
-      "Senapati": {
-        "delta": {
-          "confirmed": 1
-        },
-        "meta": {
-          "population": 354772
-        },
-        "total": {
-          "confirmed": 258,
-          "recovered": 21
-        }
-      },
-      "Tamenglong": {
-        "meta": {
-          "population": 140143
-        },
-        "total": {
-          "confirmed": 246,
-          "recovered": 32
-        }
-      },
-      "Tengnoupal": {
-        "total": {
-          "confirmed": 20,
-          "recovered": 13
-        }
-      },
-      "Thoubal": {
-        "delta": {
-          "confirmed": 14
-        },
-        "meta": {
-          "population": 420517
-        },
-        "total": {
-          "confirmed": 546,
-          "deceased": 5,
-          "recovered": 23
-        }
-      },
-      "Ukhrul": {
-        "meta": {
-          "population": 183115
-        },
-        "total": {
-          "confirmed": 281,
-          "recovered": 18
-        }
-      },
-      "Unknown": {
-        "delta": {
-          "recovered": 9
-        },
-        "total": {
-          "confirmed": 29,
-          "deceased": 2,
-          "recovered": 2920
+          "confirmed": 5585,
+          "deceased": 25,
+          "recovered": 3829,
+          "tested": 140610
         }
       }
     },
@@ -9721,45 +9142,23 @@
       "tested": 655
     },
     "districts": {
-      "East Sikkim": {
+      "Unknown": {
         "delta": {
           "confirmed": 11,
-          "recovered": 22
+          "recovered": 22,
+          "tested": 655
         },
         "meta": {
-          "population": 281293
+          "tested": {
+            "last_updated": "2020-08-26",
+            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/1935?single"
+          }
         },
         "total": {
-          "confirmed": 1299,
+          "confirmed": 1486,
           "deceased": 3,
-          "recovered": 987
-        }
-      },
-      "North Sikkim": {
-        "meta": {
-          "population": 43354
-        },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
-        }
-      },
-      "South Sikkim": {
-        "meta": {
-          "population": 146742
-        },
-        "total": {
-          "confirmed": 144,
-          "recovered": 73
-        }
-      },
-      "West Sikkim": {
-        "meta": {
-          "population": 136299
-        },
-        "total": {
-          "confirmed": 42,
-          "recovered": 15
+          "recovered": 1076,
+          "tested": 38951
         }
       }
     },

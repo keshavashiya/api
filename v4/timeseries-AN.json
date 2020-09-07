@@ -1740,25 +1740,39 @@
         "delta": {
           "confirmed": 35,
           "deceased": 1,
-          "recovered": 41
+          "recovered": 41,
+          "tested": 749
         },
         "total": {
           "confirmed": 3292,
           "deceased": 50,
           "recovered": 2904,
-          "tested": 37825
+          "tested": 38574
         }
       },
       "2020-09-06": {
         "delta": {
           "confirmed": 40,
-          "recovered": 47
+          "recovered": 47,
+          "tested": 631
         },
         "total": {
           "confirmed": 3332,
           "deceased": 50,
           "recovered": 2951,
-          "tested": 37825
+          "tested": 39205
+        }
+      },
+      "2020-09-07": {
+        "delta": {
+          "confirmed": 27,
+          "recovered": 46
+        },
+        "total": {
+          "confirmed": 3359,
+          "deceased": 50,
+          "recovered": 2997,
+          "tested": 39205
         }
       }
     },
@@ -3273,25 +3287,39 @@
             "delta": {
               "confirmed": 35,
               "deceased": 1,
-              "recovered": 41
+              "recovered": 41,
+              "tested": 749
             },
             "total": {
               "confirmed": 3292,
               "deceased": 50,
               "recovered": 2904,
-              "tested": 37825
+              "tested": 38574
             }
           },
           "2020-09-06": {
             "delta": {
               "confirmed": 40,
-              "recovered": 47
+              "recovered": 47,
+              "tested": 631
             },
             "total": {
               "confirmed": 3332,
               "deceased": 50,
               "recovered": 2951,
-              "tested": 37825
+              "tested": 39205
+            }
+          },
+          "2020-09-07": {
+            "delta": {
+              "confirmed": 27,
+              "recovered": 46
+            },
+            "total": {
+              "confirmed": 3359,
+              "deceased": 50,
+              "recovered": 2997,
+              "tested": 39205
             }
           }
         }

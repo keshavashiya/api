@@ -52,6 +52,24 @@
     "delta": {
       "tested": 148
     },
+    "districts": {
+      "Unknown": {
+        "delta": {
+          "tested": 148
+        },
+        "meta": {
+          "tested": {
+            "last_updated": "2020-04-11",
+            "source": "https://t.me/indiacovid/2075?single"
+          }
+        },
+        "total": {
+          "confirmed": 29,
+          "deceased": 1,
+          "tested": 3011
+        }
+      }
+    },
     "meta": {
       "population": 34293000,
       "tested": {
@@ -198,6 +216,24 @@
   "GA": {
     "delta": {
       "recovered": 4
+    },
+    "districts": {
+      "Unknown": {
+        "delta": {
+          "recovered": 4
+        },
+        "meta": {
+          "tested": {
+            "last_updated": "2020-04-10",
+            "source": "https://twitter.com/DHS_Goa/status/1248609175241764872/photo/1"
+          }
+        },
+        "total": {
+          "confirmed": 7,
+          "recovered": 5,
+          "tested": 354
+        }
+      }
     },
     "meta": {
       "population": 1540000,
@@ -397,6 +433,14 @@
     }
   },
   "MN": {
+    "districts": {
+      "Unknown": {
+        "total": {
+          "confirmed": 2,
+          "recovered": 1
+        }
+      }
+    },
     "meta": {
       "population": 3103000
     },

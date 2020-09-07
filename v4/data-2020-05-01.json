@@ -239,134 +239,21 @@
       "recovered": 4
     },
     "districts": {
-      "Bongaigaon": {
-        "meta": {
-          "population": 732639
-        },
-        "total": {
-          "confirmed": 5
-        }
-      },
-      "Cachar": {
-        "meta": {
-          "population": 1736319
-        },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
-        }
-      },
-      "Dhubri": {
-        "meta": {
-          "population": 1948632
-        },
-        "total": {
-          "confirmed": 5,
-          "recovered": 4
-        }
-      },
-      "Goalpara": {
-        "meta": {
-          "population": 1008959
-        },
-        "total": {
-          "confirmed": 5,
-          "recovered": 4
-        }
-      },
-      "Golaghat": {
+      "Unknown": {
         "delta": {
-          "recovered": 1
-        },
-        "meta": {
-          "population": 1058674
-        },
-        "total": {
-          "confirmed": 9,
-          "recovered": 9
-        }
-      },
-      "Hailakandi": {
-        "meta": {
-          "population": 659260
-        },
-        "total": {
-          "confirmed": 1,
-          "deceased": 1
-        }
-      },
-      "Kamrup": {
-        "meta": {
-          "population": 1517202
-        },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
-        }
-      },
-      "Kamrup Metropolitan": {
-        "meta": {
-          "population": 1260419
-        },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
-        }
-      },
-      "Karimganj": {
-        "meta": {
-          "population": 1217002
-        },
-        "total": {
-          "confirmed": 2
-        }
-      },
-      "Lakhimpur": {
-        "meta": {
-          "population": 1040644
-        },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
-        }
-      },
-      "Morigaon": {
-        "delta": {
-          "recovered": 2
-        },
-        "meta": {
-          "population": 957853
-        },
-        "total": {
-          "confirmed": 6,
-          "recovered": 6
-        }
-      },
-      "Nalbari": {
-        "meta": {
-          "population": 769919
-        },
-        "total": {
-          "confirmed": 4,
           "recovered": 4
-        }
-      },
-      "Other State": {
-        "delta": {
-          "recovered": 1
         },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
-        }
-      },
-      "South Salmara Mankachar": {
         "meta": {
-          "population": 555114
+          "tested": {
+            "last_updated": "2020-04-29",
+            "source": "https://twitter.com/nhm_assam/status/1255530189448241159"
+          }
         },
         "total": {
-          "confirmed": 1,
-          "recovered": 1
+          "confirmed": 43,
+          "deceased": 1,
+          "recovered": 33,
+          "tested": 9520
         }
       }
     },
@@ -867,22 +754,20 @@
       "tested": 150
     },
     "districts": {
-      "North Goa": {
+      "Unknown": {
+        "delta": {
+          "tested": 150
+        },
         "meta": {
-          "population": 817761
+          "tested": {
+            "last_updated": "2020-05-01",
+            "source": "https://twitter.com/DHS_Goa/status/1256231452225798144/photo/1"
+          }
         },
         "total": {
-          "confirmed": 6,
-          "recovered": 6
-        }
-      },
-      "South Goa": {
-        "meta": {
-          "population": 639962
-        },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
+          "confirmed": 7,
+          "recovered": 7,
+          "tested": 2181
         }
       }
     },
@@ -2866,22 +2751,20 @@
       "tested": 2
     },
     "districts": {
-      "Imphal East": {
+      "Unknown": {
+        "delta": {
+          "tested": 2
+        },
         "meta": {
-          "population": 452661
+          "tested": {
+            "last_updated": "2020-05-01",
+            "source": "http://nrhmmanipur.org/wp-content/uploads/2020/05/status_010520.jpg"
+          }
         },
         "total": {
-          "confirmed": 1,
-          "recovered": 1
-        }
-      },
-      "Imphal West": {
-        "meta": {
-          "population": 514683
-        },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
+          "confirmed": 2,
+          "recovered": 2,
+          "tested": 461
         }
       }
     },

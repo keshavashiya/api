@@ -2744,19 +2744,21 @@
     "delta": {
       "confirmed": 51,
       "migrated": 4,
-      "recovered": 43
+      "recovered": 43,
+      "tested": 343
     },
     "districts": {
       "Dadra and Nagar Haveli": {
         "delta": {
           "confirmed": 17,
-          "recovered": 17
+          "recovered": 17,
+          "tested": 282
         },
         "meta": {
           "population": 343709,
           "tested": {
-            "last_updated": "2020-09-03",
-            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD03092020.pdf"
+            "last_updated": "2020-09-04",
+            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD04092020.pdf"
           }
         },
         "total": {
@@ -2764,19 +2766,20 @@
           "deceased": 1,
           "migrated": 4,
           "recovered": 1016,
-          "tested": 34003
+          "tested": 34285
         }
       },
       "Daman": {
         "delta": {
           "confirmed": 23,
-          "recovered": 4
+          "recovered": 4,
+          "tested": 56
         },
         "meta": {
           "population": 191173,
           "tested": {
-            "last_updated": "2020-09-03",
-            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD03092020.pdf"
+            "last_updated": "2020-09-04",
+            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD04092020.pdf"
           }
         },
         "total": {
@@ -2784,35 +2787,36 @@
           "deceased": 1,
           "migrated": 8,
           "recovered": 975,
-          "tested": 14848
+          "tested": 14904
         }
       },
       "Diu": {
         "delta": {
           "confirmed": 11,
           "migrated": 4,
-          "recovered": 22
+          "recovered": 22,
+          "tested": 5
         },
         "meta": {
           "population": 52074,
           "tested": {
-            "last_updated": "2020-09-03",
-            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD03092020.pdf"
+            "last_updated": "2020-09-04",
+            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD04092020.pdff"
           }
         },
         "total": {
           "confirmed": 242,
           "migrated": 12,
           "recovered": 211,
-          "tested": 6494
+          "tested": 6499
         }
       }
     },
     "meta": {
       "population": 959000,
       "tested": {
-        "last_updated": "2020-09-03",
-        "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD03092020.pdf"
+        "last_updated": "2020-09-04",
+        "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD04092020.pdf"
       }
     },
     "total": {
@@ -2820,7 +2824,7 @@
       "deceased": 2,
       "migrated": 24,
       "recovered": 2202,
-      "tested": 55345
+      "tested": 55688
     }
   },
   "GA": {
@@ -3949,20 +3953,21 @@
       "Gurugram": {
         "delta": {
           "confirmed": 229,
-          "recovered": 122
+          "recovered": 122,
+          "tested": 2248
         },
         "meta": {
           "population": 1514085,
           "tested": {
-            "last_updated": "2020-09-03",
-            "source": "https://cdn.s3waas.gov.in/s325b2822c2f5a3230abfadd476e8b04c9/uploads/2020/09/2020090445.pdf"
+            "last_updated": "2020-09-04",
+            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/2206"
           }
         },
         "total": {
           "confirmed": 12764,
           "deceased": 135,
           "recovered": 11258,
-          "tested": 173775
+          "tested": 176023
         }
       },
       "Hisar": {
@@ -7363,7 +7368,7 @@
           "confirmed": 36,
           "deceased": 1,
           "recovered": 33,
-          "tested": 1288
+          "tested": 708
         },
         "meta": {
           "population": 2184672,
@@ -13124,21 +13129,20 @@
       "Shrawasti": {
         "delta": {
           "confirmed": 13,
-          "recovered": 21,
-          "tested": 29058
+          "recovered": 21
         },
         "meta": {
           "population": 1114615,
           "tested": {
-            "last_updated": "2020-09-04",
-            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/2160"
+            "last_updated": "2020-09-03",
+            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/2137"
           }
         },
         "total": {
           "confirmed": 739,
           "deceased": 11,
           "recovered": 592,
-          "tested": 66654
+          "tested": 37596
         }
       },
       "Siddharthnagar": {

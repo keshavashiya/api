@@ -248,150 +248,22 @@
       "tested": 4033
     },
     "districts": {
-      "Bongaigaon": {
-        "meta": {
-          "population": 732639
-        },
-        "total": {
-          "confirmed": 5,
-          "recovered": 5
-        }
-      },
-      "Cachar": {
-        "meta": {
-          "population": 1736319
-        },
-        "total": {
-          "confirmed": 11,
-          "recovered": 1
-        }
-      },
-      "Dhubri": {
-        "meta": {
-          "population": 1948632
-        },
-        "total": {
-          "confirmed": 5,
-          "recovered": 5
-        }
-      },
-      "Goalpara": {
-        "meta": {
-          "population": 1008959
-        },
-        "total": {
-          "confirmed": 6,
-          "recovered": 4
-        }
-      },
-      "Golaghat": {
-        "meta": {
-          "population": 1058674
-        },
-        "total": {
-          "confirmed": 9,
-          "recovered": 9
-        }
-      },
-      "Hailakandi": {
-        "meta": {
-          "population": 659260
-        },
-        "total": {
-          "confirmed": 1,
-          "deceased": 1
-        }
-      },
-      "Jorhat": {
-        "meta": {
-          "population": 1091295
-        },
-        "total": {
-          "confirmed": 3
-        }
-      },
-      "Kamrup": {
-        "meta": {
-          "population": 1517202
-        },
-        "total": {
-          "confirmed": 2,
-          "recovered": 1
-        }
-      },
-      "Kamrup Metropolitan": {
+      "Unknown": {
         "delta": {
-          "confirmed": 8
+          "confirmed": 7,
+          "tested": 4033
         },
         "meta": {
-          "population": 1260419
+          "tested": {
+            "last_updated": "2020-05-14",
+            "source": "https://twitter.com/nhm_assam/status/1260970754763640833"
+          }
         },
         "total": {
-          "confirmed": 29,
-          "deceased": 1,
-          "recovered": 1
-        }
-      },
-      "Karimganj": {
-        "meta": {
-          "population": 1217002
-        },
-        "total": {
-          "confirmed": 2,
-          "recovered": 1
-        }
-      },
-      "Kokrajhar": {
-        "meta": {
-          "population": 886999
-        },
-        "total": {
-          "confirmed": 1
-        }
-      },
-      "Lakhimpur": {
-        "meta": {
-          "population": 1040644
-        },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
-        }
-      },
-      "Morigaon": {
-        "delta": {
-          "confirmed": -1
-        },
-        "meta": {
-          "population": 957853
-        },
-        "total": {
-          "confirmed": 6,
-          "recovered": 6
-        }
-      },
-      "Nalbari": {
-        "meta": {
-          "population": 769919
-        },
-        "total": {
-          "confirmed": 4,
-          "recovered": 4
-        }
-      },
-      "Other State": {
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
-        }
-      },
-      "South Salmara Mankachar": {
-        "meta": {
-          "population": 555114
-        },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
+          "confirmed": 87,
+          "deceased": 2,
+          "recovered": 40,
+          "tested": 25824
         }
       }
     },
@@ -1041,25 +913,21 @@
       "tested": 1429
     },
     "districts": {
-      "North Goa": {
-        "meta": {
-          "population": 817761
-        },
-        "total": {
-          "confirmed": 6,
-          "recovered": 6
-        }
-      },
-      "South Goa": {
+      "Unknown": {
         "delta": {
-          "confirmed": 8
+          "confirmed": 8,
+          "tested": 1429
         },
         "meta": {
-          "population": 639962
+          "tested": {
+            "last_updated": "2020-05-14",
+            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/2"
+          }
         },
         "total": {
-          "confirmed": 9,
-          "recovered": 1
+          "confirmed": 15,
+          "recovered": 7,
+          "tested": 6736
         }
       }
     },
@@ -3248,25 +3116,20 @@
       "confirmed": 1
     },
     "districts": {
-      "Imphal East": {
+      "Unknown": {
         "delta": {
           "confirmed": 1
         },
         "meta": {
-          "population": 452661
+          "tested": {
+            "last_updated": "2020-05-13",
+            "source": "http://nrhmmanipur.org/wp-content/uploads/2020/05/status_130520.jpg"
+          }
         },
         "total": {
-          "confirmed": 2,
-          "recovered": 1
-        }
-      },
-      "Imphal West": {
-        "meta": {
-          "population": 514683
-        },
-        "total": {
-          "confirmed": 1,
-          "recovered": 1
+          "confirmed": 3,
+          "recovered": 2,
+          "tested": 1706
         }
       }
     },
@@ -4772,6 +4635,22 @@
   "SK": {
     "delta": {
       "tested": 140
+    },
+    "districts": {
+      "Unknown": {
+        "delta": {
+          "tested": 140
+        },
+        "meta": {
+          "tested": {
+            "last_updated": "2020-05-14",
+            "source": "https://covid19sikkim.org/"
+          }
+        },
+        "total": {
+          "tested": 579
+        }
+      }
     },
     "meta": {
       "population": 664000,

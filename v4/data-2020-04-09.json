@@ -62,6 +62,23 @@
     "delta": {
       "confirmed": 1
     },
+    "districts": {
+      "Unknown": {
+        "delta": {
+          "confirmed": 1
+        },
+        "meta": {
+          "tested": {
+            "last_updated": "2020-04-02",
+            "source": "https://twitter.com/nhm_assam/status/1245742375319691264/photo/1"
+          }
+        },
+        "total": {
+          "confirmed": 29,
+          "tested": 962
+        }
+      }
+    },
     "meta": {
       "population": 34293000,
       "tested": {
@@ -202,6 +219,23 @@
   "GA": {
     "delta": {
       "tested": 124
+    },
+    "districts": {
+      "Unknown": {
+        "delta": {
+          "tested": 124
+        },
+        "meta": {
+          "tested": {
+            "last_updated": "2020-04-09",
+            "source": "https://twitter.com/dip_goa/status/1248237654258352129?s=09"
+          }
+        },
+        "total": {
+          "confirmed": 7,
+          "tested": 344
+        }
+      }
     },
     "meta": {
       "population": 1540000,
@@ -387,6 +421,14 @@
     }
   },
   "MN": {
+    "districts": {
+      "Unknown": {
+        "total": {
+          "confirmed": 2,
+          "recovered": 1
+        }
+      }
+    },
     "meta": {
       "population": 3103000
     },
