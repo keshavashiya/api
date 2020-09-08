@@ -1362,19 +1362,20 @@
       "Saharsa": {
         "delta": {
           "confirmed": 61,
-          "recovered": 141
+          "recovered": 141,
+          "tested": 1097
         },
         "meta": {
           "population": 1897102,
           "tested": {
-            "last_updated": "2020-09-05"
+            "last_updated": "2020-09-06"
           }
         },
         "total": {
           "confirmed": 3678,
           "deceased": 5,
           "recovered": 3122,
-          "tested": 92788
+          "tested": 93885
         }
       },
       "Samastipur": {
@@ -3141,6 +3142,7 @@
       "Solan": {
         "delta": {
           "confirmed": 57,
+          "other": 1,
           "recovered": 58,
           "tested": 272
         },
@@ -3153,7 +3155,7 @@
         "total": {
           "confirmed": 1696,
           "deceased": 14,
-          "other": 36,
+          "other": 37,
           "recovered": 1235,
           "tested": 32216
         }
@@ -3177,14 +3179,6 @@
           "other": 2,
           "recovered": 374,
           "tested": 22079
-        }
-      },
-      "Unknown": {
-        "delta": {
-          "other": 1
-        },
-        "total": {
-          "other": 1
         }
       }
     },
@@ -3472,19 +3466,20 @@
       "Palwal": {
         "delta": {
           "confirmed": 15,
-          "recovered": 31
+          "recovered": 31,
+          "tested": 1173
         },
         "meta": {
           "population": 1040493,
           "tested": {
-            "last_updated": "2020-09-04"
+            "last_updated": "2020-09-06"
           }
         },
         "total": {
           "confirmed": 1631,
           "deceased": 13,
           "recovered": 1507,
-          "tested": 34962
+          "tested": 36135
         }
       },
       "Panchkula": {
@@ -5573,12 +5568,13 @@
         "delta": {
           "confirmed": 1910,
           "deceased": 37,
-          "recovered": 912
+          "recovered": 912,
+          "tested": -90542
         },
         "meta": {
           "population": 12442373,
           "tested": {
-            "last_updated": "2020-09-05"
+            "last_updated": "2020-09-06"
           }
         },
         "total": {
@@ -5586,7 +5582,7 @@
           "deceased": 7869,
           "other": 336,
           "recovered": 123478,
-          "tested": 824886
+          "tested": 734344
         }
       },
       "Nagpur": {
@@ -5703,19 +5699,20 @@
         "delta": {
           "confirmed": 371,
           "deceased": 9,
-          "recovered": 2
+          "recovered": 2,
+          "tested": 9188
         },
         "meta": {
           "population": 2990116,
           "tested": {
-            "last_updated": "2020-09-01"
+            "last_updated": "2020-09-06"
           }
         },
         "total": {
           "confirmed": 28018,
           "deceased": 641,
           "recovered": 21316,
-          "tested": 143052
+          "tested": 152240
         }
       },
       "Parbhani": {

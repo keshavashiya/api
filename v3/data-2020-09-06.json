@@ -1165,18 +1165,21 @@
         }
       },
       "Udalguri": {
+        "delta": {
+          "tested": 24
+        },
         "meta": {
           "population": 832769,
           "tested": {
-            "last_updated": "2020-09-04",
-            "source": "https://twitter.com/DeputyUdalguri/status/1302124925910544385"
+            "last_updated": "2020-09-06",
+            "source": "https://twitter.com/DeputyUdalguri/status/1303200096033492992"
           }
         },
         "total": {
           "confirmed": 758,
           "deceased": 3,
           "recovered": 666,
-          "tested": 23628
+          "tested": 23689
         }
       },
       "Unknown": {
@@ -1786,20 +1789,21 @@
       "Saharsa": {
         "delta": {
           "confirmed": 61,
-          "recovered": 141
+          "recovered": 141,
+          "tested": 1097
         },
         "meta": {
           "population": 1897102,
           "tested": {
-            "last_updated": "2020-09-05",
-            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/2189"
+            "last_updated": "2020-09-06",
+            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/2206"
           }
         },
         "total": {
           "confirmed": 3678,
           "deceased": 5,
           "recovered": 3122,
-          "tested": 92788
+          "tested": 93885
         }
       },
       "Samastipur": {
@@ -3742,6 +3746,7 @@
       "Solan": {
         "delta": {
           "confirmed": 57,
+          "migrated": 1,
           "recovered": 58,
           "tested": 272
         },
@@ -3755,7 +3760,7 @@
         "total": {
           "confirmed": 1696,
           "deceased": 14,
-          "migrated": 36,
+          "migrated": 37,
           "recovered": 1235,
           "tested": 32216
         }
@@ -3780,14 +3785,6 @@
           "migrated": 2,
           "recovered": 374,
           "tested": 22079
-        }
-      },
-      "Unknown": {
-        "delta": {
-          "migrated": 1
-        },
-        "total": {
-          "migrated": 1
         }
       }
     },
@@ -4088,20 +4085,21 @@
       "Palwal": {
         "delta": {
           "confirmed": 15,
-          "recovered": 31
+          "recovered": 31,
+          "tested": 1173
         },
         "meta": {
           "population": 1040493,
           "tested": {
-            "last_updated": "2020-09-04",
-            "source": "https://twitter.com/DiproPalwal/status/1301850844065742849?s=20"
+            "last_updated": "2020-09-06",
+            "source": "https://twitter.com/DiproPalwal/status/1302946501006520320/photo/2"
           }
         },
         "total": {
           "confirmed": 1631,
           "deceased": 13,
           "recovered": 1507,
-          "tested": 34962
+          "tested": 36135
         }
       },
       "Panchkula": {
@@ -6256,13 +6254,14 @@
         "delta": {
           "confirmed": 1910,
           "deceased": 37,
-          "recovered": 912
+          "recovered": 912,
+          "tested": -90542
         },
         "meta": {
           "population": 12442373,
           "tested": {
-            "last_updated": "2020-09-05",
-            "source": "https://twitter.com/mybmc/status/1302630674931675141"
+            "last_updated": "2020-09-06",
+            "source": "https://twitter.com/mybmc/status/1303009137014353943"
           }
         },
         "total": {
@@ -6270,7 +6269,7 @@
           "deceased": 7869,
           "migrated": 336,
           "recovered": 123478,
-          "tested": 824886
+          "tested": 734344
         }
       },
       "Nagpur": {
@@ -6304,7 +6303,8 @@
         "meta": {
           "population": 3356566,
           "tested": {
-            "last_updated": "2020-09-06"
+            "last_updated": "2020-09-06",
+            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/2226"
           }
         },
         "total": {
@@ -6391,12 +6391,13 @@
         "delta": {
           "confirmed": 371,
           "deceased": 9,
-          "recovered": 2
+          "recovered": 2,
+          "tested": 9188
         },
         "meta": {
           "population": 2990116,
           "tested": {
-            "last_updated": "2020-09-01",
+            "last_updated": "2020-09-06",
             "source": "https://datastudio.google.com/embed/reporting/3f20951b-561b-4a87-a919-8134ce69bb43/page/r0ZUB"
           }
         },
@@ -6404,7 +6405,7 @@
           "confirmed": 28018,
           "deceased": 641,
           "recovered": 21316,
-          "tested": 143052
+          "tested": 152240
         }
       },
       "Parbhani": {
