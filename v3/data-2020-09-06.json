@@ -3919,8 +3919,7 @@
         "meta": {
           "population": 1514085,
           "tested": {
-            "last_updated": "2020-09-06",
-            "source": "https://cdn.s3waas.gov.in/s325b2822c2f5a3230abfadd476e8b04c9/uploads/2020/09/2020090653.pdf"
+            "last_updated": "2020-09-06"
           }
         },
         "total": {
@@ -4013,20 +4012,21 @@
         "delta": {
           "confirmed": 246,
           "deceased": 2,
-          "recovered": 131
+          "recovered": 131,
+          "tested": -3756
         },
         "meta": {
           "population": 1506323,
           "tested": {
-            "last_updated": "2020-09-05",
-            "source": "https://twitter.com/dipro_karnal/status/1302225875715289088?s=20"
+            "last_updated": "2020-09-06",
+            "source": "https://twitter.com/dipro_karnal/status/1302591488572841989?s=20"
           }
         },
         "total": {
           "confirmed": 3959,
           "deceased": 43,
           "recovered": 2400,
-          "tested": 59164
+          "tested": 55408
         }
       },
       "Kurukshetra": {
@@ -6276,13 +6276,14 @@
         "delta": {
           "confirmed": 1901,
           "deceased": 22,
-          "recovered": 1350
+          "recovered": 1350,
+          "tested": 5324
         },
         "meta": {
           "population": 4653171,
           "tested": {
-            "last_updated": "2020-09-05",
-            "source": "https://twitter.com/anilgadekardio/status/1302264921309065216/photo/1"
+            "last_updated": "2020-09-06",
+            "source": "https://twitter.com/anilgadekardio/status/1303360607144427520"
           }
         },
         "total": {
@@ -6290,7 +6291,7 @@
           "deceased": 900,
           "migrated": 4,
           "recovered": 20154,
-          "tested": 187527
+          "tested": 192851
         }
       },
       "Nanded": {
