@@ -2743,19 +2743,21 @@
     "delta": {
       "confirmed": 22,
       "migrated": -1,
-      "recovered": 27
+      "recovered": 27,
+      "tested": 302
     },
     "districts": {
       "Dadra and Nagar Haveli": {
         "delta": {
           "confirmed": 1,
-          "recovered": 12
+          "recovered": 12,
+          "tested": 173
         },
         "meta": {
           "population": 343709,
           "tested": {
-            "last_updated": "2020-09-05",
-            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD05092020.pdf"
+            "last_updated": "2020-09-07",
+            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD07092020.pdf"
           }
         },
         "total": {
@@ -2763,19 +2765,20 @@
           "deceased": 1,
           "migrated": 4,
           "recovered": 1064,
-          "tested": 34494
+          "tested": 34770
         }
       },
       "Daman": {
         "delta": {
           "confirmed": 3,
-          "recovered": 3
+          "recovered": 3,
+          "tested": 79
         },
         "meta": {
           "population": 191173,
           "tested": {
-            "last_updated": "2020-09-05",
-            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD05092020.pdf"
+            "last_updated": "2020-09-07",
+            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD07092020.pdf"
           }
         },
         "total": {
@@ -2783,35 +2786,36 @@
           "deceased": 1,
           "migrated": 8,
           "recovered": 991,
-          "tested": 14980
+          "tested": 15122
         }
       },
       "Diu": {
         "delta": {
           "confirmed": 18,
           "migrated": -1,
-          "recovered": 12
+          "recovered": 12,
+          "tested": 50
         },
         "meta": {
           "population": 52074,
           "tested": {
-            "last_updated": "2020-09-05",
-            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD05092020.pdf"
+            "last_updated": "2020-09-07",
+            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD07092020.pdf"
           }
         },
         "total": {
           "confirmed": 260,
           "migrated": 11,
           "recovered": 223,
-          "tested": 6534
+          "tested": 6584
         }
       }
     },
     "meta": {
       "population": 959000,
       "tested": {
-        "last_updated": "2020-09-05",
-        "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD05092020.pdf"
+        "last_updated": "2020-09-07",
+        "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD07092020.pdf"
       }
     },
     "total": {
@@ -2819,7 +2823,7 @@
       "deceased": 2,
       "migrated": 23,
       "recovered": 2278,
-      "tested": 56008
+      "tested": 56476
     }
   },
   "GA": {

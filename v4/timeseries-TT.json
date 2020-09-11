@@ -2900,17 +2900,33 @@
       },
       "2020-09-10": {
         "delta": {
-          "confirmed": 94012,
-          "deceased": 1197,
-          "other": 35,
-          "recovered": 66785
+          "confirmed": 96760,
+          "deceased": 1213,
+          "other": 36,
+          "recovered": 70899,
+          "tested": 1163542
         },
         "total": {
-          "confirmed": 4556977,
-          "deceased": 76288,
-          "other": 641,
-          "recovered": 3535869,
-          "tested": 52934433
+          "confirmed": 4559725,
+          "deceased": 76304,
+          "other": 642,
+          "recovered": 3539983,
+          "tested": 54097975
+        }
+      },
+      "2020-09-11": {
+        "delta": {
+          "confirmed": 97654,
+          "deceased": 1198,
+          "other": 6,
+          "recovered": 81455
+        },
+        "total": {
+          "confirmed": 4657379,
+          "deceased": 77502,
+          "other": 648,
+          "recovered": 3621438,
+          "tested": 54097975
         }
       }
     }

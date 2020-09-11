@@ -1775,7 +1775,7 @@
         "delta": {
           "confirmed": 55,
           "recovered": 72,
-          "tested": 1623822
+          "tested": 3822
         },
         "meta": {
           "population": 3273127,
@@ -1788,7 +1788,7 @@
           "confirmed": 4768,
           "deceased": 5,
           "recovered": 4030,
-          "tested": 1793938
+          "tested": 173938
         }
       },
       "Rohtas": {
@@ -2763,19 +2763,21 @@
   "DN": {
     "delta": {
       "confirmed": 19,
-      "recovered": 19
+      "recovered": 19,
+      "tested": 381
     },
     "districts": {
       "Dadra and Nagar Haveli": {
         "delta": {
           "confirmed": 11,
-          "recovered": 10
+          "recovered": 10,
+          "tested": 264
         },
         "meta": {
           "population": 343709,
           "tested": {
-            "last_updated": "2020-09-05",
-            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD05092020.pdf"
+            "last_updated": "2020-09-09",
+            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD09092020.pdf"
           }
         },
         "total": {
@@ -2783,19 +2785,20 @@
           "deceased": 1,
           "migrated": 4,
           "recovered": 1098,
-          "tested": 34494
+          "tested": 35239
         }
       },
       "Daman": {
         "delta": {
           "confirmed": 8,
-          "recovered": 9
+          "recovered": 9,
+          "tested": 70
         },
         "meta": {
           "population": 191173,
           "tested": {
-            "last_updated": "2020-09-05",
-            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD05092020.pdf"
+            "last_updated": "2020-09-09",
+            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD09092020.pdf"
           }
         },
         "total": {
@@ -2803,30 +2806,33 @@
           "deceased": 1,
           "migrated": 8,
           "recovered": 1007,
-          "tested": 14980
+          "tested": 15265
         }
       },
       "Diu": {
+        "delta": {
+          "tested": 47
+        },
         "meta": {
           "population": 52074,
           "tested": {
-            "last_updated": "2020-09-05",
-            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD05092020.pdf"
+            "last_updated": "2020-09-09",
+            "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD09092020.pdf"
           }
         },
         "total": {
           "confirmed": 260,
           "migrated": 11,
           "recovered": 223,
-          "tested": 6534
+          "tested": 6716
         }
       }
     },
     "meta": {
       "population": 959000,
       "tested": {
-        "last_updated": "2020-09-05",
-        "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD05092020.pdf"
+        "last_updated": "2020-09-09",
+        "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD09092020.pdf"
       }
     },
     "total": {
@@ -2834,7 +2840,7 @@
       "deceased": 2,
       "migrated": 23,
       "recovered": 2328,
-      "tested": 56008
+      "tested": 57220
     }
   },
   "GA": {
@@ -6320,13 +6326,14 @@
           "confirmed": 1988,
           "deceased": 43,
           "migrated": 3,
-          "recovered": 837
+          "recovered": 837,
+          "tested": 15701
         },
         "meta": {
           "population": 12442373,
           "tested": {
-            "last_updated": "2020-09-08",
-            "source": "https://twitter.com/mybmc/status/1303738900733599744/photo/1"
+            "last_updated": "2020-09-09",
+            "source": "https://twitter.com/mybmc/status/1304078687604596736"
           }
         },
         "total": {
@@ -6334,20 +6341,21 @@
           "deceased": 7985,
           "migrated": 351,
           "recovered": 126743,
-          "tested": 856454
+          "tested": 872155
         }
       },
       "Nagpur": {
         "delta": {
           "confirmed": 2113,
           "deceased": 29,
-          "recovered": 1031
+          "recovered": 1031,
+          "tested": 5625
         },
         "meta": {
           "population": 4653171,
           "tested": {
-            "last_updated": "2020-09-08",
-            "source": "https://twitter.com/anilgadekardio/status/1303360607144427520"
+            "last_updated": "2020-09-09",
+            "source": "https://twitter.com/anilgadekardio/status/1304056936392880129"
           }
         },
         "total": {
@@ -6355,7 +6363,7 @@
           "deceased": 1137,
           "migrated": 4,
           "recovered": 23511,
-          "tested": 202384
+          "tested": 208009
         }
       },
       "Nanded": {
@@ -7947,20 +7955,21 @@
         "delta": {
           "confirmed": 44,
           "deceased": 3,
-          "recovered": 48
+          "recovered": 48,
+          "tested": 1052
         },
         "meta": {
           "population": 1725818,
           "tested": {
-            "last_updated": "2020-09-08",
-            "source": "https://twitter.com/collectorshivp1/status/1303368371329576963?s=20"
+            "last_updated": "2020-09-09",
+            "source": "https://twitter.com/collectorshivp1/status/1304078730688512000?s=20"
           }
         },
         "total": {
           "confirmed": 1391,
           "deceased": 11,
           "recovered": 921,
-          "tested": 21826
+          "tested": 22878
         }
       },
       "Sidhi": {
@@ -10891,8 +10900,8 @@
         "meta": {
           "population": 1502900,
           "tested": {
-            "last_updated": "2020-09-08",
-            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/2259"
+            "last_updated": "2020-09-09",
+            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/2292"
           }
         },
         "total": {
@@ -12909,15 +12918,15 @@
         "meta": {
           "population": 4773138,
           "tested": {
-            "last_updated": "2020-09-04",
-            "source": "https://cdn.s3waas.gov.in/s382161242827b703e6acf9c726942a1e4/uploads/2020/09/2020090435.pdf"
+            "last_updated": "2020-09-08",
+            "source": "https://cdn.s3waas.gov.in/s382161242827b703e6acf9c726942a1e4/uploads/2020/09/2020090914.pdf"
           }
         },
         "total": {
           "confirmed": 6189,
           "deceased": 113,
           "recovered": 4805,
-          "tested": 120702
+          "tested": 129076
         }
       },
       "Muzaffarnagar": {
