@@ -2,40 +2,42 @@
   "AN": {
     "delta": {
       "confirmed": 39,
-      "recovered": 43
+      "recovered": 43,
+      "tested": 1016
     },
     "districts": {
       "Unknown": {
         "delta": {
           "confirmed": 39,
-          "recovered": 43
+          "recovered": 43,
+          "tested": 1016
         },
         "meta": {
           "tested": {
-            "last_updated": "2020-09-09",
-            "source": "https://dhs.andaman.gov.in/NewEvents/388.pdf"
+            "last_updated": "2020-09-10",
+            "source": "https://dhs.andaman.gov.in/NewEvents/391.pdf"
           }
         },
         "total": {
           "confirmed": 3465,
           "deceased": 51,
           "recovered": 3121,
-          "tested": 41776
+          "tested": 42792
         }
       }
     },
     "meta": {
       "population": 397000,
       "tested": {
-        "last_updated": "2020-09-09",
-        "source": "https://dhs.andaman.gov.in/NewEvents/388.pdf"
+        "last_updated": "2020-09-10",
+        "source": "https://dhs.andaman.gov.in/NewEvents/391.pdf"
       }
     },
     "total": {
       "confirmed": 3465,
       "deceased": 51,
       "recovered": 3121,
-      "tested": 41776
+      "tested": 42792
     }
   },
   "AP": {
@@ -839,7 +841,7 @@
         "delta": {
           "confirmed": 67,
           "recovered": 38,
-          "tested": 2693
+          "tested": 1512
         },
         "meta": {
           "population": 2806200,
@@ -851,7 +853,7 @@
           "confirmed": 4039,
           "deceased": 11,
           "recovered": 3067,
-          "tested": 133681
+          "tested": 132500
         }
       },
       "Arwal": {
@@ -3295,19 +3297,20 @@
       "Gurugram": {
         "delta": {
           "confirmed": 309,
-          "recovered": 216
+          "recovered": 216,
+          "tested": 3188
         },
         "meta": {
           "population": 1514085,
           "tested": {
-            "last_updated": "2020-09-09"
+            "last_updated": "2020-09-10"
           }
         },
         "total": {
           "confirmed": 14309,
           "deceased": 140,
           "recovered": 12219,
-          "tested": 189355
+          "tested": 192543
         }
       },
       "Hisar": {
@@ -5580,12 +5583,13 @@
         "delta": {
           "confirmed": 2371,
           "deceased": 38,
-          "recovered": 1369
+          "recovered": 1369,
+          "tested": 15119
         },
         "meta": {
           "population": 12442373,
           "tested": {
-            "last_updated": "2020-09-09"
+            "last_updated": "2020-09-10"
           }
         },
         "total": {
@@ -5593,7 +5597,7 @@
           "deceased": 8023,
           "other": 351,
           "recovered": 128112,
-          "tested": 872155
+          "tested": 887274
         }
       },
       "Nagpur": {
@@ -6978,19 +6982,20 @@
         "delta": {
           "confirmed": 59,
           "deceased": 2,
-          "recovered": 47
+          "recovered": 47,
+          "tested": 577
         },
         "meta": {
           "population": 1725818,
           "tested": {
-            "last_updated": "2020-09-09"
+            "last_updated": "2020-09-10"
           }
         },
         "total": {
           "confirmed": 1450,
           "deceased": 13,
           "recovered": 968,
-          "tested": 22878
+          "tested": 23455
         }
       },
       "Sidhi": {
@@ -9333,19 +9338,20 @@
         "delta": {
           "confirmed": 1011,
           "deceased": 11,
-          "recovered": 1009
+          "recovered": 1009,
+          "tested": 12540
         },
         "meta": {
           "population": 7100000,
           "tested": {
-            "last_updated": "2020-09-09"
+            "last_updated": "2020-09-10"
           }
         },
         "total": {
           "confirmed": 145606,
-          "deceased": 2921,
+          "deceased": 2918,
           "recovered": 131840,
-          "tested": 1078038
+          "tested": 1090578
         }
       },
       "Coimbatore": {
@@ -10001,7 +10007,7 @@
     },
     "total": {
       "confirmed": 486052,
-      "deceased": 8157,
+      "deceased": 8154,
       "recovered": 429416,
       "tested": 5630323
     }
@@ -10207,7 +10213,7 @@
     },
     "total": {
       "confirmed": 4559725,
-      "deceased": 76304,
+      "deceased": 76301,
       "other": 642,
       "recovered": 3539983,
       "tested": 54097975
@@ -11659,20 +11665,19 @@
         "delta": {
           "confirmed": 175,
           "deceased": 4,
-          "recovered": 118,
-          "tested": -118618
+          "recovered": 118
         },
         "meta": {
           "population": 3682194,
           "tested": {
-            "last_updated": "2020-09-10"
+            "last_updated": "2020-09-09"
           }
         },
         "total": {
           "confirmed": 10055,
           "deceased": 198,
           "recovered": 7872,
-          "tested": 13789
+          "tested": 132407
         }
       }
     },
