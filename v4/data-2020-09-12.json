@@ -2,40 +2,42 @@
   "AN": {
     "delta": {
       "confirmed": 27,
-      "recovered": 45
+      "recovered": 45,
+      "tested": 890
     },
     "districts": {
       "Unknown": {
         "delta": {
           "confirmed": 27,
-          "recovered": 45
+          "recovered": 45,
+          "tested": 890
         },
         "meta": {
           "tested": {
-            "last_updated": "2020-09-11",
-            "source": "https://dhs.andaman.gov.in/NewEvents/392.pdf"
+            "last_updated": "2020-09-12",
+            "source": "https://dhs.andaman.gov.in/NewEvents/393.pdf"
           }
         },
         "total": {
           "confirmed": 3521,
           "deceased": 51,
           "recovered": 3202,
-          "tested": 43680
+          "tested": 44570
         }
       }
     },
     "meta": {
       "population": 397000,
       "tested": {
-        "last_updated": "2020-09-11",
-        "source": "https://dhs.andaman.gov.in/NewEvents/392.pdf"
+        "last_updated": "2020-09-12",
+        "source": "https://dhs.andaman.gov.in/NewEvents/393.pdf"
       }
     },
     "total": {
       "confirmed": 3521,
       "deceased": 51,
       "recovered": 3202,
-      "tested": 43680
+      "tested": 44570
     }
   },
   "AP": {
@@ -1183,20 +1185,19 @@
       "Lakhisarai": {
         "delta": {
           "confirmed": 40,
-          "recovered": 26,
-          "tested": -7911
+          "recovered": 26
         },
         "meta": {
           "population": 1000717,
           "tested": {
-            "last_updated": "2020-09-12"
+            "last_updated": "2020-09-11"
           }
         },
         "total": {
           "confirmed": 2158,
           "deceased": 6,
           "recovered": 1842,
-          "tested": 49416
+          "tested": 57327
         }
       },
       "Madhepura": {
@@ -3339,19 +3340,20 @@
         "delta": {
           "confirmed": 326,
           "deceased": 2,
-          "recovered": 196
+          "recovered": 196,
+          "tested": 3752
         },
         "meta": {
           "population": 1514085,
           "tested": {
-            "last_updated": "2020-09-11"
+            "last_updated": "2020-09-12"
           }
         },
         "total": {
           "confirmed": 14924,
           "deceased": 145,
           "recovered": 12612,
-          "tested": 196081
+          "tested": 199833
         }
       },
       "Hisar": {
@@ -5630,12 +5632,13 @@
           "confirmed": 2350,
           "deceased": 42,
           "other": 2,
-          "recovered": 772
+          "recovered": 772,
+          "tested": 12688
         },
         "meta": {
           "population": 12442373,
           "tested": {
-            "last_updated": "2020-09-11"
+            "last_updated": "2020-09-12"
           }
         },
         "total": {
@@ -5643,7 +5646,7 @@
           "deceased": 8109,
           "other": 355,
           "recovered": 130016,
-          "tested": 903101
+          "tested": 915789
         }
       },
       "Nagpur": {
@@ -6649,19 +6652,20 @@
       "Katni": {
         "delta": {
           "confirmed": 7,
-          "recovered": 11
+          "recovered": 11,
+          "tested": 42
         },
         "meta": {
           "population": 1291684,
           "tested": {
-            "last_updated": "2020-09-04"
+            "last_updated": "2020-09-12"
           }
         },
         "total": {
           "confirmed": 600,
           "deceased": 11,
           "recovered": 495,
-          "tested": 13513
+          "tested": 15562
         }
       },
       "Khandwa": {
@@ -9394,19 +9398,20 @@
         "delta": {
           "confirmed": 998,
           "deceased": 17,
-          "recovered": 1215
+          "recovered": 1215,
+          "tested": 12362
         },
         "meta": {
           "population": 7100000,
           "tested": {
-            "last_updated": "2020-09-11"
+            "last_updated": "2020-09-12"
           }
         },
         "total": {
           "confirmed": 147591,
           "deceased": 2956,
           "recovered": 133987,
-          "tested": 1103204
+          "tested": 1115566
         }
       },
       "Coimbatore": {
@@ -9450,19 +9455,20 @@
       "Dharmapuri": {
         "delta": {
           "confirmed": 95,
-          "recovered": 52
+          "recovered": 52,
+          "tested": 1485
         },
         "meta": {
           "population": 1502900,
           "tested": {
-            "last_updated": "2020-09-11"
+            "last_updated": "2020-09-12"
           }
         },
         "total": {
           "confirmed": 1987,
           "deceased": 19,
           "recovered": 1293,
-          "tested": 47014
+          "tested": 48499
         }
       },
       "Dindigul": {
