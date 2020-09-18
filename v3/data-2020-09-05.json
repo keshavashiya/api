@@ -2774,8 +2774,9 @@
   },
   "DN": {
     "delta": {
-      "confirmed": 21,
-      "recovered": 28,
+      "confirmed": 27,
+      "migrated": -2,
+      "recovered": 32,
       "tested": 320
     },
     "districts": {
@@ -2823,6 +2824,9 @@
       },
       "Diu": {
         "delta": {
+          "confirmed": 6,
+          "migrated": -2,
+          "recovered": 4,
           "tested": 35
         },
         "meta": {
@@ -2833,9 +2837,9 @@
           }
         },
         "total": {
-          "confirmed": 242,
-          "migrated": 12,
-          "recovered": 211,
+          "confirmed": 248,
+          "migrated": 10,
+          "recovered": 217,
           "tested": 6534
         }
       }
@@ -2848,10 +2852,10 @@
       }
     },
     "total": {
-      "confirmed": 2531,
+      "confirmed": 2537,
       "deceased": 2,
-      "migrated": 24,
-      "recovered": 2230,
+      "migrated": 22,
+      "recovered": 2236,
       "tested": 56008
     }
   },
@@ -5688,6 +5692,7 @@
     "delta": {
       "confirmed": 2655,
       "deceased": 11,
+      "migrated": 1,
       "recovered": 2111,
       "tested": 39945
     },
@@ -5893,6 +5898,7 @@
         "delta": {
           "confirmed": 590,
           "deceased": 4,
+          "migrated": 1,
           "recovered": 512
         },
         "meta": {
@@ -5901,7 +5907,7 @@
         "total": {
           "confirmed": 17386,
           "deceased": 109,
-          "migrated": 24,
+          "migrated": 25,
           "recovered": 12283
         }
       },
@@ -5946,7 +5952,7 @@
     "total": {
       "confirmed": 84760,
       "deceased": 338,
-      "migrated": 66,
+      "migrated": 67,
       "recovered": 62555,
       "tested": 1832275
     }
@@ -11758,10 +11764,10 @@
   },
   "TT": {
     "delta": {
-      "confirmed": 90600,
+      "confirmed": 90606,
       "deceased": 1044,
-      "migrated": 6,
-      "recovered": 73161,
+      "migrated": 5,
+      "recovered": 73165,
       "tested": 1092654
     },
     "meta": {
@@ -11772,10 +11778,10 @@
       }
     },
     "total": {
-      "confirmed": 4110839,
+      "confirmed": 4110845,
       "deceased": 70679,
-      "migrated": 621,
-      "recovered": 3177673,
+      "migrated": 620,
+      "recovered": 3177679,
       "tested": 48831145
     }
   },

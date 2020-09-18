@@ -2205,21 +2205,23 @@
   },
   "DN": {
     "delta": {
-      "confirmed": 26,
-      "other": 2,
-      "recovered": 24
+      "confirmed": 28,
+      "other": 1,
+      "recovered": 29,
+      "tested": 367
     },
     "districts": {
       "Dadra and Nagar Haveli": {
         "delta": {
           "confirmed": 19,
           "other": 1,
-          "recovered": 20
+          "recovered": 20,
+          "tested": 260
         },
         "meta": {
           "population": 343709,
           "tested": {
-            "last_updated": "2020-09-09"
+            "last_updated": "2020-09-10"
           }
         },
         "total": {
@@ -2227,19 +2229,20 @@
           "deceased": 1,
           "other": 5,
           "recovered": 1118,
-          "tested": 35239
+          "tested": 35499
         }
       },
       "Daman": {
         "delta": {
           "confirmed": 7,
           "other": 1,
-          "recovered": 4
+          "recovered": 4,
+          "tested": 80
         },
         "meta": {
           "population": 191173,
           "tested": {
-            "last_updated": "2020-09-09"
+            "last_updated": "2020-09-10"
           }
         },
         "total": {
@@ -2247,37 +2250,43 @@
           "deceased": 1,
           "other": 9,
           "recovered": 1011,
-          "tested": 15265
+          "tested": 15345
         }
       },
       "Diu": {
+        "delta": {
+          "confirmed": 2,
+          "other": -1,
+          "recovered": 5,
+          "tested": 27
+        },
         "meta": {
           "population": 52074,
           "tested": {
-            "last_updated": "2020-09-09"
+            "last_updated": "2020-09-10"
           }
         },
         "total": {
-          "confirmed": 260,
-          "other": 11,
-          "recovered": 223,
-          "tested": 6716
+          "confirmed": 273,
+          "other": 4,
+          "recovered": 239,
+          "tested": 6743
         }
       }
     },
     "meta": {
       "population": 959000,
       "tested": {
-        "last_updated": "2020-09-09",
-        "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD09092020.pdf"
+        "last_updated": "2020-09-10",
+        "source": "https://dddcovid19.in/uploads/report/BulletinDNHDD10092020.pdf"
       }
     },
     "total": {
-      "confirmed": 2658,
+      "confirmed": 2671,
       "deceased": 2,
-      "other": 25,
-      "recovered": 2352,
-      "tested": 57220
+      "other": 18,
+      "recovered": 2368,
+      "tested": 57587
     }
   },
   "GA": {
@@ -5197,7 +5206,7 @@
         "total": {
           "confirmed": 19818,
           "deceased": 131,
-          "other": 24,
+          "other": 25,
           "recovered": 15000
         }
       },
@@ -5247,7 +5256,7 @@
     "total": {
       "confirmed": 99267,
       "deceased": 397,
-      "other": 66,
+      "other": 67,
       "recovered": 72574,
       "tested": 2018921
     }
@@ -7757,14 +7766,14 @@
         "meta": {
           "population": 1439891,
           "tested": {
-            "last_updated": "2020-08-23"
+            "last_updated": "2020-09-09"
           }
         },
         "total": {
           "confirmed": 2657,
           "deceased": 4,
           "recovered": 1804,
-          "tested": 106962
+          "tested": 201618
         }
       },
       "Kendujhar": {
@@ -10233,10 +10242,10 @@
   },
   "TT": {
     "delta": {
-      "confirmed": 96760,
+      "confirmed": 96762,
       "deceased": 1213,
-      "other": 36,
-      "recovered": 70899,
+      "other": 35,
+      "recovered": 70904,
       "tested": 1163542
     },
     "meta": {
@@ -10247,10 +10256,10 @@
       }
     },
     "total": {
-      "confirmed": 4559725,
+      "confirmed": 4559738,
       "deceased": 76301,
-      "other": 642,
-      "recovered": 3539983,
+      "other": 636,
+      "recovered": 3539999,
       "tested": 54097975
     }
   },

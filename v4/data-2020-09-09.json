@@ -2220,8 +2220,9 @@
   },
   "DN": {
     "delta": {
-      "confirmed": 19,
-      "recovered": 19,
+      "confirmed": 26,
+      "other": -3,
+      "recovered": 24,
       "tested": 381
     },
     "districts": {
@@ -2267,6 +2268,9 @@
       },
       "Diu": {
         "delta": {
+          "confirmed": 7,
+          "other": -3,
+          "recovered": 5,
           "tested": 47
         },
         "meta": {
@@ -2276,9 +2280,9 @@
           }
         },
         "total": {
-          "confirmed": 260,
-          "other": 11,
-          "recovered": 223,
+          "confirmed": 271,
+          "other": 5,
+          "recovered": 234,
           "tested": 6716
         }
       }
@@ -2291,10 +2295,10 @@
       }
     },
     "total": {
-      "confirmed": 2632,
+      "confirmed": 2643,
       "deceased": 2,
-      "other": 23,
-      "recovered": 2328,
+      "other": 17,
+      "recovered": 2339,
       "tested": 57220
     }
   },
@@ -5216,7 +5220,7 @@
         "total": {
           "confirmed": 19260,
           "deceased": 129,
-          "other": 24,
+          "other": 25,
           "recovered": 14517
         }
       },
@@ -5265,7 +5269,7 @@
     "total": {
       "confirmed": 95918,
       "deceased": 385,
-      "other": 66,
+      "other": 67,
       "recovered": 70917,
       "tested": 1978316
     }
@@ -7782,19 +7786,20 @@
       "Kendrapara": {
         "delta": {
           "confirmed": 116,
-          "recovered": 131
+          "recovered": 131,
+          "tested": 94656
         },
         "meta": {
           "population": 1439891,
           "tested": {
-            "last_updated": "2020-08-23"
+            "last_updated": "2020-09-09"
           }
         },
         "total": {
           "confirmed": 2510,
           "deceased": 4,
           "recovered": 1738,
-          "tested": 106962
+          "tested": 201618
         }
       },
       "Kendujhar": {
@@ -10269,10 +10274,9 @@
   },
   "TT": {
     "delta": {
-      "confirmed": 95529,
+      "confirmed": 95536,
       "deceased": 1168,
-      "other": 3,
-      "recovered": 73057,
+      "recovered": 73062,
       "tested": 1129756
     },
     "meta": {
@@ -10283,10 +10287,10 @@
       }
     },
     "total": {
-      "confirmed": 4462965,
+      "confirmed": 4462976,
       "deceased": 75088,
-      "other": 606,
-      "recovered": 3469084,
+      "other": 601,
+      "recovered": 3469095,
       "tested": 52934433
     }
   },

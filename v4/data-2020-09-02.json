@@ -2199,8 +2199,9 @@
   },
   "DN": {
     "delta": {
-      "confirmed": 44,
-      "recovered": 17,
+      "confirmed": 49,
+      "other": -1,
+      "recovered": 19,
       "tested": 398
     },
     "districts": {
@@ -2246,6 +2247,9 @@
       },
       "Diu": {
         "delta": {
+          "confirmed": 5,
+          "other": -1,
+          "recovered": 2,
           "tested": 19
         },
         "meta": {
@@ -2255,9 +2259,9 @@
           }
         },
         "total": {
-          "confirmed": 231,
-          "other": 8,
-          "recovered": 189,
+          "confirmed": 236,
+          "other": 7,
+          "recovered": 193,
           "tested": 6469
         }
       }
@@ -2270,10 +2274,10 @@
       }
     },
     "total": {
-      "confirmed": 2430,
+      "confirmed": 2435,
       "deceased": 2,
-      "other": 20,
-      "recovered": 2139,
+      "other": 19,
+      "recovered": 2143,
       "tested": 54964
     }
   },
@@ -10238,10 +10242,10 @@
   },
   "TT": {
     "delta": {
-      "confirmed": 82860,
+      "confirmed": 82865,
       "deceased": 1026,
-      "other": 6,
-      "recovered": 67874,
+      "other": 5,
+      "recovered": 67876,
       "tested": 1172179
     },
     "meta": {
@@ -10252,10 +10256,10 @@
       }
     },
     "total": {
-      "confirmed": 3848968,
+      "confirmed": 3848973,
       "deceased": 67486,
-      "other": 598,
-      "recovered": 2967396,
+      "other": 597,
+      "recovered": 2967400,
       "tested": 45509380
     }
   },
