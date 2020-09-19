@@ -2100,6 +2100,14 @@
           "recovered": 2600,
           "tested": 44147
         }
+      },
+      "2020-09-19": {
+        "total": {
+          "confirmed": 3635,
+          "deceased": 48,
+          "recovered": 2600,
+          "tested": 44147
+        }
       }
     },
     "districts": {
@@ -3698,6 +3706,14 @@
               "confirmed": 24,
               "recovered": 4
             },
+            "total": {
+              "confirmed": 1581,
+              "deceased": 27,
+              "recovered": 1069,
+              "tested": 15876
+            }
+          },
+          "2020-09-19": {
             "total": {
               "confirmed": 1581,
               "deceased": 27,
@@ -5384,6 +5400,14 @@
               "recovered": 1531,
               "tested": 28271
             }
+          },
+          "2020-09-19": {
+            "total": {
+              "confirmed": 2054,
+              "deceased": 20,
+              "recovered": 1531,
+              "tested": 28271
+            }
           }
         }
       },
@@ -5393,6 +5417,11 @@
             "delta": {
               "deceased": 1
             },
+            "total": {
+              "deceased": 1
+            }
+          },
+          "2020-09-19": {
             "total": {
               "deceased": 1
             }
