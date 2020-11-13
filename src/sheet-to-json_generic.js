@@ -3,19 +3,19 @@ const c = require('../lib/constants');
 
 (async function main() {
   console.log('Running task on start...')
-  // await task({
-  //   sheet: c.SHEET_LOCALE,
-  //   tabs: { locales: 'od6' },
-  //   file: '/locales.json'
-  // })
+  await task({
+    sheet: c.SHEET_LOCALE,
+    tabs: { locales: 'od6' },
+    file: '/locales.json'
+  })
 
-  // await task({
-  //   sheet: c.SHEET_LOCALE,
-  //   tabs: { locales_progress: 'ou6ga5q' },
-  //   file: '/locales_progress.json'
-  // })
+  await task({
+    sheet: c.SHEET_LOCALE,
+    tabs: { locales_progress: 'ou6ga5q' },
+    file: '/locales_progress.json'
+  })
 
-  //   // uncomment below if v1 sheet has updates
+    // uncomment below if v1 sheet has updates
   // await task({
   //   sheet: c.SHEET_v1,
   //   tabs: { raw_data: c.SHEET_RAW_DATA },
@@ -104,22 +104,28 @@ const c = require('../lib/constants');
   //   file: c.FILE_RAW_DATA_15
   // })
 
-  await task({
-    sheet: c.SHEET_v16,
-    tabs: { raw_data: c.SHEET_RAW_DATA },
-    file: c.FILE_RAW_DATA_16
-  })
+  // await task({
+  //   sheet: c.SHEET_v16,
+  //   tabs: { raw_data: c.SHEET_RAW_DATA },
+  //   file: c.FILE_RAW_DATA_16
+  // })
   
-  await task({
-    sheet: c.SHEET_v17,
-    tabs: { raw_data: c.SHEET_RAW_DATA },
-    file: c.FILE_RAW_DATA_17
-  })  
+  // await task({
+  //   sheet: c.SHEET_v17,
+  //   tabs: { raw_data: c.SHEET_RAW_DATA },
+  //   file: c.FILE_RAW_DATA_17
+  // })  
 
   await task({
     sheet: c.SHEET_v18,
     tabs: { raw_data: c.SHEET_RAW_DATA },
     file: c.FILE_RAW_DATA_18
+  })  
+
+  await task({
+    sheet: c.SHEET_v19,
+    tabs: { raw_data: c.SHEET_RAW_DATA },
+    file: c.FILE_RAW_DATA_19
   })  
 
   // uncomment below if v1 sheet has updates
@@ -160,13 +166,13 @@ const c = require('../lib/constants');
   //   file: c.FILE_TRAVEL_HISTORY
   // });
 
-  // await task({
-  //   sheet: c.SHEET,
-  //   tabs: {
-  //     factoids: c.SHEET_NAME_FACTOIDS, faq: c.SHEET_FAQ
-  //   },
-  //   file: c.FILE_WEBSITE_DATA
-  // })
+  await task({
+    sheet: c.SHEET,
+    tabs: {
+      factoids: c.SHEET_NAME_FACTOIDS, faq: c.SHEET_FAQ
+    },
+    file: c.FILE_WEBSITE_DATA
+  })
 
   // need to remove objects with empty states or empty totaltested
   var data = await fetchData({
@@ -204,17 +210,17 @@ const c = require('../lib/constants');
     file: c.FILE_SOURCES_LIST
   })
 
-  // await task({
-  //   sheet: c.SHEET_RESOURCES,
-  //   tabs: { resources: c.SHEET_RESOURCES_SHEET },
-  //   file: c.FILE_RESOURCES_ESSENTIALS
-  // })
+  await task({
+    sheet: c.SHEET_RESOURCES,
+    tabs: { resources: c.SHEET_RESOURCES_SHEET },
+    file: c.FILE_RESOURCES_ESSENTIALS
+  })
 
-  //   await task({
-  //     sheet: c.SHEET,
-  //     tabs: { zones: c.SHEET_ZONES },
-  //     file: c.FILE_ZONES
-  //   })
+    await task({
+      sheet: c.SHEET,
+      tabs: { zones: c.SHEET_ZONES },
+      file: c.FILE_ZONES
+    })
 
   await task({
     sheet: c.SHEET,
