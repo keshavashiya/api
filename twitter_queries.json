@@ -25,11 +25,11 @@
 			"statename": "Andhra Pradesh"
 		},
 		{
-			"destination": "data_ops,aux",
+			"destination": "data_ops",
 			"districtname": "",
 			"link": "https://twitter.com/DirectorateofHS",
 			"remarks": "",
-			"searchcriteria": "(#ArunachalCovid19Update OR symptomatic OR Patients OR Today) (from:DirectorateofHS)",
+			"searchcriteria": "(#ArunachalCovid19Update OR symptomatic OR Patients OR Today) (from:DirectorateofHS) include:replies",
 			"statename": "Arunachal Pradesh"
 		},
 		{
@@ -69,7 +69,7 @@
 			"districtname": "",
 			"link": "https://twitter.com/ani",
 			"remarks": "",
-			"searchcriteria": "CHANDIGARH (active OR positive OR deaths) (from:ANI)",
+			"searchcriteria": "CHANDIGARH (report OR reports OR active OR positive OR deaths) (from:ANI)",
 			"statename": "Chandigarh"
 		},
 		{
@@ -259,6 +259,14 @@
 		{
 			"destination": "data_ops",
 			"districtname": "",
+			"link": "https://twitter.com/prasarbharti",
+			"remarks": "",
+			"searchcriteria": "(discharged) (from:prasarbharti)",
+			"statename": "Ladakh"
+		},
+		{
+			"destination": "data_ops",
+			"districtname": "",
 			"link": "https://twitter.com/JansamparkMP",
 			"remarks": "",
 			"searchcriteria": "(मीडिया बुलेटिन) (from:JansamparkMP)",
@@ -283,9 +291,9 @@
 		{
 			"destination": "data_ops",
 			"districtname": "",
-			"link": "https://twitter.com/sanket_news24",
+			"link": "https://twitter.com/pibmumbai",
 			"remarks": "",
-			"searchcriteria": "(from:sanket_news24) (महाराष्ट्र में आज)",
+			"searchcriteria": "(from:pibmumbai) (district-wise active cases)",
 			"statename": "Maharashtra"
 		},
 		{
@@ -339,9 +347,17 @@
 		{
 			"destination": "data_ops",
 			"districtname": "",
+			"link": "https://twitter.com/pibshillong",
+			"remarks": "",
+			"searchcriteria": "(from:pibshillong) (#covid19 OR update OR active OR Cases)",
+			"statename": "Meghalaya"
+		},
+		{
+			"destination": "data_ops",
+			"districtname": "",
 			"link": "https://twitter.com/ShillongTimesIn",
 			"remarks": "",
-			"searchcriteria": "(Meghalaya’s OR update OR active) (from:shillongtimesin)",
+			"searchcriteria": "(Meghalaya’s OR update OR active) (from:shillongtimesin) -#indiafightscorona",
 			"statename": "Meghalaya"
 		},
 		{
@@ -349,7 +365,7 @@
 			"districtname": "",
 			"link": "https://twitter.com/dipr_mizoram",
 			"remarks": "",
-			"searchcriteria": "(from:dipr_mizoram) -a -an",
+			"searchcriteria": "(from:dipr_mizoram) -a -an -test -nei -lo",
 			"statename": "Mizoram"
 		},
 		{
@@ -481,12 +497,11 @@
 			"statename": "Tamil Nadu"
 		},
 		{
-			"_ckd7g": "hold: @telenganamulki + replies",
 			"destination": "data_ops",
 			"districtname": "",
 			"link": "https://twitter.com/Eatala_Rajender",
-			"remarks": "",
-			"searchcriteria": "(Media OR Bulletin OR status) (#TelanganaFightsCorona) (from:Eatala_Rajender)",
+			"remarks": "hold: @telenganamulki + replies",
+			"searchcriteria": "(Media OR Bulletin OR status) (#TelanganaFightsCorona) (from:Eatala_Rajender) -telugu",
 			"statename": "Telangana"
 		},
 		{
@@ -494,7 +509,7 @@
 			"districtname": "",
 			"link": "https://twitter.com/dgrsrao",
 			"remarks": "",
-			"searchcriteria": "(Media OR Bulletin OR status) (from:drgsrao) -beds",
+			"searchcriteria": "(Media OR Bulletin OR status) (from:drgsrao) -beds -telugu",
 			"statename": "Telangana"
 		},
 		{
@@ -846,7 +861,7 @@
 			"districtname": "Chandrapur",
 			"link": "https://twitter.com/InfoChandrapur",
 			"remarks": "",
-			"searchcriteria": "चंद्रपूर जिल्ह्यातील बाधितांची संख्या (from:InfoChandrapur)",
+			"searchcriteria": "(चंद्रपूर जिल्ह्यातील बाधितांची संख्या OR एकूण बाधितांची संख्या) (from:InfoChandrapur)",
 			"statename": "Maharashtra"
 		},
 		{
@@ -910,7 +925,7 @@
 			"districtname": "Nagpur",
 			"link": "https://twitter.com/anilgadekardio",
 			"remarks": "",
-			"searchcriteria": "(कोरोना_अपडेट्स OR #कोरोना_अपडेट OR #कोरोना_वायरस OR #कोरोना_पॉजिटिव) (from:anilgadekardio)",
+			"searchcriteria": "(कोरोना_अपडेट्स OR #कोरोना_अपडेट OR #कोरोना_वायरस OR #कोरोना_पॉजिटिव OR #कोरोनावायरस ) (from:anilgadekardio)",
 			"statename": "Maharashtra"
 		},
 		{
@@ -1014,7 +1029,7 @@
 			"districtname": "Yavatmal",
 			"link": "https://twitter.com/InfoYavatmal",
 			"remarks": "",
-			"searchcriteria": "(from:infoyavatmal) (#यवतमाळकोरोनाअपडेट OR #yavatmalcoronaupdate )",
+			"searchcriteria": "(from:infoyavatmal) (#यवतमाळकोरोनाअपडेट OR #yavatmalcoronaupdate OR #yavatmal : Corona update )",
 			"statename": "Maharashtra"
 		},
 		{
@@ -1054,8 +1069,16 @@
 			"districtname": "Barabanki",
 			"link": "https://twitter.com/BarabankiD",
 			"remarks": "",
-			"searchcriteria": "#aarogyasetu_app #COVID19 (from:BarabankiD)",
+			"searchcriteria": "(Active OR वर्तमान OR #aarogyasetu_app OR #COVID19)(from:BarabankiD)",
 			"statename": "UttarPradesh"
+		},
+		{
+			"destination": "aux",
+			"districtname": "Jaunpur",
+			"link": "https://twitter.com/dmjaunpur",
+			"remarks": "",
+			"searchcriteria": "from:dmjaunpur (सैंपल OR पॉजिटिव OR नेगेटिव OR death) include:replies",
+			"statename": "Uttar Pradesh"
 		},
 		{
 			"destination": "aux",
@@ -1159,6 +1182,30 @@
 			"link": "https://twitter.com/dipro_jhajjar",
 			"remarks": "",
 			"searchcriteria": "(from:dipro_jhajjar) \"Health Bulletin\"",
+			"statename": "Haryana"
+		},
+		{
+			"destination": "aux",
+			"districtname": "Rajnandgaon",
+			"link": "https://twitter.com/RajnandgaonDist",
+			"remarks": "",
+			"searchcriteria": "(from:Rajnandgaondist) (बुलेटिन OR सैंपल)",
+			"statename": "Chhattisgarh"
+		},
+		{
+			"destination": "aux",
+			"districtname": "Surguja",
+			"link": "https://twitter.com/SurgujaDist",
+			"remarks": "",
+			"searchcriteria": "(from:surgujadist) (पॉजिटिव OR डिस्चार्ज OR आइसोलेशन OR जांच)",
+			"statename": "Chhattisgarh"
+		},
+		{
+			"destination": "aux",
+			"districtname": "Panchkula",
+			"link": "https://twitter.com/nagarkoti",
+			"remarks": "",
+			"searchcriteria": "#panchkulaupdate (from:nagarkoti)",
 			"statename": "Haryana"
 		}
 	]

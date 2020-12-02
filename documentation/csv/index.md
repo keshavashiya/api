@@ -15,19 +15,25 @@ These are the files available
 | ------------- | ---------- | -------------------------------------------------------- | ---------------------- |
 | :green_heart: | raw_data1  | <https://api.covid19india.org/csv/latest/raw_data1.csv>  | Till Apr 19th          |
 | :green_heart: | raw_data2  | <https://api.covid19india.org/csv/latest/raw_data2.csv>  | Apr 20th to Apr 26th   |
-| :green_heart: | raw_data3  | <https://api.covid19india.org/csv/latest/raw_data3.csv>  | April 27th to May 9th  |
+| :green_heart: | raw_data3  | <https://api.covid19india.org/csv/latest/raw_data3.csv>  | Apr 27th to May 9th    |
 | :green_heart: | raw_data4  | <https://api.covid19india.org/csv/latest/raw_data4.csv>  | May 10th to May 23rd   |
-| :green_heart: | raw_data5  | <https://api.covid19india.org/csv/latest/raw_data5.csv>  | May 24th to June 4th   |
-| :green_heart: | raw_data6  | <https://api.covid19india.org/csv/latest/raw_data6.csv>  | June 5th to June 19th  |
-| :green_heart: | raw_data7  | <https://api.covid19india.org/csv/latest/raw_data7.csv>  | June 20th to June 30th |
-| :green_heart: | raw_data8  | <https://api.covid19india.org/csv/latest/raw_data8.csv>  | July 1st to July 7th   |
-| :green_heart: | raw_data9  | <https://api.covid19india.org/csv/latest/raw_data9.csv>  | July 8th to July 13th  |
-| :green_heart: | raw_data10 | <https://api.covid19india.org/csv/latest/raw_data10.csv> | July 14th to July 17th |
-| :green_heart: | raw_data11 | <https://api.covid19india.org/csv/latest/raw_data11.csv> | July 18th to July 22nd |
-| :green_heart: | raw_data12 | <https://api.covid19india.org/csv/latest/raw_data12.csv> | July 23th to Aug 06th  |
+| :green_heart: | raw_data5  | <https://api.covid19india.org/csv/latest/raw_data5.csv>  | May 24th to Jun 4th    |
+| :green_heart: | raw_data6  | <https://api.covid19india.org/csv/latest/raw_data6.csv>  | Jun 05th to Jun 19th   |
+| :green_heart: | raw_data7  | <https://api.covid19india.org/csv/latest/raw_data7.csv>  | Jun 20th to Jun 30th   |
+| :green_heart: | raw_data8  | <https://api.covid19india.org/csv/latest/raw_data8.csv>  | Jul 01st to Jul 7th    |
+| :green_heart: | raw_data9  | <https://api.covid19india.org/csv/latest/raw_data9.csv>  | Jul 08th to Jul 13th   |
+| :green_heart: | raw_data10 | <https://api.covid19india.org/csv/latest/raw_data10.csv> | Jul 14th to Jul 17th   |
+| :green_heart: | raw_data11 | <https://api.covid19india.org/csv/latest/raw_data11.csv> | Jul 18th to Jul 22nd   |
+| :green_heart: | raw_data12 | <https://api.covid19india.org/csv/latest/raw_data12.csv> | Jul 23th to Aug 06th   |
 | :green_heart: | raw_data13 | <https://api.covid19india.org/csv/latest/raw_data13.csv> | Aug 07th to Aug 21st   |
-| :green_heart: | raw_data14 | <https://api.covid19india.org/csv/latest/raw_data14.csv> | Aug 22nd to Sep 08th   |
-| :green_heart: | raw_data15 | <https://api.covid19india.org/csv/latest/raw_data15.csv> | Sep 09 onwards         |
+| :green_heart: | raw_data14 | <https://api.covid19india.org/csv/latest/raw_data14.csv> | Aug 22nd to Sep 05th   |
+| :green_heart: | raw_data15 | <https://api.covid19india.org/csv/latest/raw_data15.csv> | Sep 06th to Sep 21st   |
+| :green_heart: | raw_data16 | <https://api.covid19india.org/csv/latest/raw_data16.csv> | Sep 22nd to Oct 08th   |
+| :green_heart: | raw_data17 | <https://api.covid19india.org/csv/latest/raw_data17.csv> | Oct 09th to Oct 26th   |
+| :green_heart: | raw_data18 | <https://api.covid19india.org/csv/latest/raw_data18.csv> | Oct 27th to Nov 12th   |
+| :green_heart: | raw_data19 | <https://api.covid19india.org/csv/latest/raw_data19.csv> | Nov 13th to Nov 30th   |
+| :green_heart: | raw_data20 | <https://api.covid19india.org/csv/latest/raw_data20.csv> | Dec 01st onwards       |
+
 
 #### Other Sheets
 
@@ -39,12 +45,11 @@ These are the files available
 | :green_heart: | state_wise_daily              | <https://api.covid19india.org/csv/latest/state_wise_daily.csv>              | Statewise timeseries of Confirmed, Recovered and Deceased numbers.  
 | :green_heart: | states                        | <https://api.covid19india.org/csv/latest/states.csv>                        | Statewise timeseries of Confirmed, Recovered and Deceased numbers in long format  
 | :green_heart: | districts                        | <https://api.covid19india.org/csv/latest/districts.csv>                  | Districtwise timeseries of Confirmed, Recovered and Deceased numbers in long format                           |
-| :green_heart: | statewise_tested_numbers_data | <https://api.covid19india.org/csv/latest/statewise_tested_numbers_data.csv> | Number of tests conducted in each state, ventilators and hospital bed information reported in state bulletins |
+| :green_heart: | statewise_tested_numbers_data | <https://api.covid19india.org/csv/latest/statewise_tested_numbers_data.csv> | Number of tests conducted in each state, ventilators ,hospital bed occupany reported in state bulletins |
 | :green_heart: | tested_numbers_icmr_data      | <https://api.covid19india.org/csv/latest/tested_numbers_icmr_data.csv>      | Number of tests reported by ICMR                                                                |
+| :green_heart: | icmr_labs_statewise      | <https://api.covid19india.org/csv/latest/icmr_labs_statewise.csv>      | Number of Labs in each state as per ICMR                                                                |
 | :green_heart: | sources_list                  | <https://api.covid19india.org/csv/latest/sources_list.csv>                  | List of sources that we are using.                                                              |
-| :end:         | raw_data                      | <https://api.covid19india.org/csv/latest/raw_data.csv>                      | raw_data1 + raw_data2. This is frozen as of Apr 26th.                                           |
-| :end:         | death_and_recovered           | <https://api.covid19india.org/csv/latest/death_and_recovered.csv>           | death_and_recovered1 + death_and_recovered2. This is frozen as of Apr 26th.                     |
-| :end:         | travel_history                | <https://api.covid19india.org/csv/latest/travel_history.csv>                | Travel history of patients. This data is not reported or captured anymore.                      |
+| :green_heart: | rtpcr_samples_collected       | <http://api.covid19india.org/csv/latest/icmr_rtpcr_tests_daily.csv>          | Number of RTPCR samples collected statewise in ICMR Application                             |
 
 #### Note
 

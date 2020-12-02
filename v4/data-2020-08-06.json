@@ -360,11 +360,24 @@
           "tested": 422
         }
       },
+      "Capital Complex": {
+        "delta": {
+          "tested": 167
+        },
+        "meta": {
+          "tested": {
+            "last_updated": "2020-08-06"
+          }
+        },
+        "total": {
+          "tested": 11522
+        }
+      },
       "Changlang": {
         "delta": {
           "confirmed": 2,
           "recovered": 5,
-          "tested": 167
+          "tested": 121
         },
         "meta": {
           "population": 147951,
@@ -375,19 +388,6 @@
         "total": {
           "confirmed": 269,
           "recovered": 122,
-          "tested": 11522
-        }
-      },
-      "Dibang Valley": {
-        "delta": {
-          "tested": 121
-        },
-        "meta": {
-          "tested": {
-            "last_updated": "2020-08-06"
-          }
-        },
-        "total": {
           "tested": 131
         }
       },
@@ -395,7 +395,7 @@
         "delta": {
           "confirmed": 8,
           "recovered": 9,
-          "tested": 54
+          "tested": 4
         },
         "meta": {
           "population": 78413,
@@ -406,7 +406,7 @@
         "total": {
           "confirmed": 57,
           "recovered": 18,
-          "tested": 1084
+          "tested": 640
         }
       },
       "East Siang": {
@@ -428,7 +428,7 @@
       },
       "Kamle": {
         "delta": {
-          "tested": 4
+          "tested": 131
         },
         "meta": {
           "population": 22256,
@@ -439,28 +439,14 @@
         "total": {
           "confirmed": 1,
           "recovered": 1,
-          "tested": 640
+          "tested": 400
         }
       },
       "Kra Daadi": {
         "delta": {
-          "tested": 131
-        },
-        "meta": {
-          "tested": {
-            "last_updated": "2020-08-06"
-          }
-        },
-        "total": {
-          "tested": 400
-        }
-      },
-      "Kurung Kumey": {
-        "delta": {
           "tested": 61
         },
         "meta": {
-          "population": 89717,
           "tested": {
             "last_updated": "2020-08-06"
           }
@@ -469,7 +455,21 @@
           "tested": 315
         }
       },
+      "Kurung Kumey": {
+        "meta": {
+          "population": 89717,
+          "tested": {
+            "last_updated": "2020-08-06"
+          }
+        },
+        "total": {
+          "tested": 429
+        }
+      },
       "Lepa Rada": {
+        "delta": {
+          "tested": 133
+        },
         "meta": {
           "tested": {
             "last_updated": "2020-08-06"
@@ -478,13 +478,13 @@
         "total": {
           "confirmed": 13,
           "recovered": 11,
-          "tested": 429
+          "tested": 2776
         }
       },
       "Lohit": {
         "delta": {
           "confirmed": 10,
-          "tested": 133
+          "tested": 54
         },
         "meta": {
           "population": 145538,
@@ -495,12 +495,12 @@
         "total": {
           "confirmed": 55,
           "recovered": 17,
-          "tested": 2776
+          "tested": 1825
         }
       },
       "Longding": {
         "delta": {
-          "tested": 54
+          "tested": 63
         },
         "meta": {
           "population": 60000,
@@ -511,13 +511,13 @@
         "total": {
           "confirmed": 14,
           "recovered": 8,
-          "tested": 1825
+          "tested": 2618
         }
       },
       "Lower Dibang Valley": {
         "delta": {
           "recovered": 1,
-          "tested": 63
+          "tested": 215
         },
         "meta": {
           "population": 53986,
@@ -528,13 +528,13 @@
         "total": {
           "confirmed": 22,
           "recovered": 16,
-          "tested": 2618
+          "tested": 2450
         }
       },
       "Lower Siang": {
         "delta": {
           "confirmed": 2,
-          "tested": 215
+          "tested": 23
         },
         "meta": {
           "population": 80597,
@@ -545,12 +545,12 @@
         "total": {
           "confirmed": 40,
           "recovered": 17,
-          "tested": 2450
+          "tested": 1481
         }
       },
       "Lower Subansiri": {
         "delta": {
-          "tested": 23
+          "tested": 241
         },
         "meta": {
           "population": 82839,
@@ -561,13 +561,13 @@
         "total": {
           "confirmed": 39,
           "recovered": 26,
-          "tested": 1481
+          "tested": 6450
         }
       },
       "Namsai": {
         "delta": {
           "confirmed": 55,
-          "tested": 241
+          "tested": 25
         },
         "meta": {
           "population": 95950,
@@ -578,12 +578,12 @@
         "total": {
           "confirmed": 160,
           "recovered": 56,
-          "tested": 6450
+          "tested": 551
         }
       },
       "Pakke Kessang": {
         "delta": {
-          "tested": 25
+          "tested": 868
         },
         "meta": {
           "tested": {
@@ -593,26 +593,21 @@
         "total": {
           "confirmed": 1,
           "recovered": 1,
-          "tested": 551
+          "tested": 45497
         }
       },
       "Papum Pare": {
         "delta": {
           "confirmed": 7,
-          "recovered": 21,
-          "tested": 868
+          "recovered": 21
         },
         "meta": {
-          "population": 176385,
-          "tested": {
-            "last_updated": "2020-08-06"
-          }
+          "population": 176385
         },
         "total": {
           "confirmed": 910,
           "deceased": 1,
-          "recovered": 750,
-          "tested": 45497
+          "recovered": 750
         }
       },
       "Shi Yomi": {
@@ -679,6 +674,20 @@
           "confirmed": 63,
           "recovered": 30,
           "tested": 3804
+        }
+      },
+      "Upper Dibang Valley": {
+        "delta": {
+          "tested": 54
+        },
+        "meta": {
+          "population": 7948,
+          "tested": {
+            "last_updated": "2020-08-06"
+          }
+        },
+        "total": {
+          "tested": 1084
         }
       },
       "Upper Siang": {
@@ -2317,7 +2326,7 @@
         },
         "total": {
           "confirmed": 570,
-          "deceased": 9,
+          "deceased": 8,
           "recovered": 324,
           "tested": 14588
         }
@@ -2373,7 +2382,7 @@
         },
         "total": {
           "confirmed": 769,
-          "deceased": 17,
+          "deceased": 16,
           "recovered": 752,
           "tested": 17287
         }
@@ -2522,7 +2531,7 @@
         },
         "total": {
           "confirmed": 1653,
-          "deceased": 44,
+          "deceased": 46,
           "recovered": 1276,
           "tested": 17400
         }
@@ -2580,7 +2589,7 @@
         },
         "total": {
           "confirmed": 1078,
-          "deceased": 18,
+          "deceased": 20,
           "recovered": 818,
           "tested": 25876
         }
@@ -2599,7 +2608,7 @@
         },
         "total": {
           "confirmed": 688,
-          "deceased": 16,
+          "deceased": 15,
           "recovered": 563,
           "tested": 13871
         }
@@ -2657,7 +2666,7 @@
         },
         "total": {
           "confirmed": 1042,
-          "deceased": 23,
+          "deceased": 22,
           "recovered": 547,
           "tested": 14045
         }
@@ -2713,7 +2722,7 @@
         },
         "total": {
           "confirmed": 626,
-          "deceased": 6,
+          "deceased": 7,
           "recovered": 455,
           "tested": 10471
         }
@@ -2745,7 +2754,7 @@
         },
         "total": {
           "confirmed": 601,
-          "deceased": 16,
+          "deceased": 17,
           "recovered": 375,
           "tested": 12875
         }
@@ -2764,7 +2773,7 @@
         },
         "total": {
           "confirmed": 651,
-          "deceased": 32,
+          "deceased": 33,
           "recovered": 555,
           "tested": 11337
         }
@@ -2802,7 +2811,7 @@
         },
         "total": {
           "confirmed": 2328,
-          "deceased": 43,
+          "deceased": 42,
           "recovered": 1273,
           "tested": 23816
         }
@@ -2860,7 +2869,7 @@
         },
         "total": {
           "confirmed": 878,
-          "deceased": 10,
+          "deceased": 8,
           "recovered": 494,
           "tested": 15509
         }
@@ -2899,7 +2908,7 @@
         },
         "total": {
           "confirmed": 5279,
-          "deceased": 91,
+          "deceased": 93,
           "recovered": 4065,
           "tested": 50999
         }
@@ -2934,7 +2943,7 @@
     },
     "total": {
       "confirmed": 67811,
-      "deceased": 2582,
+      "deceased": 2584,
       "recovered": 50422,
       "tested": 903782
     }
@@ -4907,8 +4916,8 @@
         "total": {
           "confirmed": 2263,
           "deceased": 6,
-          "other": 6,
-          "recovered": 1296
+          "other": 5,
+          "recovered": 1297
         }
       },
       "Ernakulam": {
@@ -4922,8 +4931,8 @@
         "total": {
           "confirmed": 2486,
           "deceased": 14,
-          "other": 6,
-          "recovered": 1384
+          "other": 5,
+          "recovered": 1385
         }
       },
       "Idukki": {
@@ -5042,8 +5051,8 @@
         "total": {
           "confirmed": 2082,
           "deceased": 2,
-          "other": 2,
-          "recovered": 1528
+          "other": 1,
+          "recovered": 1529
         }
       },
       "Pathanamthitta": {
@@ -5057,8 +5066,8 @@
         "total": {
           "confirmed": 1690,
           "deceased": 1,
-          "other": 2,
-          "recovered": 1216
+          "other": 1,
+          "recovered": 1217
         }
       },
       "Thiruvananthapuram": {
@@ -5117,8 +5126,8 @@
     "total": {
       "confirmed": 30450,
       "deceased": 98,
-      "other": 36,
-      "recovered": 18333,
+      "other": 32,
+      "recovered": 18337,
       "tested": 908355
     }
   },
@@ -10012,9 +10021,9 @@
     },
     "total": {
       "confirmed": 2025410,
-      "deceased": 41641,
-      "other": 454,
-      "recovered": 1377282,
+      "deceased": 41643,
+      "other": 450,
+      "recovered": 1377286,
       "tested": 22788393
     }
   },

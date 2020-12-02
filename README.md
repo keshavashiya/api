@@ -24,8 +24,13 @@ Detailed documentation regarding the API end-points [can be found here](document
 | :green_heart: | Patient Level : Raw Data Partition 10 (From Jul 14 to Jul 17)                | <https://api.covid19india.org/raw_data10.json>          |
 | :green_heart: | Patient Level : Raw Data Partition 11 (From Jul 18 to Jul 22)                | <https://api.covid19india.org/raw_data11.json>          |
 | :green_heart: | Patient Level : Raw Data Partition 12 (From Jul 23 to Aug 06)                | <https://api.covid19india.org/raw_data12.json>          |
-| :green_heart: | Patient Level : Raw Data Partition 13 (From Aug 07 to Aug 21)                  | <https://api.covid19india.org/raw_data13.json>          |
-| :green_heart: | Patient Level : Raw Data Partition 14 (From Aug 22 onward)                  | <https://api.covid19india.org/raw_data14.json>          |
+| :green_heart: | Patient Level : Raw Data Partition 13 (From Aug 07 to Aug 21)                | <https://api.covid19india.org/raw_data13.json>          |
+| :green_heart: | Patient Level : Raw Data Partition 14 (From Aug 22 to Sep 05)                | <https://api.covid19india.org/raw_data14.json>          |
+| :green_heart: | Patient Level : Raw Data Partition 15 (From Sep 06 to Sep 21)                | <https://api.covid19india.org/raw_data15.json>          |
+| :green_heart: | Patient Level : Raw Data Partition 16 (From Sep 22 to Oct 08)                | <https://api.covid19india.org/raw_data16.json>          |
+| :green_heart: | Patient Level : Raw Data Partition 17 (From Oct 09 to Oct 26)                  | <https://api.covid19india.org/raw_data17.json>          |
+| :green_heart: | Patient Level : Raw Data Partition 18 (From Oct 27 to Nov 12)                  | <https://api.covid19india.org/raw_data18.json>          |
+| :green_heart: | Patient Level : Raw Data Partition 19 (From Nov 13 onwards)                  | <https://api.covid19india.org/raw_data19.json>          |
 | :green_heart: | National Level :Time series, State-wise stats and Test counts                | <https://api.covid19india.org/data.json>                |
 | :green_heart: | State Level : has district-wise info                                         | <https://api.covid19india.org/state_district_wise.json> |
 | :green_heart: | State Level : Daily changes                                                  | <https://api.covid19india.org/states_daily.json>        |
@@ -34,8 +39,7 @@ Detailed documentation regarding the API end-points [can be found here](document
 | :green_heart: | National/State/District Level : Specific date cummulative/daily counts       | <https://api.covid19india.org/v4/data-YYYY-MM-DD.json>  |
 | :green_heart: | National/State/District Level : Historical date-wise cumulative/daily counts | <https://api.covid19india.org/v4/data-all.json>         |
 | :green_heart: | National/State Level: Timeseries_(different structure)_                      | <https://api.covid19india.org/v4/timeseries.json>       |
-| :end:         | District Level : Daily changes                                               | <https://api.covid19india.org/districts_daily.json>     |
-
+| :green_heart: | State & District Level: Population                                           | <https://api.covid19india.org/misc.json>                |
 
 ### CSV
 
@@ -59,7 +63,7 @@ Sometimes, having files in a spreadsheet format is more useful for analysts and 
 This repository contains both the code that routinely fetches the data from Google Sheet and convert it into JSON files in the required format and the data itself (in the gh-pages branch). So, the content of this repository is licensed in two ways : Code and Data
 
 License for Code (Consider this as everything in the `master` branch) : MIT License (Detailed in LICENSE_CODE.txt)  
-License for Data (Consider this as everything in the `gh-pages` branch) : CC-BY-SA-4.0 License (Detailed in LICENSE_DATA.txt)
+License for Data (Consider this as everything in the `gh-pages` branch) : CC-BY-4.0 License (Detailed in LICENSE_DATA.txt)
 
 ## Citation
 

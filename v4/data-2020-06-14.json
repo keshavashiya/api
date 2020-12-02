@@ -335,6 +335,16 @@
           "tested": 98
         }
       },
+      "Capital Complex": {
+        "meta": {
+          "tested": {
+            "last_updated": "2020-06-09"
+          }
+        },
+        "total": {
+          "tested": 1723
+        }
+      },
       "Changlang": {
         "meta": {
           "population": 147951,
@@ -344,16 +354,6 @@
         },
         "total": {
           "confirmed": 59,
-          "tested": 1723
-        }
-      },
-      "Dibang Valley": {
-        "meta": {
-          "tested": {
-            "last_updated": "2020-06-09"
-          }
-        },
-        "total": {
           "tested": 10
         }
       },
@@ -365,7 +365,7 @@
           }
         },
         "total": {
-          "tested": 131
+          "tested": 35
         }
       },
       "East Siang": {
@@ -388,7 +388,7 @@
           }
         },
         "total": {
-          "tested": 35
+          "tested": 10
         }
       },
       "Kra Daadi": {
@@ -398,7 +398,7 @@
           }
         },
         "total": {
-          "tested": 10
+          "tested": 11
         }
       },
       "Kurung Kumey": {
@@ -409,7 +409,7 @@
           }
         },
         "total": {
-          "tested": 11
+          "tested": 96
         }
       },
       "Lepa Rada": {
@@ -419,7 +419,7 @@
           }
         },
         "total": {
-          "tested": 96
+          "tested": 580
         }
       },
       "Lohit": {
@@ -432,7 +432,7 @@
         "total": {
           "confirmed": 2,
           "recovered": 1,
-          "tested": 580
+          "tested": 356
         }
       },
       "Longding": {
@@ -444,7 +444,7 @@
         },
         "total": {
           "confirmed": 1,
-          "tested": 356
+          "tested": 406
         }
       },
       "Lower Dibang Valley": {
@@ -456,7 +456,7 @@
         },
         "total": {
           "confirmed": 2,
-          "tested": 406
+          "tested": 200
         }
       },
       "Lower Siang": {
@@ -467,7 +467,7 @@
           }
         },
         "total": {
-          "tested": 200
+          "tested": 325
         }
       },
       "Lower Subansiri": {
@@ -478,7 +478,7 @@
           }
         },
         "total": {
-          "tested": 325
+          "tested": 834
         }
       },
       "Namsai": {
@@ -491,7 +491,7 @@
         "total": {
           "confirmed": 3,
           "recovered": 2,
-          "tested": 834
+          "tested": 91
         }
       },
       "Pakke Kessang": {
@@ -502,7 +502,7 @@
         },
         "total": {
           "recovered": 1,
-          "tested": 91
+          "tested": 3754
         }
       },
       "Papum Pare": {
@@ -510,15 +510,11 @@
           "confirmed": 3
         },
         "meta": {
-          "population": 176385,
-          "tested": {
-            "last_updated": "2020-06-09"
-          }
+          "population": 176385
         },
         "total": {
           "confirmed": 8,
-          "recovered": 2,
-          "tested": 3754
+          "recovered": 2
         }
       },
       "Shi Yomi": {
@@ -565,6 +561,17 @@
         "total": {
           "confirmed": 1,
           "tested": 609
+        }
+      },
+      "Upper Dibang Valley": {
+        "meta": {
+          "population": 7948,
+          "tested": {
+            "last_updated": "2020-06-09"
+          }
+        },
+        "total": {
+          "tested": 131
         }
       },
       "Upper Siang": {
@@ -2242,7 +2249,7 @@
         },
         "total": {
           "confirmed": 185,
-          "deceased": 10,
+          "deceased": 9,
           "recovered": 118,
           "tested": 3295
         }
@@ -2349,7 +2356,7 @@
         },
         "total": {
           "confirmed": 114,
-          "deceased": 9,
+          "deceased": 10,
           "recovered": 77,
           "tested": 3307
         }
@@ -2653,11 +2660,6 @@
           "confirmed": 64,
           "recovered": 38
         }
-      },
-      "Unknown": {
-        "total": {
-          "other": -3
-        }
       }
     },
     "meta": {
@@ -2670,7 +2672,7 @@
     "total": {
       "confirmed": 518,
       "deceased": 7,
-      "other": 11,
+      "other": 14,
       "recovered": 326,
       "tested": 53946
     }
@@ -4277,8 +4279,7 @@
         "total": {
           "confirmed": 284,
           "deceased": 1,
-          "other": 1,
-          "recovered": 124
+          "recovered": 125
         }
       },
       "Pathanamthitta": {
@@ -4347,8 +4348,7 @@
     "total": {
       "confirmed": 2462,
       "deceased": 20,
-      "other": 1,
-      "recovered": 1101,
+      "recovered": 1102,
       "tested": 149164
     }
   },
@@ -8522,8 +8522,8 @@
     "total": {
       "confirmed": 333038,
       "deceased": 9521,
-      "other": 41,
-      "recovered": 169684,
+      "other": 43,
+      "recovered": 169685,
       "tested": 5774133
     }
   },

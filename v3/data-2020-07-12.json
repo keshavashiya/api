@@ -378,11 +378,24 @@
           "tested": 199
         }
       },
+      "Capital Complex": {
+        "delta": {
+          "tested": 136
+        },
+        "meta": {
+          "tested": {
+            "last_updated": "2020-07-12",
+            "source": "https://twitter.com/DirectorateofHS/status/1282382077703286784?s=20"
+          }
+        },
+        "total": {
+          "tested": 5245
+        }
+      },
       "Changlang": {
         "delta": {
           "confirmed": 7,
-          "recovered": 2,
-          "tested": 136
+          "recovered": 2
         },
         "meta": {
           "population": 147951,
@@ -394,17 +407,6 @@
         "total": {
           "confirmed": 109,
           "recovered": 71,
-          "tested": 5245
-        }
-      },
-      "Dibang Valley": {
-        "meta": {
-          "tested": {
-            "last_updated": "2020-07-12",
-            "source": "https://twitter.com/DirectorateofHS/status/1282382077703286784?s=20"
-          }
-        },
-        "total": {
           "tested": 10
         }
       },
@@ -417,7 +419,7 @@
           }
         },
         "total": {
-          "tested": 279
+          "tested": 54
         }
       },
       "East Siang": {
@@ -446,7 +448,7 @@
           }
         },
         "total": {
-          "tested": 54
+          "tested": 13
         }
       },
       "Kra Daadi": {
@@ -457,7 +459,7 @@
           }
         },
         "total": {
-          "tested": 13
+          "tested": 11
         }
       },
       "Kurung Kumey": {
@@ -469,7 +471,7 @@
           }
         },
         "total": {
-          "tested": 11
+          "tested": 198
         }
       },
       "Lepa Rada": {
@@ -482,7 +484,7 @@
         "total": {
           "confirmed": 3,
           "recovered": 1,
-          "tested": 198
+          "tested": 1347
         }
       },
       "Lohit": {
@@ -496,7 +498,7 @@
         "total": {
           "confirmed": 4,
           "recovered": 4,
-          "tested": 1347
+          "tested": 760
         }
       },
       "Longding": {
@@ -510,7 +512,7 @@
         "total": {
           "confirmed": 4,
           "recovered": 2,
-          "tested": 760
+          "tested": 998
         }
       },
       "Lower Dibang Valley": {
@@ -524,10 +526,13 @@
         "total": {
           "confirmed": 3,
           "recovered": 3,
-          "tested": 998
+          "tested": 500
         }
       },
       "Lower Siang": {
+        "delta": {
+          "tested": 32
+        },
         "meta": {
           "population": 80597,
           "tested": {
@@ -537,13 +542,10 @@
         },
         "total": {
           "confirmed": 3,
-          "tested": 500
+          "tested": 652
         }
       },
       "Lower Subansiri": {
-        "delta": {
-          "tested": 32
-        },
         "meta": {
           "population": 82839,
           "tested": {
@@ -553,7 +555,7 @@
         },
         "total": {
           "confirmed": 12,
-          "tested": 652
+          "tested": 1836
         }
       },
       "Namsai": {
@@ -570,10 +572,13 @@
         "total": {
           "confirmed": 19,
           "recovered": 5,
-          "tested": 1836
+          "tested": 308
         }
       },
       "Pakke Kessang": {
+        "delta": {
+          "tested": 384
+        },
         "meta": {
           "tested": {
             "last_updated": "2020-07-12",
@@ -583,26 +588,20 @@
         "total": {
           "confirmed": 1,
           "recovered": 1,
-          "tested": 308
+          "tested": 10767
         }
       },
       "Papum Pare": {
         "delta": {
           "confirmed": 11,
-          "recovered": 7,
-          "tested": 384
+          "recovered": 7
         },
         "meta": {
-          "population": 176385,
-          "tested": {
-            "last_updated": "2020-07-12",
-            "source": "https://twitter.com/DirectorateofHS/status/1282382077703286784?s=20"
-          }
+          "population": 176385
         },
         "total": {
           "confirmed": 149,
-          "recovered": 24,
-          "tested": 10767
+          "recovered": 24
         }
       },
       "Shi Yomi": {
@@ -661,6 +660,18 @@
           "confirmed": 5,
           "recovered": 3,
           "tested": 1715
+        }
+      },
+      "Upper Dibang Valley": {
+        "meta": {
+          "population": 7948,
+          "tested": {
+            "last_updated": "2020-07-12",
+            "source": "https://twitter.com/DirectorateofHS/status/1282382077703286784?s=20"
+          }
+        },
+        "total": {
+          "tested": 279
         }
       },
       "Upper Siang": {
@@ -2548,7 +2559,7 @@
         },
         "total": {
           "confirmed": 149,
-          "deceased": 9,
+          "deceased": 8,
           "recovered": 83,
           "tested": 6973
         }
@@ -2608,7 +2619,7 @@
         },
         "total": {
           "confirmed": 336,
-          "deceased": 15,
+          "deceased": 14,
           "recovered": 222,
           "tested": 11622
         }
@@ -2763,7 +2774,7 @@
         },
         "total": {
           "confirmed": 893,
-          "deceased": 32,
+          "deceased": 34,
           "recovered": 627,
           "tested": 10211
         }
@@ -2823,7 +2834,7 @@
         },
         "total": {
           "confirmed": 312,
-          "deceased": 6,
+          "deceased": 7,
           "recovered": 123,
           "tested": 16882
         }
@@ -2844,7 +2855,7 @@
         },
         "total": {
           "confirmed": 309,
-          "deceased": 15,
+          "deceased": 14,
           "recovered": 182,
           "tested": 7776
         }
@@ -2902,7 +2913,7 @@
         },
         "total": {
           "confirmed": 439,
-          "deceased": 15,
+          "deceased": 14,
           "recovered": 189,
           "tested": 6625
         }
@@ -2960,7 +2971,7 @@
         },
         "total": {
           "confirmed": 251,
-          "deceased": 1,
+          "deceased": 2,
           "recovered": 133,
           "tested": 5984
         }
@@ -2994,7 +3005,7 @@
         },
         "total": {
           "confirmed": 246,
-          "deceased": 15,
+          "deceased": 16,
           "recovered": 175,
           "tested": 7919
         }
@@ -3014,7 +3025,7 @@
         },
         "total": {
           "confirmed": 276,
-          "deceased": 19,
+          "deceased": 20,
           "recovered": 187,
           "tested": 5692
         }
@@ -3053,7 +3064,7 @@
         },
         "total": {
           "confirmed": 655,
-          "deceased": 18,
+          "deceased": 17,
           "recovered": 181,
           "tested": 12262
         }
@@ -3114,7 +3125,7 @@
         },
         "total": {
           "confirmed": 291,
-          "deceased": 10,
+          "deceased": 8,
           "recovered": 139,
           "tested": 8809
         }
@@ -3153,7 +3164,7 @@
         },
         "total": {
           "confirmed": 3052,
-          "deceased": 49,
+          "deceased": 51,
           "recovered": 2138,
           "tested": 27252
         }
@@ -3188,7 +3199,7 @@
     },
     "total": {
       "confirmed": 41906,
-      "deceased": 2046,
+      "deceased": 2047,
       "recovered": 29198,
       "tested": 464646
     }
@@ -3415,11 +3426,6 @@
           "recovered": 112,
           "tested": 9966
         }
-      },
-      "Unknown": {
-        "total": {
-          "migrated": -3
-        }
       }
     },
     "meta": {
@@ -3432,7 +3438,7 @@
     "total": {
       "confirmed": 1213,
       "deceased": 10,
-      "migrated": 13,
+      "migrated": 16,
       "recovered": 916,
       "tested": 100315
     }
@@ -5194,8 +5200,7 @@
         "total": {
           "confirmed": 645,
           "deceased": 2,
-          "migrated": 1,
-          "recovered": 254
+          "recovered": 255
         }
       },
       "Ernakulam": {
@@ -5209,8 +5214,7 @@
         "total": {
           "confirmed": 507,
           "deceased": 3,
-          "migrated": 1,
-          "recovered": 202
+          "recovered": 203
         }
       },
       "Idukki": {
@@ -5317,8 +5321,7 @@
         "total": {
           "confirmed": 883,
           "deceased": 1,
-          "migrated": 1,
-          "recovered": 544
+          "recovered": 545
         }
       },
       "Pathanamthitta": {
@@ -5332,8 +5335,7 @@
         "total": {
           "confirmed": 531,
           "deceased": 1,
-          "migrated": 1,
-          "recovered": 291
+          "recovered": 292
         }
       },
       "Thiruvananthapuram": {
@@ -5389,8 +5391,7 @@
     "total": {
       "confirmed": 7874,
       "deceased": 32,
-      "migrated": 4,
-      "recovered": 4095,
+      "recovered": 4099,
       "tested": 347529
     }
   },
@@ -10806,9 +10807,9 @@
     },
     "total": {
       "confirmed": 879454,
-      "deceased": 23182,
-      "migrated": 372,
-      "recovered": 554429,
+      "deceased": 23183,
+      "migrated": 371,
+      "recovered": 554433,
       "tested": 11806256
     }
   },

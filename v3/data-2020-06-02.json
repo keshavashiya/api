@@ -327,6 +327,17 @@
           "tested": 60
         }
       },
+      "Capital Complex": {
+        "meta": {
+          "tested": {
+            "last_updated": "2020-06-01",
+            "source": "https://twitter.com/DirectorateofHS/status/1267501404769398784?s=20"
+          }
+        },
+        "total": {
+          "tested": 1062
+        }
+      },
       "Changlang": {
         "meta": {
           "population": 147951,
@@ -337,17 +348,6 @@
         },
         "total": {
           "confirmed": 16,
-          "tested": 1062
-        }
-      },
-      "Dibang Valley": {
-        "meta": {
-          "tested": {
-            "last_updated": "2020-06-01",
-            "source": "https://twitter.com/DirectorateofHS/status/1267501404769398784?s=20"
-          }
-        },
-        "total": {
           "tested": 10
         }
       },
@@ -360,7 +360,7 @@
           }
         },
         "total": {
-          "tested": 99
+          "tested": 20
         }
       },
       "East Siang": {
@@ -384,7 +384,7 @@
           }
         },
         "total": {
-          "tested": 20
+          "tested": 10
         }
       },
       "Kra Daadi": {
@@ -395,7 +395,7 @@
           }
         },
         "total": {
-          "tested": 10
+          "tested": 11
         }
       },
       "Kurung Kumey": {
@@ -407,7 +407,7 @@
           }
         },
         "total": {
-          "tested": 11
+          "tested": 73
         }
       },
       "Lepa Rada": {
@@ -418,7 +418,7 @@
           }
         },
         "total": {
-          "tested": 73
+          "tested": 439
         }
       },
       "Lohit": {
@@ -435,7 +435,7 @@
         "total": {
           "confirmed": 1,
           "recovered": 1,
-          "tested": 439
+          "tested": 160
         }
       },
       "Longding": {
@@ -447,7 +447,7 @@
           }
         },
         "total": {
-          "tested": 160
+          "tested": 274
         }
       },
       "Lower Dibang Valley": {
@@ -459,7 +459,7 @@
           }
         },
         "total": {
-          "tested": 274
+          "tested": 123
         }
       },
       "Lower Siang": {
@@ -471,7 +471,7 @@
           }
         },
         "total": {
-          "tested": 123
+          "tested": 212
         }
       },
       "Lower Subansiri": {
@@ -483,7 +483,7 @@
           }
         },
         "total": {
-          "tested": 212
+          "tested": 518
         }
       },
       "Namsai": {
@@ -499,7 +499,7 @@
         },
         "total": {
           "confirmed": 1,
-          "tested": 518
+          "tested": 63
         }
       },
       "Pakke Kessang": {
@@ -510,7 +510,7 @@
           }
         },
         "total": {
-          "tested": 63
+          "tested": 2852
         }
       },
       "Papum Pare": {
@@ -518,15 +518,10 @@
           "confirmed": 2
         },
         "meta": {
-          "population": 176385,
-          "tested": {
-            "last_updated": "2020-06-01",
-            "source": "https://twitter.com/DirectorateofHS/status/1267501404769398784?s=20"
-          }
+          "population": 176385
         },
         "total": {
-          "confirmed": 5,
-          "tested": 2852
+          "confirmed": 5
         }
       },
       "Shi Yomi": {
@@ -578,9 +573,16 @@
           "tested": 400
         }
       },
-      "Unknown": {
+      "Upper Dibang Valley": {
+        "meta": {
+          "population": 7948,
+          "tested": {
+            "last_updated": "2020-06-01",
+            "source": "https://twitter.com/DirectorateofHS/status/1267501404769398784?s=20"
+          }
+        },
         "total": {
-          "confirmed": -1
+          "tested": 99
         }
       },
       "Upper Siang": {
@@ -641,7 +643,7 @@
       }
     },
     "total": {
-      "confirmed": 24,
+      "confirmed": 25,
       "recovered": 1,
       "tested": 9079
     }
@@ -8770,7 +8772,7 @@
       }
     },
     "total": {
-      "confirmed": 207183,
+      "confirmed": 207184,
       "deceased": 5828,
       "migrated": 13,
       "recovered": 100275,
