@@ -2833,13 +2833,25 @@
       "2020-12-10": {
         "delta": {
           "confirmed": 7,
-          "recovered": 8
+          "recovered": 8,
+          "tested": 1322
         },
         "total": {
           "confirmed": 3984,
           "deceased": 6,
           "recovered": 3790,
-          "tested": 159714
+          "tested": 161036
+        }
+      },
+      "2020-12-11": {
+        "delta": {
+          "confirmed": 14
+        },
+        "total": {
+          "confirmed": 3998,
+          "deceased": 6,
+          "recovered": 3790,
+          "tested": 161036
         }
       }
     },
@@ -4890,6 +4902,16 @@
               "deceased": 6,
               "recovered": 2564
             }
+          },
+          "2020-12-11": {
+            "delta": {
+              "confirmed": 10
+            },
+            "total": {
+              "confirmed": 2659,
+              "deceased": 6,
+              "recovered": 2564
+            }
           }
         }
       },
@@ -6190,6 +6212,12 @@
               "confirmed": 84,
               "recovered": 79
             }
+          },
+          "2020-12-11": {
+            "total": {
+              "confirmed": 84,
+              "recovered": 79
+            }
           }
         }
       },
@@ -6969,6 +6997,12 @@
             }
           },
           "2020-12-10": {
+            "total": {
+              "confirmed": 15,
+              "recovered": 15
+            }
+          },
+          "2020-12-11": {
             "total": {
               "confirmed": 15,
               "recovered": 15
@@ -8123,6 +8157,12 @@
             }
           },
           "2020-12-10": {
+            "total": {
+              "confirmed": 22,
+              "recovered": 20
+            }
+          },
+          "2020-12-11": {
             "total": {
               "confirmed": 22,
               "recovered": 20
@@ -9517,6 +9557,12 @@
               "confirmed": 272,
               "recovered": 267
             }
+          },
+          "2020-12-11": {
+            "total": {
+              "confirmed": 272,
+              "recovered": 267
+            }
           }
         }
       },
@@ -10893,6 +10939,15 @@
             },
             "total": {
               "confirmed": 281,
+              "recovered": 237
+            }
+          },
+          "2020-12-11": {
+            "delta": {
+              "confirmed": 1
+            },
+            "total": {
+              "confirmed": 282,
               "recovered": 237
             }
           }
@@ -12352,6 +12407,15 @@
               "confirmed": 347,
               "recovered": 316
             }
+          },
+          "2020-12-11": {
+            "delta": {
+              "confirmed": 3
+            },
+            "total": {
+              "confirmed": 350,
+              "recovered": 316
+            }
           }
         }
       },
@@ -13682,6 +13746,12 @@
               "confirmed": 82,
               "recovered": 80
             }
+          },
+          "2020-12-11": {
+            "total": {
+              "confirmed": 82,
+              "recovered": 80
+            }
           }
         }
       },
@@ -14858,6 +14928,12 @@
             }
           },
           "2020-12-10": {
+            "total": {
+              "confirmed": 35,
+              "recovered": 35
+            }
+          },
+          "2020-12-11": {
             "total": {
               "confirmed": 35,
               "recovered": 35
@@ -16071,6 +16147,12 @@
             "delta": {
               "recovered": 1
             },
+            "total": {
+              "confirmed": 26,
+              "recovered": 23
+            }
+          },
+          "2020-12-11": {
             "total": {
               "confirmed": 26,
               "recovered": 23
@@ -17412,6 +17494,12 @@
             "delta": {
               "confirmed": 3
             },
+            "total": {
+              "confirmed": 171,
+              "recovered": 154
+            }
+          },
+          "2020-12-11": {
             "total": {
               "confirmed": 171,
               "recovered": 154
