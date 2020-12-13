@@ -3750,11 +3750,31 @@
         }
       },
       "2020-12-11": {
+        "delta": {
+          "confirmed": 2385,
+          "deceased": 60,
+          "recovered": 2402,
+          "tested": 71679
+        },
         "total": {
-          "confirmed": 601150,
-          "deceased": 9874,
-          "recovered": 572523,
-          "tested": 7005476
+          "confirmed": 603535,
+          "deceased": 9934,
+          "recovered": 574925,
+          "tested": 7077155
+        }
+      },
+      "2020-12-12": {
+        "delta": {
+          "confirmed": 1935,
+          "deceased": 47,
+          "recovered": 3191,
+          "tested": 73413
+        },
+        "total": {
+          "confirmed": 605470,
+          "deceased": 9981,
+          "recovered": 578116,
+          "tested": 7150568
         }
       }
     },
@@ -6956,11 +6976,31 @@
             }
           },
           "2020-12-11": {
+            "delta": {
+              "confirmed": 2385,
+              "deceased": 60,
+              "recovered": 2402,
+              "tested": 71679
+            },
             "total": {
-              "confirmed": 601150,
-              "deceased": 9874,
-              "recovered": 572523,
-              "tested": 7005476
+              "confirmed": 603535,
+              "deceased": 9934,
+              "recovered": 574925,
+              "tested": 7077155
+            }
+          },
+          "2020-12-12": {
+            "delta": {
+              "confirmed": 1935,
+              "deceased": 47,
+              "recovered": 3191,
+              "tested": 73413
+            },
+            "total": {
+              "confirmed": 605470,
+              "deceased": 9981,
+              "recovered": 578116,
+              "tested": 7150568
             }
           }
         }

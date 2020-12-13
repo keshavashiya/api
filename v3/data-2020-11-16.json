@@ -5589,6 +5589,7 @@
     "delta": {
       "confirmed": 2710,
       "deceased": 19,
+      "migrated": 2,
       "recovered": 6567,
       "tested": 25141
     },
@@ -5596,6 +5597,7 @@
       "Alappuzha": {
         "delta": {
           "confirmed": 226,
+          "migrated": 1,
           "recovered": 658
         },
         "meta": {
@@ -5604,7 +5606,7 @@
         "total": {
           "confirmed": 41725,
           "deceased": 129,
-          "migrated": 16,
+          "migrated": 17,
           "recovered": 33991
         }
       },
@@ -5708,7 +5710,7 @@
         "total": {
           "confirmed": 29993,
           "deceased": 72,
-          "migrated": 3,
+          "migrated": 2,
           "recovered": 25603
         }
       },
@@ -5801,6 +5803,7 @@
         "delta": {
           "confirmed": 204,
           "deceased": 5,
+          "migrated": 1,
           "recovered": 310
         },
         "meta": {
@@ -5813,7 +5816,7 @@
         "total": {
           "confirmed": 66676,
           "deceased": 494,
-          "migrated": 45,
+          "migrated": 49,
           "recovered": 60040,
           "tested": 436661
         }
@@ -5834,7 +5837,7 @@
         "total": {
           "confirmed": 51385,
           "deceased": 177,
-          "migrated": 7,
+          "migrated": 5,
           "recovered": 43097,
           "tested": 392682
         }
@@ -5871,7 +5874,7 @@
     "total": {
       "confirmed": 527709,
       "deceased": 1889,
-      "migrated": 119,
+      "migrated": 121,
       "recovered": 454774,
       "tested": 5498108
     }
@@ -11670,7 +11673,7 @@
     "delta": {
       "confirmed": 28609,
       "deceased": 451,
-      "migrated": 16,
+      "migrated": 18,
       "recovered": 40392,
       "tested": 844382
     },
@@ -11684,7 +11687,7 @@
     "total": {
       "confirmed": 8874225,
       "deceased": 130560,
-      "migrated": 1996,
+      "migrated": 1998,
       "recovered": 8288342,
       "tested": 126542907
     }

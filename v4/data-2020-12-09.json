@@ -3930,15 +3930,20 @@
       "Saraikela-Kharsawan": {
         "delta": {
           "confirmed": 3,
-          "recovered": 2
+          "recovered": 2,
+          "tested": 158816
         },
         "meta": {
-          "population": 1063458
+          "population": 1063458,
+          "tested": {
+            "last_updated": "2020-12-09"
+          }
         },
         "total": {
           "confirmed": 3630,
           "deceased": 12,
-          "recovered": 3555
+          "recovered": 3555,
+          "tested": 158816
         }
       },
       "Simdega": {
@@ -4882,6 +4887,7 @@
     "delta": {
       "confirmed": 4875,
       "deceased": 35,
+      "other": 3,
       "recovered": 4647,
       "tested": 52745
     },
@@ -4898,7 +4904,7 @@
         "total": {
           "confirmed": 50084,
           "deceased": 198,
-          "other": 16,
+          "other": 18,
           "recovered": 46512
         }
       },
@@ -4977,6 +4983,7 @@
         "delta": {
           "confirmed": 212,
           "deceased": 3,
+          "other": 1,
           "recovered": 281
         },
         "meta": {
@@ -4985,7 +4992,7 @@
         "total": {
           "confirmed": 50474,
           "deceased": 188,
-          "other": 7,
+          "other": 11,
           "recovered": 46940
         }
       },
@@ -5000,7 +5007,7 @@
         "total": {
           "confirmed": 39947,
           "deceased": 123,
-          "other": 3,
+          "other": 2,
           "recovered": 34611
         }
       },
@@ -5008,6 +5015,7 @@
         "delta": {
           "confirmed": 656,
           "deceased": 1,
+          "other": 1,
           "recovered": 610,
           "tested": 6189
         },
@@ -5020,7 +5028,7 @@
         "total": {
           "confirmed": 73896,
           "deceased": 226,
-          "other": 7,
+          "other": 9,
           "recovered": 67970,
           "tested": 832268
         }
@@ -5041,7 +5049,7 @@
         "total": {
           "confirmed": 78935,
           "deceased": 262,
-          "other": 9,
+          "other": 10,
           "recovered": 71544,
           "tested": 402738
         }
@@ -5049,6 +5057,7 @@
       "Palakkad": {
         "delta": {
           "confirmed": 343,
+          "other": 1,
           "recovered": 437
         },
         "meta": {
@@ -5060,7 +5069,7 @@
         "total": {
           "confirmed": 41544,
           "deceased": 83,
-          "other": 3,
+          "other": 6,
           "recovered": 36683,
           "tested": 226562
         }
@@ -5101,7 +5110,7 @@
         "total": {
           "confirmed": 74988,
           "deceased": 574,
-          "other": 48,
+          "other": 56,
           "recovered": 70941,
           "tested": 436661
         }
@@ -5122,7 +5131,7 @@
         "total": {
           "confirmed": 63983,
           "deceased": 284,
-          "other": 8,
+          "other": 7,
           "recovered": 57274,
           "tested": 522126
         }
@@ -5142,6 +5151,7 @@
         "total": {
           "confirmed": 12648,
           "deceased": 30,
+          "other": 1,
           "recovered": 10367,
           "tested": 181547
         }
@@ -5157,7 +5167,7 @@
     "total": {
       "confirmed": 649572,
       "deceased": 2508,
-      "other": 125,
+      "other": 144,
       "recovered": 586998,
       "tested": 6755630
     }
@@ -5176,14 +5186,14 @@
         "meta": {
           "population": 143000,
           "tested": {
-            "last_updated": "2020-12-06"
+            "last_updated": "2020-12-08"
           }
         },
         "total": {
           "confirmed": 2074,
           "deceased": 43,
           "recovered": 1909,
-          "tested": 34384
+          "tested": 35037
         }
       },
       "Leh": {
@@ -5194,29 +5204,29 @@
         "meta": {
           "population": 147000,
           "tested": {
-            "last_updated": "2020-12-06"
+            "last_updated": "2020-12-08"
           }
         },
         "total": {
           "confirmed": 6971,
           "deceased": 79,
           "recovered": 6193,
-          "tested": 62924
+          "tested": 64073
         }
       }
     },
     "meta": {
       "population": 293000,
       "tested": {
-        "last_updated": "2020-12-06",
-        "source": "https://twitter.com/DIPR_Leh/status/1335780981924483072/photo/1"
+        "last_updated": "2020-12-08",
+        "source": "https://twitter.com/DIPR_Leh/status/1337284262513442818/photo/3"
       }
     },
     "total": {
       "confirmed": 9045,
       "deceased": 122,
       "recovered": 8102,
-      "tested": 97308
+      "tested": 99110
     }
   },
   "MH": {
@@ -6313,19 +6323,20 @@
       "Chhindwara": {
         "delta": {
           "confirmed": 15,
-          "recovered": 15
+          "recovered": 15,
+          "tested": 1486
         },
         "meta": {
           "population": 2090306,
           "tested": {
-            "last_updated": "2020-12-08"
+            "last_updated": "2020-12-09"
           }
         },
         "total": {
           "confirmed": 2558,
           "deceased": 39,
           "recovered": 2469,
-          "tested": 57552
+          "tested": 59038
         }
       },
       "Damoh": {
@@ -7203,7 +7214,7 @@
         "meta": {
           "population": 379769,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -7211,21 +7222,21 @@
           "deceased": 40,
           "other": 74,
           "recovered": 6000,
-          "tested": 44362
+          "tested": 46366
         }
       },
       "Kiphire": {
         "meta": {
           "population": 74033,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 29,
           "deceased": 1,
           "recovered": 24,
-          "tested": 917
+          "tested": 961
         }
       },
       "Kohima": {
@@ -7237,7 +7248,7 @@
         "meta": {
           "population": 270063,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -7245,28 +7256,28 @@
           "deceased": 21,
           "other": 22,
           "recovered": 3138,
-          "tested": 30849
+          "tested": 33244
         }
       },
       "Longleng": {
         "meta": {
           "population": 50593,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 18,
           "other": 9,
           "recovered": 9,
-          "tested": 1182
+          "tested": 1193
         }
       },
       "Mokokchung": {
         "meta": {
           "population": 193171,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -7274,14 +7285,14 @@
           "deceased": 1,
           "other": 4,
           "recovered": 116,
-          "tested": 3750
+          "tested": 3902
         }
       },
       "Mon": {
         "meta": {
           "population": 259604,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -7289,7 +7300,7 @@
           "deceased": 2,
           "other": 9,
           "recovered": 565,
-          "tested": 11415
+          "tested": 12040
         }
       },
       "Peren": {
@@ -7299,26 +7310,26 @@
         "meta": {
           "population": 163294,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 480,
           "recovered": 472,
-          "tested": 5382
+          "tested": 5573
         }
       },
       "Phek": {
         "meta": {
           "population": 163294,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 44,
           "recovered": 44,
-          "tested": 2668
+          "tested": 2765
         }
       },
       "Tuensang": {
@@ -7328,14 +7339,14 @@
         "meta": {
           "population": 414801,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 238,
           "deceased": 1,
           "recovered": 195,
-          "tested": 4190
+          "tested": 4728
         }
       },
       "Wokha": {
@@ -7346,7 +7357,7 @@
         "meta": {
           "population": 166239,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -7354,21 +7365,21 @@
           "deceased": 1,
           "other": 3,
           "recovered": 28,
-          "tested": 1304
+          "tested": 1327
         }
       },
       "Zunheboto": {
         "meta": {
           "population": 141014,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 142,
           "other": 3,
           "recovered": 137,
-          "tested": 2035
+          "tested": 2122
         }
       }
     },
@@ -7703,15 +7714,20 @@
       "Kendujhar": {
         "delta": {
           "confirmed": 7,
-          "recovered": 28
+          "recovered": 28,
+          "tested": 396128
         },
         "meta": {
-          "population": 1802777
+          "population": 1802777,
+          "tested": {
+            "last_updated": "2020-12-09"
+          }
         },
         "total": {
           "confirmed": 7670,
           "deceased": 36,
-          "recovered": 7559
+          "recovered": 7559,
+          "tested": 396128
         }
       },
       "Khordha": {
@@ -8157,19 +8173,20 @@
         "delta": {
           "confirmed": 60,
           "deceased": 1,
-          "recovered": 94
+          "recovered": 94,
+          "tested": 11568
         },
         "meta": {
           "population": 3487882,
           "tested": {
-            "last_updated": "2020-12-05"
+            "last_updated": "2020-12-09"
           }
         },
         "total": {
           "confirmed": 23667,
           "deceased": 924,
           "recovered": 21907,
-          "tested": 474786
+          "tested": 486354
         }
       },
       "Mansa": {
@@ -8235,14 +8252,14 @@
         "meta": {
           "population": 2892282,
           "tested": {
-            "last_updated": "2020-09-02"
+            "last_updated": "2020-12-08"
           }
         },
         "total": {
           "confirmed": 15051,
           "deceased": 449,
           "recovered": 14171,
-          "tested": 88769
+          "tested": 256194
         }
       },
       "Rupnagar": {
@@ -10140,7 +10157,7 @@
     "delta": {
       "confirmed": 31637,
       "deceased": 413,
-      "other": 29,
+      "other": 32,
       "recovered": 37693,
       "tested": 922959
     },
@@ -10154,7 +10171,7 @@
     "total": {
       "confirmed": 9767654,
       "deceased": 141811,
-      "other": 2464,
+      "other": 2483,
       "recovered": 9252593,
       "tested": 150759726
     }

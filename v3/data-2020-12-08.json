@@ -5577,6 +5577,7 @@
     "delta": {
       "confirmed": 5032,
       "deceased": 31,
+      "migrated": 1,
       "recovered": 4735,
       "tested": 60521
     },
@@ -5593,7 +5594,7 @@
         "total": {
           "confirmed": 49890,
           "deceased": 195,
-          "migrated": 16,
+          "migrated": 18,
           "recovered": 46149
         }
       },
@@ -5683,7 +5684,7 @@
         "total": {
           "confirmed": 50262,
           "deceased": 185,
-          "migrated": 7,
+          "migrated": 10,
           "recovered": 46659
         }
       },
@@ -5699,7 +5700,7 @@
         "total": {
           "confirmed": 39450,
           "deceased": 123,
-          "migrated": 3,
+          "migrated": 2,
           "recovered": 34300
         }
       },
@@ -5720,7 +5721,7 @@
         "total": {
           "confirmed": 73240,
           "deceased": 225,
-          "migrated": 7,
+          "migrated": 8,
           "recovered": 67360,
           "tested": 826079
         }
@@ -5740,7 +5741,7 @@
         "total": {
           "confirmed": 78226,
           "deceased": 255,
-          "migrated": 9,
+          "migrated": 10,
           "recovered": 70932,
           "tested": 395088
         }
@@ -5748,6 +5749,7 @@
       "Palakkad": {
         "delta": {
           "confirmed": 328,
+          "migrated": 1,
           "recovered": 383
         },
         "meta": {
@@ -5760,7 +5762,7 @@
         "total": {
           "confirmed": 41201,
           "deceased": 83,
-          "migrated": 3,
+          "migrated": 5,
           "recovered": 36246,
           "tested": 226562
         }
@@ -5802,7 +5804,7 @@
         "total": {
           "confirmed": 74807,
           "deceased": 571,
-          "migrated": 48,
+          "migrated": 56,
           "recovered": 70540,
           "tested": 436661
         }
@@ -5824,7 +5826,7 @@
         "total": {
           "confirmed": 63472,
           "deceased": 279,
-          "migrated": 8,
+          "migrated": 7,
           "recovered": 56804,
           "tested": 516088
         }
@@ -5846,6 +5848,7 @@
         "total": {
           "confirmed": 12407,
           "deceased": 30,
+          "migrated": 1,
           "recovered": 10256,
           "tested": 179542
         }
@@ -5861,7 +5864,7 @@
     "total": {
       "confirmed": 644697,
       "deceased": 2473,
-      "migrated": 125,
+      "migrated": 141,
       "recovered": 582351,
       "tested": 6702885
     }
@@ -5870,61 +5873,64 @@
     "delta": {
       "confirmed": 73,
       "deceased": 1,
-      "recovered": 42
+      "recovered": 42,
+      "tested": 1802
     },
     "districts": {
       "Kargil": {
         "delta": {
           "confirmed": 24,
-          "recovered": 4
+          "recovered": 4,
+          "tested": 653
         },
         "meta": {
           "population": 143000,
           "tested": {
-            "last_updated": "2020-12-06",
-            "source": "https://twitter.com/DIPR_Leh/status/1335780981924483072"
+            "last_updated": "2020-12-08",
+            "source": "https://twitter.com/DIPR_Leh/status/1337284262513442818"
           }
         },
         "total": {
           "confirmed": 2072,
           "deceased": 43,
           "recovered": 1908,
-          "tested": 34384
+          "tested": 35037
         }
       },
       "Leh": {
         "delta": {
           "confirmed": 49,
           "deceased": 1,
-          "recovered": 38
+          "recovered": 38,
+          "tested": 1149
         },
         "meta": {
           "population": 147000,
           "tested": {
-            "last_updated": "2020-12-06",
-            "source": "https://twitter.com/DIPR_Leh/status/1335780981924483072"
+            "last_updated": "2020-12-08",
+            "source": "https://twitter.com/DIPR_Leh/status/1337284262513442818"
           }
         },
         "total": {
           "confirmed": 6897,
           "deceased": 79,
           "recovered": 6146,
-          "tested": 62924
+          "tested": 64073
         }
       }
     },
     "meta": {
       "population": 293000,
       "tested": {
-        "last_updated": "2020-12-06",
-        "source": "https://twitter.com/DIPR_Leh/status/1335780981924483072/photo/1"
+        "last_updated": "2020-12-08",
+        "source": "https://twitter.com/DIPR_Leh/status/1337284262513442818/photo/3"
       }
     },
     "total": {
       "confirmed": 8969,
       "deceased": 122,
       "recovered": 8054,
-      "tested": 97308
+      "tested": 99110
     }
   },
   "MH": {
@@ -8176,8 +8182,7 @@
         "meta": {
           "population": 379769,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -8185,22 +8190,21 @@
           "deceased": 40,
           "migrated": 74,
           "recovered": 5983,
-          "tested": 44362
+          "tested": 46366
         }
       },
       "Kiphire": {
         "meta": {
           "population": 74033,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 29,
           "deceased": 1,
           "recovered": 24,
-          "tested": 917
+          "tested": 961
         }
       },
       "Kohima": {
@@ -8212,8 +8216,7 @@
         "meta": {
           "population": 270063,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -8221,30 +8224,28 @@
           "deceased": 21,
           "migrated": 19,
           "recovered": 3102,
-          "tested": 30849
+          "tested": 33244
         }
       },
       "Longleng": {
         "meta": {
           "population": 50593,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 18,
           "migrated": 9,
           "recovered": 9,
-          "tested": 1182
+          "tested": 1193
         }
       },
       "Mokokchung": {
         "meta": {
           "population": 193171,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -8252,15 +8253,14 @@
           "deceased": 1,
           "migrated": 4,
           "recovered": 116,
-          "tested": 3750
+          "tested": 3902
         }
       },
       "Mon": {
         "meta": {
           "population": 259604,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -8268,7 +8268,7 @@
           "deceased": 2,
           "migrated": 9,
           "recovered": 565,
-          "tested": 11415
+          "tested": 12040
         }
       },
       "Peren": {
@@ -8278,43 +8278,40 @@
         "meta": {
           "population": 163294,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 480,
           "recovered": 463,
-          "tested": 5382
+          "tested": 5573
         }
       },
       "Phek": {
         "meta": {
           "population": 163294,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 44,
           "recovered": 44,
-          "tested": 2668
+          "tested": 2765
         }
       },
       "Tuensang": {
         "meta": {
           "population": 414801,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 237,
           "deceased": 1,
           "recovered": 195,
-          "tested": 4190
+          "tested": 4728
         }
       },
       "Wokha": {
@@ -8324,15 +8321,14 @@
         "meta": {
           "population": 166239,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 35,
           "deceased": 1,
           "recovered": 28,
-          "tested": 1304
+          "tested": 1327
         }
       },
       "Zunheboto": {
@@ -8342,15 +8338,14 @@
         "meta": {
           "population": 141014,
           "tested": {
-            "last_updated": "2020-11-20",
-            "source": "https://twitter.com/HealthNagaland/status/1330155086039969797?s=20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 142,
           "migrated": 3,
           "recovered": 137,
-          "tested": 2035
+          "tested": 2122
         }
       }
     },
@@ -9253,20 +9248,21 @@
         "delta": {
           "confirmed": 42,
           "deceased": 4,
-          "recovered": 74
+          "recovered": 74,
+          "tested": 167425
         },
         "meta": {
           "population": 2892282,
           "tested": {
-            "last_updated": "2020-09-02",
-            "source": "https://t.me/Covid19india_Auxiliary_Test_Data/2141"
+            "last_updated": "2020-12-08",
+            "source": "https://www.facebook.com/PatialaDPRO/posts/1398423250498185"
           }
         },
         "total": {
           "confirmed": 15009,
           "deceased": 448,
           "recovered": 14138,
-          "tested": 88769
+          "tested": 256194
         }
       },
       "Rupnagar": {
@@ -11681,7 +11677,7 @@
     "delta": {
       "confirmed": 32083,
       "deceased": 402,
-      "migrated": 21,
+      "migrated": 22,
       "recovered": 36583,
       "tested": 1022712
     },
@@ -11695,7 +11691,7 @@
     "total": {
       "confirmed": 9736017,
       "deceased": 141398,
-      "migrated": 2435,
+      "migrated": 2451,
       "recovered": 9214900,
       "tested": 149836767
     }

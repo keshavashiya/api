@@ -4911,6 +4911,7 @@
     "delta": {
       "confirmed": 5718,
       "deceased": 29,
+      "other": 1,
       "recovered": 5496,
       "tested": 57456
     },
@@ -4926,7 +4927,7 @@
         "total": {
           "confirmed": 48725,
           "deceased": 186,
-          "other": 16,
+          "other": 18,
           "recovered": 44457
         }
       },
@@ -5004,6 +5005,7 @@
         "delta": {
           "confirmed": 318,
           "deceased": 5,
+          "other": 1,
           "recovered": 662
         },
         "meta": {
@@ -5012,7 +5014,7 @@
         "total": {
           "confirmed": 48868,
           "deceased": 179,
-          "other": 7,
+          "other": 9,
           "recovered": 45315
         }
       },
@@ -5028,7 +5030,7 @@
         "total": {
           "confirmed": 37599,
           "deceased": 114,
-          "other": 3,
+          "other": 2,
           "recovered": 32285
         }
       },
@@ -5048,7 +5050,7 @@
         "total": {
           "confirmed": 71157,
           "deceased": 205,
-          "other": 7,
+          "other": 8,
           "recovered": 65309,
           "tested": 806671
         }
@@ -5069,7 +5071,7 @@
         "total": {
           "confirmed": 75407,
           "deceased": 247,
-          "other": 9,
+          "other": 10,
           "recovered": 67474,
           "tested": 383938
         }
@@ -5088,7 +5090,7 @@
         "total": {
           "confirmed": 39931,
           "deceased": 82,
-          "other": 3,
+          "other": 4,
           "recovered": 34738,
           "tested": 226562
         }
@@ -5128,7 +5130,7 @@
         "total": {
           "confirmed": 73647,
           "deceased": 559,
-          "other": 48,
+          "other": 53,
           "recovered": 69179,
           "tested": 436661
         }
@@ -5149,7 +5151,7 @@
         "total": {
           "confirmed": 61531,
           "deceased": 255,
-          "other": 8,
+          "other": 6,
           "recovered": 54681,
           "tested": 496039
         }
@@ -5185,7 +5187,7 @@
     "total": {
       "confirmed": 625768,
       "deceased": 2359,
-      "other": 125,
+      "other": 134,
       "recovered": 561874,
       "tested": 6496210
     }
@@ -7251,12 +7253,13 @@
         "delta": {
           "confirmed": 10,
           "deceased": 1,
-          "recovered": 200
+          "recovered": 200,
+          "tested": 2004
         },
         "meta": {
           "population": 379769,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -7264,32 +7267,36 @@
           "deceased": 39,
           "other": 72,
           "recovered": 5983,
-          "tested": 44362
+          "tested": 46366
         }
       },
       "Kiphire": {
+        "delta": {
+          "tested": 44
+        },
         "meta": {
           "population": 74033,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 26,
           "deceased": 1,
           "recovered": 24,
-          "tested": 917
+          "tested": 961
         }
       },
       "Kohima": {
         "delta": {
           "confirmed": 10,
-          "recovered": 39
+          "recovered": 39,
+          "tested": 2395
         },
         "meta": {
           "population": 270063,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -7297,28 +7304,34 @@
           "deceased": 20,
           "other": 16,
           "recovered": 3089,
-          "tested": 30849
+          "tested": 33244
         }
       },
       "Longleng": {
+        "delta": {
+          "tested": 11
+        },
         "meta": {
           "population": 50593,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 18,
           "other": 9,
           "recovered": 9,
-          "tested": 1182
+          "tested": 1193
         }
       },
       "Mokokchung": {
+        "delta": {
+          "tested": 152
+        },
         "meta": {
           "population": 193171,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -7326,14 +7339,17 @@
           "deceased": 1,
           "other": 4,
           "recovered": 116,
-          "tested": 3750
+          "tested": 3902
         }
       },
       "Mon": {
+        "delta": {
+          "tested": 625
+        },
         "meta": {
           "population": 259604,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
@@ -7341,78 +7357,91 @@
           "deceased": 2,
           "other": 9,
           "recovered": 565,
-          "tested": 11415
+          "tested": 12040
         }
       },
       "Peren": {
+        "delta": {
+          "tested": 191
+        },
         "meta": {
           "population": 163294,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 479,
           "recovered": 460,
-          "tested": 5382
+          "tested": 5573
         }
       },
       "Phek": {
+        "delta": {
+          "tested": 97
+        },
         "meta": {
           "population": 163294,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 44,
           "recovered": 44,
-          "tested": 2668
+          "tested": 2765
         }
       },
       "Tuensang": {
+        "delta": {
+          "tested": 538
+        },
         "meta": {
           "population": 414801,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 226,
           "deceased": 1,
           "recovered": 195,
-          "tested": 4190
+          "tested": 4728
         }
       },
       "Wokha": {
         "delta": {
-          "confirmed": 2
+          "confirmed": 2,
+          "tested": 23
         },
         "meta": {
           "population": 166239,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 31,
           "deceased": 1,
           "recovered": 28,
-          "tested": 1304
+          "tested": 1327
         }
       },
       "Zunheboto": {
+        "delta": {
+          "tested": 87
+        },
         "meta": {
           "population": 141014,
           "tested": {
-            "last_updated": "2020-11-20"
+            "last_updated": "2020-12-04"
           }
         },
         "total": {
           "confirmed": 140,
           "other": 3,
           "recovered": 136,
-          "tested": 2035
+          "tested": 2122
         }
       }
     },
@@ -10197,7 +10226,7 @@
     "delta": {
       "confirmed": 36711,
       "deceased": 511,
-      "other": 23,
+      "other": 24,
       "recovered": 42359,
       "tested": 1157763
     },
@@ -10211,7 +10240,7 @@
     "total": {
       "confirmed": 9608519,
       "deceased": 139738,
-      "other": 2320,
+      "other": 2329,
       "recovered": 9058061,
       "tested": 145885512
     }

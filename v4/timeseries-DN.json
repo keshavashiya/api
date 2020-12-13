@@ -3028,11 +3028,27 @@
         }
       },
       "2020-12-11": {
+        "delta": {
+          "confirmed": 1,
+          "recovered": 3
+        },
         "total": {
-          "confirmed": 3348,
+          "confirmed": 3349,
           "deceased": 2,
           "other": 29,
-          "recovered": 3294,
+          "recovered": 3297,
+          "tested": 72410
+        }
+      },
+      "2020-12-12": {
+        "delta": {
+          "recovered": 2
+        },
+        "total": {
+          "confirmed": 3349,
+          "deceased": 2,
+          "other": 29,
+          "recovered": 3299,
           "tested": 72410
         }
       }
@@ -5646,11 +5662,26 @@
             }
           },
           "2020-12-11": {
+            "delta": {
+              "recovered": 1
+            },
             "total": {
               "confirmed": 1638,
               "deceased": 1,
               "other": 5,
-              "recovered": 1618,
+              "recovered": 1619,
+              "tested": 44813
+            }
+          },
+          "2020-12-12": {
+            "delta": {
+              "recovered": 2
+            },
+            "total": {
+              "confirmed": 1638,
+              "deceased": 1,
+              "other": 5,
+              "recovered": 1621,
               "tested": 44813
             }
           }
@@ -8022,11 +8053,24 @@
             }
           },
           "2020-12-11": {
+            "delta": {
+              "confirmed": 1,
+              "recovered": 2
+            },
             "total": {
-              "confirmed": 1398,
+              "confirmed": 1399,
               "deceased": 1,
               "other": 24,
-              "recovered": 1367,
+              "recovered": 1369,
+              "tested": 19338
+            }
+          },
+          "2020-12-12": {
+            "total": {
+              "confirmed": 1399,
+              "deceased": 1,
+              "other": 24,
+              "recovered": 1369,
               "tested": 19338
             }
           }
@@ -9871,6 +9915,13 @@
             }
           },
           "2020-12-11": {
+            "total": {
+              "confirmed": 312,
+              "recovered": 309,
+              "tested": 8259
+            }
+          },
+          "2020-12-12": {
             "total": {
               "confirmed": 312,
               "recovered": 309,
