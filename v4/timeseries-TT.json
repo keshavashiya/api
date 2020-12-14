@@ -4392,14 +4392,44 @@
           "confirmed": 30354,
           "deceased": 391,
           "other": 14,
-          "recovered": 33087
+          "recovered": 33087,
+          "tested": 1014434
         },
         "total": {
           "confirmed": 9857380,
           "deceased": 143055,
           "other": 2542,
           "recovered": 9356879,
-          "tested": 152697399
+          "tested": 153711833
+        }
+      },
+      "2020-12-13": {
+        "delta": {
+          "confirmed": 27336,
+          "deceased": 338,
+          "other": 8,
+          "recovered": 30729,
+          "tested": 855157
+        },
+        "total": {
+          "confirmed": 9884716,
+          "deceased": 143393,
+          "other": 2550,
+          "recovered": 9387608,
+          "tested": 154566990
+        }
+      },
+      "2020-12-14": {
+        "delta": {
+          "confirmed": 384,
+          "recovered": 631
+        },
+        "total": {
+          "confirmed": 9885100,
+          "deceased": 143393,
+          "other": 2550,
+          "recovered": 9388239,
+          "tested": 154566990
         }
       }
     }
