@@ -4408,28 +4408,93 @@
           "confirmed": 27336,
           "deceased": 338,
           "other": 8,
-          "recovered": 30729,
+          "recovered": 30640,
           "tested": 855157
         },
         "total": {
           "confirmed": 9884716,
           "deceased": 143393,
           "other": 2550,
-          "recovered": 9387608,
+          "recovered": 9387519,
           "tested": 154566990
         }
       },
       "2020-12-14": {
         "delta": {
-          "confirmed": 384,
-          "recovered": 631
+          "confirmed": 21941,
+          "deceased": 354,
+          "other": 17,
+          "recovered": 34421,
+          "tested": 993665
         },
         "total": {
-          "confirmed": 9885100,
-          "deceased": 143393,
-          "other": 2550,
-          "recovered": 9388239,
-          "tested": 154566990
+          "confirmed": 9906657,
+          "deceased": 143747,
+          "other": 2567,
+          "recovered": 9421940,
+          "tested": 155560655
+        }
+      },
+      "2020-12-15": {
+        "delta": {
+          "confirmed": 26251,
+          "deceased": 384,
+          "other": 23,
+          "recovered": 33853,
+          "tested": 1085625
+        },
+        "total": {
+          "confirmed": 9932908,
+          "deceased": 144131,
+          "other": 2590,
+          "recovered": 9455793,
+          "tested": 156646280
+        }
+      },
+      "2020-12-16": {
+        "delta": {
+          "confirmed": 18172,
+          "deceased": 356,
+          "other": 21,
+          "recovered": 33360,
+          "tested": 1158960
+        },
+        "total": {
+          "confirmed": 9951080,
+          "deceased": 144487,
+          "other": 2611,
+          "recovered": 9489153,
+          "tested": 157805240
+        }
+      },
+      "2020-12-17": {
+        "delta": {
+          "confirmed": 26754,
+          "deceased": 342,
+          "other": 18,
+          "recovered": 30891,
+          "tested": 1113706
+        },
+        "total": {
+          "confirmed": 9977834,
+          "deceased": 144829,
+          "other": 2629,
+          "recovered": 9520044,
+          "tested": 158918946
+        }
+      },
+      "2020-12-18": {
+        "delta": {
+          "confirmed": 935,
+          "deceased": 5,
+          "recovered": 716
+        },
+        "total": {
+          "confirmed": 9978769,
+          "deceased": 144834,
+          "other": 2629,
+          "recovered": 9520760,
+          "tested": 158918946
         }
       }
     }
