@@ -22,25 +22,23 @@ INDIA_UTC_OFFSET = '+05:30'
 # Input/Output root directory
 ROOT_DIR = Path('tmp')
 CSV_DIR = ROOT_DIR / 'csv' / 'latest'
-# Contains state codes to be used as API keys
+# State codes to be used as API keys
 META_DATA = ROOT_DIR / 'misc.json'
-# Contains list of geographical districts
+# Geographical districts of India
 DISTRICT_LIST = ROOT_DIR / 'state_district_wise.json'
 # All raw_data's
 RAW_DATA = 'raw_data{n}.json'
-# Contains deaths and recoveries for entries in raw_data1 and raw_data2
+# Deaths and recoveries for entries in raw_data1 and raw_data2
 OUTCOME_DATA = 'deaths_recoveries{n}.json'
-# Contains district data on 26th April
+# District data as of 26th April
 DISTRICT_DATA_GOSPEL = CSV_DIR / 'districts_26apr_gospel.csv'
 GOSPEL_DATE = '2020-04-26'
 # India testing data
 ICMR_TEST_DATA = ROOT_DIR / 'data.json'
-# States testing data
-STATE_TEST_DATA = ROOT_DIR / 'state_test_data.json'
-# District testing data
+STATE_TEST_DATA = CSV_DIR / 'statewise_tested_numbers_data.csv'
 DISTRICT_TEST_DATA = CSV_DIR / 'district_testing.csv'
-# State vaccination data
 STATE_VACCINATION_DATA = CSV_DIR / 'vaccine_doses_statewise.csv'
+DISTRICT_VACCINATION_DATA = CSV_DIR / 'cowin_vaccine_data_districtwise.csv'
 
 ## For adding metadata
 # For state notes and last updated
@@ -378,46 +376,48 @@ def parse_icmr(icmr_data):
         data[date]['TT']['meta'][statistic]['last_updated'] = date
 
 
-def parse_state_test(raw_data):
-  for j, entry in enumerate(raw_data['states_tested_data']):
-    count_str = entry['totaltested'].strip()
+def parse_state_test(reader):
+  for j, entry in enumerate(reader):
+    count_str = entry['Total Tested'].strip()
     if not count_str:
       continue
 
     try:
-      fdate = datetime.strptime(entry['updatedon'].strip(), '%d/%m/%Y')
+      fdate = datetime.strptime(entry['Updated On'].strip(), '%d/%m/%Y')
       date = datetime.strftime(fdate, '%Y-%m-%d')
       if date < '2020-01-01' or date > INDIA_DATE:
         # Entries from future dates will be ignored and logged
         logging.warning('[L{}] [Future/past date: {}] {}'.format(
-            j + 2, entry['updatedon'], entry['state']))
+            j + 2, entry['Updated On'], entry['State']))
         continue
     except ValueError:
       # Bad date
       logging.warning('[L{}] [Bad date: {}] {}'.format(j + 2,
-                                                       entry['updatedon'],
-                                                       entry['state']))
+                                                       entry['Updated On'],
+                                                       entry['State']))
       continue
 
-    state_name = entry['state'].strip().lower()
+    state_name = entry['State'].strip().lower()
     try:
       state = STATE_CODES[state_name]
     except KeyError:
       # Entries having unrecognized state names are discarded
       logging.warning('[L{}] [{}] [Bad state: {}]'.format(
-          j + 2, entry['updatedon'], entry['state']))
+          j + 2, entry['Updated On'], entry['State']))
       continue
 
     try:
       count = int(count_str)
     except ValueError:
-      logging.warning('[L{}] [{}] [Bad totaltested: {}] {}'.format(
-          j + 2, entry['updatedon'], entry['totaltested'], entry['state']))
+      logging.warning('[L{}] [{}] [Bad total tested: {}] {}'.format(
+          j + 2, entry['Updated On'], entry['Total Tested'], entry['State']))
       continue
+
+    source = entry['Source1'].strip()
 
     if count:
       data[date][state]['total']['tested'] = count
-      data[date][state]['meta']['tested']['source'] = entry['source1'].strip()
+      data[date][state]['meta']['tested']['source'] = source
       data[date][state]['meta']['tested']['last_updated'] = date
       # Add district entry too for single-district states
       if state in SINGLE_DISTRICT_STATES:
@@ -425,7 +425,7 @@ def parse_state_test(raw_data):
         district = SINGLE_DISTRICT_STATES[state] or STATE_NAMES[state]
         data[date][state]['districts'][district]['total']['tested'] = count
         data[date][state]['districts'][district]['meta']['tested'][
-            'source'] = entry['source1'].strip()
+            'source'] = source
         data[date][state]['districts'][district]['meta']['tested'][
             'last_updated'] = date
 
@@ -438,67 +438,87 @@ def column_str(n):
   return alpha
 
 
-def parse_district_test(reader):
-  # Header row
-  header = next(reader)
-  # Store formatted dates
-  dates = [None for _ in header]
-  # Columns >= 6 contain dates
-  for j in range(6, len(header), 5):
+def parse_pivot_headers(header1, header2):
+  # Parse till the first date
+  row_keys = {}
+  for j, column in enumerate(header1):
     try:
-      fdate = datetime.strptime(header[j].strip(), '%d/%m/%Y')
+      fdate = datetime.strptime(column.strip(), '%d/%m/%Y')
+      break
+    except ValueError:
+      row_keys[column.lower()] = j
+
+  # Parse headers in each date
+  column_keys = {}
+  while j < len(header1) and fdate == datetime.strptime(
+      header1[j].strip(), '%d/%m/%Y'):
+    column_keys[header2[j].strip().lower()] = j - len(row_keys)
+    j += 1
+
+  # Parse dates
+  dates = []
+  for j in range(len(row_keys), len(header1), len(column_keys)):
+    dates.append(None)
+    try:
+      fdate = datetime.strptime(header1[j].strip(), '%d/%m/%Y')
       date = datetime.strftime(fdate, '%Y-%m-%d')
-      if '2020-01-01' < date <= INDIA_DATE:
-        # Only keep entries upto present date
-        dates[j] = date
+      if date < '2020-01-01' or date > INDIA_DATE:
+        # Entries from future dates will be ignored
+        logging.warning('[{}] Future/past date: {}'.format(
+            column_str(j + 1), header1[j]))
+        continue
+      dates[-1] = date
     except ValueError:
       # Bad date
-      logging.warning('[{}] Bad date: {}'.format(column_str(j + 1), header[j]))
-  # Skip second row
-  next(reader)
+      logging.warning('[{}] Bad date: {}'.format(column_str(j + 1),
+                                                 header1[j]))
+  return row_keys, column_keys, dates
+
+
+def parse_district_test(reader):
+  header1 = next(reader)
+  header2 = next(reader)
+  row_keys, column_keys, dates = parse_pivot_headers(header1, header2)
+
   for i, row in enumerate(reader):
-    # Column 3 contains state name
-    state_name = row[3].strip().lower()
+    state_name = row[row_keys['state']].strip().lower()
     try:
       state = STATE_CODES[state_name]
     except KeyError:
       # Entries having unrecognized state names are discarded
-      logging.warning('[L{}] Bad state: {}'.format(i + 3, row[3]))
+      logging.warning('[L{}] Bad state: {}'.format(i + 3,
+                                                   row[row_keys['state']]))
       continue
 
     if state in SINGLE_DISTRICT_STATES:
       # Skip since value is already added while parsing state data
       continue
 
-    # Column 4 contains district name
-    district, expected = parse_district(row[4], state)
+    district, expected = parse_district(row[row_keys['district']], state)
     if not expected:
       # Print unexpected district names
       logging.warning('[L{}] Unexpected district: {} {}'.format(
           i + 3, state, district))
 
-    # Testing data starts from column 6
-    for j in range(6, len(row), 5):
-      # | Tested | Positive | Negative | Source1 | Source2 |
-      count_str = row[j].strip()
-      # Date header
-      date = dates[j]
+    for j1, j2 in enumerate(range(len(row_keys), len(row), len(column_keys))):
+      # Date from header
+      date = dates[j1]
       if not date:
-        # Skip future date
-        if count_str:
-          # Log non-zero entries
-          logging.warning('[L{} {}] [Future date: {}] {}: {}'.format(
-              i + 3, column_str(j + 1), header[j].strip(), state, district))
         continue
+
+      # Tested count
+      count_str = row[j2 + column_keys['tested']].strip()
+
       try:
         count = int(count_str)
       except ValueError:
         if count_str:
           logging.warning('[L{} {}] [{}: {}] Bad Tested: {}'.format(
-              i + 3, column_str(j + 1), state, district, row[j]))
+              i + 3, column_str(j2 + column_keys['tested'] + 1), state,
+              district, row[j2 + column_keys['tested']]))
         continue
       # Use Source1 key as source
-      source = row[j + 3].strip()
+      source = row[j2 + column_keys['source1']].strip()
       if count:
         data[date][state]['districts'][district]['total']['tested'] = count
         #  data[date][state]['districts'][district]['meta']['tested'][
@@ -544,6 +564,50 @@ def parse_state_vaccination(reader):
 
       if count:
         data[date][state]['total']['vaccinated'] = count
+
+
+def parse_district_vaccination(reader):
+  header1 = next(reader)
+  header2 = next(reader)
+  row_keys, column_keys, dates = parse_pivot_headers(header1, header2)
+
+  for i, row in enumerate(reader):
+    state = row[row_keys['state_code']].strip().upper()
+    if state not in STATE_CODES.values():
+      logging.warning('[L{}] Bad state: {}'.format(
+          i + 3, row[row_keys['state_code']]))
+      continue
+
+    if state in SINGLE_DISTRICT_STATES:
+      # Skip since value is already added while parsing state data
+      continue
+
+    district, expected = parse_district(row[row_keys['district']], state)
+    if not expected:
+      # Print unexpected district names
+      logging.warning('[L{}] Unexpected district: {} {}'.format(
+          i + 3, state, district))
+
+    for j1, j2 in enumerate(range(len(row_keys), len(row), len(column_keys))):
+      # Date from header
+      date = dates[j1]
+      if not date:
+        continue
+
+      for key in ['first dose administered', 'second dose administered']:
+        count_str = row[j2 + column_keys[key]].strip()
+        try:
+          count = int(count_str)
+        except ValueError:
+          if count_str:
+            logging.warning('[L{} {}] [{}: {}] Bad {}: {}'.format(
+                i + 3, column_str(j2 + column_keys[key] + 1), state, district,
+                key, row[j2 + column_keys[key]]))
+          continue
+
+        if count:
+          inc(data[date][state]['districts'][district]['total'], 'vaccinated',
+              count)
 
 
 def contains(raw_data, keys):
@@ -1054,8 +1118,8 @@ if __name__ == '__main__':
   logging.info('Parsing test data for all states...')
   with open(STATE_TEST_DATA, 'r') as f:
     logging.info('File: {}'.format(STATE_TEST_DATA.name))
-    raw_data = json.load(f, object_pairs_hook=OrderedDict)
-    parse_state_test(raw_data)
+    reader = csv.DictReader(f)
+    parse_state_test(reader)
   logging.info('Done!')
 
   logging.info('-' * PRINT_WIDTH)
@@ -1072,6 +1136,14 @@ if __name__ == '__main__':
     logging.info('File: {}'.format(STATE_VACCINATION_DATA.name))
     reader = csv.DictReader(f)
     parse_state_vaccination(reader)
+  logging.info('Done!')
+
+  logging.info('-' * PRINT_WIDTH)
+  logging.info('Parsing vaccination data for districts...')
+  with open(DISTRICT_VACCINATION_DATA, 'r') as f:
+    logging.info('File: {}'.format(DISTRICT_VACCINATION_DATA.name))
+    reader = csv.reader(f)
+    parse_district_vaccination(reader)
   logging.info('Done!')
 
   # Fill delta values for tested
