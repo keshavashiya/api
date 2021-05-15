@@ -18,6 +18,7 @@ const StateDistrictWiseData = rawDistData.districts.reduce((acc, row) => {
       notes: '',
       active: 0,
       confirmed: 0,
+      migratedother: 0,
       deceased: 0,
       recovered: 0,
       delta: {
@@ -31,6 +32,7 @@ const StateDistrictWiseData = rawDistData.districts.reduce((acc, row) => {
   currentDistrict.notes = row.districtnotes
   currentDistrict.active = +row.active
   currentDistrict.confirmed = +row.confirmed
+  currentDistrict.migratedother = +row.migratedother
   currentDistrict.recovered = +row.recovered
   currentDistrict.deceased = +row.deceased
   currentDistrict.delta.confirmed = +row.deltaconfirmed

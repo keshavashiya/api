@@ -63,6 +63,8 @@ jobs:
           SHEET_ID_v23: ${{ secrets.SHEET_ID_v23 }}
           SHEET_ID_v24: ${{ secrets.SHEET_ID_v24 }}
           SHEET_ID_v25: ${{ secrets.SHEET_ID_v25 }}
+          SHEET_ID_v26: ${{ secrets.SHEET_ID_v26 }}
+          SHEET_ID_v27: ${{ secrets.SHEET_ID_v27 }}
           RESOURCES_SHEET_ID: ${{ secrets.RESOURCES_SHEET_ID }}
           SHEET_LOCALE: ${{ secrets.SHEET_LOCALE }}
           STUCK_BOT: ${{ secrets.STUCK_BOT }}
@@ -75,5 +77,3 @@ jobs:
           status: ${{job.status}}
           STUCK_BOT: ${{ secrets.STUCK_BOT }}
           GITHUB_TOKEN: ${{ secrets.github_token }}
-#trigger the action
-#trigger the action by remove this line

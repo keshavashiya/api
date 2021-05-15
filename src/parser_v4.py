@@ -548,10 +548,11 @@ def parse_state_vaccination(reader):
           # Entries from future/past dates will be ignored
           continue
       except ValueError:
-        # Bad date
+        # Only log bad date warning once
         if not j:
           logging.warning('[{}] Bad date: {}'.format(column_str(j + 2),
                                                      date_raw))
+        continue
       count_str = row[date_raw]
 
       try:

@@ -152,16 +152,28 @@ const c = require('../lib/constants');
   //   file: c.FILE_RAW_DATA_23
   // })  
 
+  // await task({
+  //   sheet: c.SHEET_v24,
+  //   tabs: { raw_data: c.SHEET_RAW_DATA },
+  //   file: c.FILE_RAW_DATA_24
+  // })  
+
+  // await task({
+  //   sheet: c.SHEET_v25,
+  //   tabs: { raw_data: c.SHEET_RAW_DATA },
+  //   file: c.FILE_RAW_DATA_25
+  // })  
+
   await task({
-    sheet: c.SHEET_v24,
+    sheet: c.SHEET_v26,
     tabs: { raw_data: c.SHEET_RAW_DATA },
-    file: c.FILE_RAW_DATA_24
+    file: c.FILE_RAW_DATA_26
   })  
 
   await task({
-    sheet: c.SHEET_v25,
+    sheet: c.SHEET_v27,
     tabs: { raw_data: c.SHEET_RAW_DATA },
-    file: c.FILE_RAW_DATA_25
+    file: c.FILE_RAW_DATA_27
   })  
 
   // uncomment below if v1 sheet has updates
@@ -268,6 +280,12 @@ const c = require('../lib/constants');
     sheet: c.SHEET,
     tabs: { twitter_queries: c.SHEET_TWITTER_QUERIES },
     file: c.FILE_TWITTER_QUERIES
+  })
+
+  await task({
+    sheet: c.SHEET,
+    tabs: { crowdsourcd_resources_links : c.SHEET_CROWDSOURCED_RESOURCES_LINKS },
+    file: c.FILE_CROWDSOURCED_RESOURCES_LINKS
   })
 
   console.log('End of sheet-to-json_generic')
