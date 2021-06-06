@@ -65,6 +65,8 @@ jobs:
           SHEET_ID_v25: ${{ secrets.SHEET_ID_v25 }}
           SHEET_ID_v26: ${{ secrets.SHEET_ID_v26 }}
           SHEET_ID_v27: ${{ secrets.SHEET_ID_v27 }}
+          SHEET_ID_v28: ${{ secrets.SHEET_ID_v28 }}
+          SHEET_ID_v29: ${{ secrets.SHEET_ID_v29 }}
           RESOURCES_SHEET_ID: ${{ secrets.RESOURCES_SHEET_ID }}
           SHEET_LOCALE: ${{ secrets.SHEET_LOCALE }}
           STUCK_BOT: ${{ secrets.STUCK_BOT }}
