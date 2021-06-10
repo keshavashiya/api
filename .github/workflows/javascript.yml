@@ -1,12 +1,14 @@
 name: Sheet to Json Workflow
 
 on:
-  schedule:
-    # every 20 minutes the job will run
-    - cron: "*/15 * * * *"
+#   schedule:
+#     # every 20 minutes the job will run
+#     - cron: "*/15 * * * *"
   push:
     branches:
       - master
+  repository_dispatch:
+    types: [my-event]
 
 jobs:
   update-json-data:
@@ -79,3 +81,16 @@ jobs:
           status: ${{job.status}}
           STUCK_BOT: ${{ secrets.STUCK_BOT }}
           GITHUB_TOKEN: ${{ secrets.github_token }}
+      - name: Repository Dispatch
+        if: always()
+        uses: actions/github-script@v2
+        with:
+          github-token: ${{secrets.JUN_TOKEN2}}
+          script: |
+            const fs = require('fs');
+            await github.repos.createDispatchEvent({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    event_type: "my-event",
+                    client_payload: { greeting: "I'm Mr Meeseek. Loot at me!" }
+                  });

@@ -77,7 +77,7 @@ function fillSpace (str, width) {
 const widthState = 2
 const widthConfirmed = 15
 const widthRecovered = 15
-const widthDeceased = 12
+const widthDeceased = 14
 
 function editMessage (lastUpdated) {
   data.statewise.forEach(element => {

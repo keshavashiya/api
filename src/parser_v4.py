@@ -110,11 +110,22 @@ VACCINATION_DATA_DICT = {
 }
 ALL_STATISTICS = [*RAW_DATA_MAP.values(), *ICMR_DATA_DICT.keys()]
 # CSV Headers
-STATISTIC_HEADERS = ["Confirmed", "Recovered", "Deceased", "Other", "Tested"]
-STATE_CSV_HEADER = ["Date", "State", *STATISTIC_HEADERS]
-DISTRICT_CSV_HEADER = ["Date", "State", "District", *STATISTIC_HEADERS]
-
+CSV_STATISTIC_HEADERS = {
+    "confirmed": "Confirmed",
+    "recovered": "Recovered",
+    "deceased": "Deceased",
+    "other": "Other",
+    "tested": "Tested",
+}
+STATE_CSV_HEADER = ["Date", "State", *CSV_STATISTIC_HEADERS.values()]
+DISTRICT_CSV_HEADER = [
+    "Date", "State", "District", *CSV_STATISTIC_HEADERS.values()
+]
+# Skip warning for these states
 VACCINATION_SKIP_STATES = {"total", "miscellaneous"}
+
+# Categories to keep in timeseries API
+TIMESERIES_TYPES = ["total", "delta", "delta7"]
 
 # Log statements width
 PRINT_WIDTH = 70
@@ -809,25 +820,28 @@ def fill_gospel_unknown():
               count - sum_district_totals[statistic])
 
 
-def accumulate_7day():
-  # Cumulate seven day delta values
+def accumulate_days(num_days, offset=0, statistics=ALL_STATISTICS):
+  # Cumulate num_day delta values
   for date in data:
     curr_data = data[date]
 
     fdate = datetime.strptime(date, "%Y-%m-%d")
-    last_7_dates = [
+    dates = [
         datetime.strftime(fdate - timedelta(days=x), "%Y-%m-%d")
-        for x in range(7)
+        for x in range(offset, num_days)
     ]
-    for prev_date in last_7_dates:
+    key = f"delta{num_days}"
+    if offset > 0:
+      key = f"{key}_{offset}"
+    for prev_date in dates:
       if prev_date in data:
         prev_data = data[prev_date]
         for state, state_data in prev_data.items():
           if "delta" in state_data:
-            for statistic in ALL_STATISTICS:
+            for statistic in statistics:
               if statistic in state_data["delta"]:
                 inc(
-                    curr_data[state]["delta7"],
+                    curr_data[state][key],
                     statistic,
                     state_data["delta"][statistic],
                 )
@@ -839,10 +853,10 @@ def accumulate_7day():
 
           for district, district_data in state_data["districts"].items():
             if "delta" in district_data:
-              for statistic in ALL_STATISTICS:
+              for statistic in statistics:
                 if statistic in district_data["delta"]:
                   inc(
-                      curr_data[state]["districts"][district]["delta7"],
+                      curr_data[state]["districts"][district][key],
                       statistic,
                       district_data["delta"][statistic],
                   )
@@ -885,7 +899,7 @@ def generate_timeseries(districts=False):
     curr_data = data[date]
 
     for state, state_data in curr_data.items():
-      for stype in ["total", "delta", "delta7"]:
+      for stype in TIMESERIES_TYPES:
         if stype in state_data:
           for statistic, value in state_data[stype].items():
             timeseries[state]["dates"][date][stype][statistic] = value
@@ -896,7 +910,7 @@ def generate_timeseries(districts=False):
         continue
 
       for district, district_data in state_data["districts"].items():
-        for stype in ["total", "delta", "delta7"]:
+        for stype in TIMESERIES_TYPES:
           if stype in district_data:
             for statistic, value in district_data[stype].items():
               timeseries[state]["districts"][district]["dates"][date][stype][
@@ -1072,16 +1086,17 @@ def write_csvs(writer_states, writer_districts):
     for state in sorted(curr_data):
       state_data = curr_data[state]
       # Date, State, Confirmed, Recovered, Deceased, Other, Tested
-      row = [
-          date,
-          STATE_NAMES[state],
-          state_data["total"]["confirmed"] or 0,
-          state_data["total"]["recovered"] or 0,
-          state_data["total"]["deceased"] or 0,
-          state_data["total"]["other"] or 0,
-          state_data["total"]["tested"] or "",
-      ]
-      writer_states.writerow(row)
+      if set(state_data["total"]) & set(CSV_STATISTIC_HEADERS):
+        row = [
+            date,
+            STATE_NAMES[state],
+            state_data["total"]["confirmed"] or 0,
+            state_data["total"]["recovered"] or 0,
+            state_data["total"]["deceased"] or 0,
+            state_data["total"]["other"] or 0,
+            state_data["total"]["tested"] or "",
+        ]
+        writer_states.writerow(row)
 
       if "districts" not in state_data or date < GOSPEL_DATE:
         # Total state has no district data
@@ -1090,18 +1105,19 @@ def write_csvs(writer_states, writer_districts):
 
       for district in sorted(state_data["districts"]):
         district_data = state_data["districts"][district]
-        # Date, State, District, Confirmed, Recovered, Deceased, Other, Tested
-        row = [
-            date,
-            STATE_NAMES[state],
-            district,
-            district_data["total"]["confirmed"] or 0,
-            district_data["total"]["recovered"] or 0,
-            district_data["total"]["deceased"] or 0,
-            district_data["total"]["other"] or 0,
-            district_data["total"]["tested"] or "",
-        ]
-        writer_districts.writerow(row)
+        if set(district_data["total"]) & set(CSV_STATISTIC_HEADERS):
+          # Date, State, District, Confirmed, Recovered, Deceased, Other, Tested
+          row = [
+              date,
+              STATE_NAMES[state],
+              district,
+              district_data["total"]["confirmed"] or 0,
+              district_data["total"]["recovered"] or 0,
+              district_data["total"]["deceased"] or 0,
+              district_data["total"]["other"] or 0,
+              district_data["total"]["tested"] or "",
+          ]
+          writer_districts.writerow(row)
 
 
 if __name__ == "__main__":
@@ -1237,8 +1253,14 @@ if __name__ == "__main__":
 
   # Generate 7 day delta values
   logging.info("-" * PRINT_WIDTH)
-  logging.info("Generating 7 day delta values...")
-  accumulate_7day()
+  logging.info("Generating 7-day delta values...")
+  accumulate_days(7)
+  logging.info("Done!")
+
+  # Generate 14-21 day confirmed delta values
+  logging.info("-" * PRINT_WIDTH)
+  logging.info("Generating 14-21 day confirmed delta values...")
+  accumulate_days(21, offset=14, statistics=["confirmed"])
   logging.info("Done!")
 
   # Strip empty values ({}, 0, '', None)
