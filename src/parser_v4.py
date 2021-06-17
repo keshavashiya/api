@@ -19,6 +19,9 @@ INDIA_DATE = datetime.strftime(
     datetime.utcnow() + timedelta(hours=5, minutes=30), "%Y-%m-%d")
 INDIA_UTC_OFFSET = "+05:30"
 
+# Arbitrary minimum date
+MIN_DATE = "2020-01-01"
+
 # Input/Output root directory
 ROOT_DIR = Path("tmp")
 CSV_DIR = ROOT_DIR / "csv" / "latest"
@@ -69,17 +72,8 @@ DISTRICTS_DICT = defaultdict(dict)
 # District key to give to unkown district values in raw_data
 UNKNOWN_DISTRICT_KEY = "Unknown"
 # States with single district/no district-wise data
-SINGLE_DISTRICT_STATES = {
-    "AN": UNKNOWN_DISTRICT_KEY,
-    "AS": UNKNOWN_DISTRICT_KEY,
-    "CH": None,
-    "DL": None,
-    "GA": UNKNOWN_DISTRICT_KEY,
-    "LD": None,
-    "MN": UNKNOWN_DISTRICT_KEY,
-    "SK": UNKNOWN_DISTRICT_KEY,
-    "TG": UNKNOWN_DISTRICT_KEY,
-}
+SINGLE_DISTRICT_STATES = ["CH", "DL", "LD"]
+NO_DISTRICT_DATA_STATES = ["AN", "AS", "GA", "MN", "SK", "TG"]
 
 # Three most important statistics
 PRIMARY_STATISTICS = ["confirmed", "recovered", "deceased"]
@@ -159,7 +153,7 @@ def parse_state_metadata(raw_data):
 def parse_district_list(raw_data):
   # Initialize with districts from single district states
   for state in SINGLE_DISTRICT_STATES:
-    district = SINGLE_DISTRICT_STATES[state] or STATE_NAMES[state]
+    district = STATE_NAMES[state]
     DISTRICTS_DICT[state][district.lower()] = district
   # Parse from file
   for i, entry in enumerate(raw_data.values()):
@@ -175,11 +169,13 @@ def parse_district_list(raw_data):
       DISTRICTS_DICT[state][district.lower()] = district
 
 
-def parse_district(district, state, use_state=True):
+def parse_district(district, state, single_district=True, allow_unknown=True):
   district = district.strip()
   expected = True
-  if use_state and state in SINGLE_DISTRICT_STATES:
-    district = SINGLE_DISTRICT_STATES[state] or STATE_NAMES[state]
+  if single_district and state in SINGLE_DISTRICT_STATES:
+    district = STATE_NAMES[state]
+  elif allow_unknown and state in NO_DISTRICT_DATA_STATES:
+    district = UNKNOWN_DISTRICT_KEY
   elif not district or district.lower() == "unknown":
     district = UNKNOWN_DISTRICT_KEY
   elif district.lower() in DISTRICTS_DICT[state]:
@@ -199,7 +195,8 @@ def parse_district_metadata(raw_data):
     # District name with sheet capitalization
     district, expected = parse_district(entry["district"],
                                         state,
-                                        use_state=False)
+                                        single_district=False,
+                                        allow_unknown=False)
     if not expected:
       logging.warning(f"[L{i + 2}] [{state}] Unexpected district: {district}")
     # District population
@@ -244,7 +241,7 @@ def parse(raw_data, i):
     try:
       fdate = datetime.strptime(entry["dateannounced"].strip(), "%d/%m/%Y")
       date = datetime.strftime(fdate, "%Y-%m-%d")
-      if date < "2020-01-01" or date > INDIA_DATE:
+      if date < MIN_DATE or date > INDIA_DATE:
         # Entries from future dates will be ignored
         logging.warning(
             f"[L{j+2}] [Future/past date: {entry['dateannounced']}] {entry['detectedstate']}: {entry['detecteddistrict']} {entry['numcases']}"
@@ -281,8 +278,9 @@ def parse(raw_data, i):
         inc(data[date]["TT"]["delta"], statistic, count)
         inc(data[date][state]["delta"], statistic, count)
         # Don't parse old district data since it's unreliable
-        if state in SINGLE_DISTRICT_STATES or (i > 2 and date > GOSPEL_DATE and
-                                               state != UNASSIGNED_STATE_CODE):
+        if (state in SINGLE_DISTRICT_STATES or state in NO_DISTRICT_DATA_STATES
+            or
+            (i > 2 and date > GOSPEL_DATE and state != UNASSIGNED_STATE_CODE)):
           inc(
               data[date][state]["districts"][district]["delta"],
               statistic,
@@ -312,7 +310,7 @@ def parse_outcome(outcome_data, i):
     try:
       fdate = datetime.strptime(entry["date"].strip(), "%d/%m/%Y")
       date = datetime.strftime(fdate, "%Y-%m-%d")
-      if date < "2020-01-01" or date > INDIA_DATE:
+      if date < MIN_DATE or date > INDIA_DATE:
         # Entries from future dates will be ignored
         logging.warning(
             f"[L{j + 2}] [Future/past date: {entry['date']}] {state}")
@@ -334,7 +332,7 @@ def parse_outcome(outcome_data, i):
 
       inc(data[date]["TT"]["delta"], statistic, 1)
       inc(data[date][state]["delta"], statistic, 1)
-      if state in SINGLE_DISTRICT_STATES:
+      if state in SINGLE_DISTRICT_STATES or state in NO_DISTRICT_DATA_STATES:
         inc(data[date][state]["districts"][district]["delta"], statistic, 1)
       ## Don't parse old district data since it's unreliable
       #  inc(data[date][state]['districts'][district]['delta'], statistic,
@@ -349,7 +347,8 @@ def parse_outcome(outcome_data, i):
 def parse_district_gospel(reader):
   for i, row in enumerate(reader):
     state = row["State_Code"].strip().upper()
-    if state not in STATE_CODES.values() or state in SINGLE_DISTRICT_STATES:
+    if (state not in STATE_CODES.values() or state in SINGLE_DISTRICT_STATES
+        or state in NO_DISTRICT_DATA_STATES):
       if state not in STATE_CODES.values():
         logging.warning(f"[{i + 2}] Bad state: {state}")
       continue
@@ -377,7 +376,7 @@ def parse_icmr(icmr_data):
       try:
         fdate = datetime.strptime(entry["testedasof"].strip(), "%d/%m/%Y")
         date = datetime.strftime(fdate, "%Y-%m-%d")
-        if date < "2020-01-01" or date > INDIA_DATE:
+        if date < MIN_DATE or date > INDIA_DATE:
           # Entries from future dates will be ignored and logged
           logging.warning(
               f"[L{j + 2}] [Future/past date: {entry['testedasof']}]")
@@ -402,7 +401,7 @@ def parse_icmr(icmr_data):
                     in {"vaccinated1", "vaccinated2"} else statistic)
         data[date]["TT"]["meta"][meta_key]["source"] = entry[
             statistic_dict["source"]].strip()
-        data[date]["TT"]["meta"][meta_key]["last_updated"] = date
+        data[date]["TT"]["meta"][meta_key]["date"] = date
 
 
 def parse_state_test(reader):
@@ -414,7 +413,7 @@ def parse_state_test(reader):
     try:
       fdate = datetime.strptime(entry["Updated On"].strip(), "%d/%m/%Y")
       date = datetime.strftime(fdate, "%Y-%m-%d")
-      if date < "2020-01-01" or date > INDIA_DATE:
+      if date < MIN_DATE or date > INDIA_DATE:
         # Entries from future dates will be ignored and logged
         logging.warning(
             f"[L{j+2}] [Future/past date: {entry['Updated On']}] {entry['State']}"
@@ -448,16 +447,16 @@ def parse_state_test(reader):
     if count:
       data[date][state]["total"]["tested"] = count
       data[date][state]["meta"]["tested"]["source"] = source
-      data[date][state]["meta"]["tested"]["last_updated"] = date
+      data[date][state]["meta"]["tested"]["date"] = date
       # Add district entry too for single-district states
       if state in SINGLE_DISTRICT_STATES:
         # District/State name
-        district = SINGLE_DISTRICT_STATES[state] or STATE_NAMES[state]
+        district = STATE_NAMES[state]
         data[date][state]["districts"][district]["total"]["tested"] = count
         data[date][state]["districts"][district]["meta"]["tested"][
             "source"] = source
         data[date][state]["districts"][district]["meta"]["tested"][
-            "last_updated"] = date
+            "date"] = date
 
 
 def column_str(n):
@@ -492,7 +491,7 @@ def parse_pivot_headers(header1, header2):
     try:
       fdate = datetime.strptime(header1[j].strip(), "%d/%m/%Y")
       date = datetime.strftime(fdate, "%Y-%m-%d")
-      if date < "2020-01-01" or date > INDIA_DATE:
+      if date < MIN_DATE or date > INDIA_DATE:
         # Entries from future dates will be ignored
         logging.warning(
             f"[{column_str(j + 1)}] Future/past date: {header1[j]}")
@@ -522,7 +521,9 @@ def parse_district_test(reader):
       # Skip since value is already added while parsing state data
       continue
 
-    district, expected = parse_district(row[row_keys["district"]], state)
+    district, expected = parse_district(row[row_keys["district"]],
+                                        state,
+                                        allow_unknown=False)
     if not expected:
       # Print unexpected district names
       logging.warning(f"[L{i + 3}] Unexpected district: {state} {district}")
@@ -551,7 +552,7 @@ def parse_district_test(reader):
         #  data[date][state]['districts'][district]['meta']['tested'][
         #      'source'] = source
         data[date][state]["districts"][district]["meta"]["tested"][
-            "last_updated"] = date
+            "date"] = date
 
 
 def parse_state_vaccination(reader):
@@ -566,7 +567,7 @@ def parse_state_vaccination(reader):
         fdate = datetime.strptime(entry["Vaccinated As of"].strip(),
                                   "%d/%m/%Y")
         date = datetime.strftime(fdate, "%Y-%m-%d")
-        if date < "2020-01-01" or date > INDIA_DATE:
+        if date < MIN_DATE or date > INDIA_DATE:
           # Entries from future dates will be ignored and logged
           logging.warning(
               f"[L{j+2}] [Future/past date: {entry['Vaccinated As of']}] {entry['State']}"
@@ -603,17 +604,17 @@ def parse_state_vaccination(reader):
       if count:
         data[date][state]["total"][statistic] = count
         #  data[date][state]["meta"]["vaccinated"]["source"] = source
-        data[date][state]["meta"]["vaccinated"]["last_updated"] = date
+        data[date][state]["meta"]["vaccinated"]["date"] = date
 
         # Add district entry too for single-district states
         if state in SINGLE_DISTRICT_STATES:
           # District/State name
-          district = SINGLE_DISTRICT_STATES[state] or STATE_NAMES[state]
+          district = STATE_NAMES[state]
           data[date][state]["districts"][district]["total"][statistic] = count
           #  data[date][state]["districts"][district]["meta"]["vaccinated"][
           #      "source"] = source
           data[date][state]["districts"][district]["meta"]["vaccinated"][
-              "last_updated"] = date
+              "date"] = date
 
 
 def parse_district_vaccination(reader):
@@ -631,7 +632,9 @@ def parse_district_vaccination(reader):
       # Skip since value is already added while parsing state data
       continue
 
-    district, expected = parse_district(row[row_keys["district"]], state)
+    district, expected = parse_district(row[row_keys["district"]],
+                                        state,
+                                        allow_unknown=False)
     if not expected:
       # Print unexpected district names
       logging.warning(f"[L{i + 3}] Unexpected district: {state} {district}")
@@ -705,8 +708,8 @@ def fill_deltas():
               curr_data[state]["total"][key] = state_data["total"][key]
               curr_data[state]["meta"][key]["source"] = state_data["meta"][
                   key]["source"]
-              curr_data[state]["meta"][key]["last_updated"] = state_data[
-                  "meta"][key]["last_updated"]
+              curr_data[state]["meta"][key]["date"] = state_data["meta"][key][
+                  "date"]
 
         if "districts" not in state_data:
           continue
@@ -726,11 +729,10 @@ def fill_deltas():
                 curr_data[state]["districts"][district]["meta"][key][
                     "source"] = district_data["meta"][key]["source"]
                 curr_data[state]["districts"][district]["meta"][key][
-                    "last_updated"] = district_data["meta"][key][
-                        "last_updated"]
+                    "date"] = district_data["meta"][key]["date"]
 
 
-def accumulate(start_after_date="2020-01-01", end_date="3020-01-30"):
+def accumulate(start_after_date=MIN_DATE, end_date="3020-01-30"):
   # Cumulate daily delta values into total
   dates = sorted(data)
   for i, date in enumerate(dates):
@@ -753,8 +755,9 @@ def accumulate(start_after_date="2020-01-01", end_date="3020-01-30"):
                 state_data["total"][statistic],
             )
 
-        if state not in SINGLE_DISTRICT_STATES and (
-            "districts" not in state_data or date <= GOSPEL_DATE):
+        if (state not in SINGLE_DISTRICT_STATES
+            and state not in NO_DISTRICT_DATA_STATES
+            and ("districts" not in state_data or date <= GOSPEL_DATE)):
           # Old district data is already accumulated
           continue
 
@@ -778,8 +781,9 @@ def accumulate(start_after_date="2020-01-01", end_date="3020-01-30"):
                 state_data["delta"][statistic],
             )
 
-        if state not in SINGLE_DISTRICT_STATES and (
-            "districts" not in state_data or date <= GOSPEL_DATE):
+        if (state not in SINGLE_DISTRICT_STATES
+            and state not in NO_DISTRICT_DATA_STATES
+            and ("districts" not in state_data or date <= GOSPEL_DATE)):
           # Old district data is already accumulated
           continue
 
@@ -846,8 +850,9 @@ def accumulate_days(num_days, offset=0, statistics=ALL_STATISTICS):
                     state_data["delta"][statistic],
                 )
 
-          if state not in SINGLE_DISTRICT_STATES and (
-              "districts" not in state_data or date <= GOSPEL_DATE):
+          if (state not in SINGLE_DISTRICT_STATES
+              and state not in NO_DISTRICT_DATA_STATES
+              and ("districts" not in state_data or date <= GOSPEL_DATE)):
             # Old district data is already accumulated
             continue
 
@@ -894,6 +899,31 @@ def add_populations():
           pass
 
 
+def trim_timeseries():
+  for state_data in timeseries.values():
+    if "dates" in state_data:
+      dates = list(state_data["dates"])
+      for date in sorted(dates, reverse=True):
+        if "delta" in state_data["dates"][date]:
+          last_date = date
+          break
+      for date in dates:
+        if date > last_date:
+          del state_data["dates"][date]
+
+    if "districts" in state_data:
+      for district_data in state_data["districts"].values():
+        if "dates" in district_data:
+          dates = list(district_data["dates"])
+          for date in sorted(dates, reverse=True):
+            if "delta" in district_data["dates"][date]:
+              last_date = date
+              break
+          for date in dates:
+            if date > last_date:
+              del district_data["dates"][date]
+
+
 def generate_timeseries(districts=False):
   for date in sorted(data):
     curr_data = data[date]
@@ -915,10 +945,12 @@ def generate_timeseries(districts=False):
             for statistic, value in district_data[stype].items():
               timeseries[state]["districts"][district]["dates"][date][stype][
                   statistic] = value
+  trim_timeseries()
 
 
 def add_state_meta(raw_data):
-  last_data = data[sorted(data)[-1]]
+  last_date = sorted(data)[-1]
+  last_data = data[last_date]
   for j, entry in enumerate(raw_data["statewise"]):
     state = entry["statecode"].strip().upper()
     if state not in STATE_CODES.values() or state not in last_data:
@@ -938,6 +970,7 @@ def add_state_meta(raw_data):
           f"[L{j + 2}] [Bad timestamp: {entry['lastupdatedtime']}] {state}")
       continue
 
+    last_data[state]["meta"]["date"] = last_date
     last_data[state]["meta"]["last_updated"] = fdate.isoformat(
     ) + INDIA_UTC_OFFSET
     if entry["statenotes"]:
@@ -948,7 +981,8 @@ def add_district_meta(raw_data):
   last_data = data[sorted(data)[-1]]
   for j, entry in enumerate(raw_data.values()):
     state = entry["statecode"].strip().upper()
-    if state not in STATE_CODES.values() or state in SINGLE_DISTRICT_STATES:
+    if (state not in STATE_CODES.values() or state in SINGLE_DISTRICT_STATES
+        or state in NO_DISTRICT_DATA_STATES):
       # Entries having unrecognized state codes are discarded
       if state not in STATE_CODES.values():
         logging.warning(f"[L{j + 2}] Bad state: {entry['statecode']}")
@@ -1027,7 +1061,8 @@ def tally_districtwise(raw_data):
   # Check for extra entries
   logging.info("Checking for extra entries...")
   for state, state_data in last_data.items():
-    if "districts" not in state_data or state in SINGLE_DISTRICT_STATES:
+    if ("districts" not in state_data or state in SINGLE_DISTRICT_STATES
+        or state in NO_DISTRICT_DATA_STATES):
       continue
     state_name = STATE_NAMES[state]
     if state_name in raw_data:
@@ -1053,7 +1088,8 @@ def tally_districtwise(raw_data):
   for j, entry in enumerate(raw_data.values()):
     state = entry["statecode"].strip().upper()
     if (state not in STATE_CODES.values() or state == UNASSIGNED_STATE_CODE
-        or state in SINGLE_DISTRICT_STATES):
+        or state in SINGLE_DISTRICT_STATES
+        or state in NO_DISTRICT_DATA_STATES):
       continue
 
     for district, district_data in entry["districtData"].items():
