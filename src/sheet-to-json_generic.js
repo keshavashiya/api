@@ -182,16 +182,22 @@ const c = require('../lib/constants');
   //   file: c.FILE_RAW_DATA_28
   // })  
 
-  await task({
-    sheet: c.SHEET_v29,
-    tabs: { raw_data: c.SHEET_RAW_DATA },
-    file: c.FILE_RAW_DATA_29
-  })
+  // await task({
+  //   sheet: c.SHEET_v29,
+  //   tabs: { raw_data: c.SHEET_RAW_DATA },
+  //   file: c.FILE_RAW_DATA_29
+  // })
   
   await task({
     sheet: c.SHEET_v30,
     tabs: { raw_data: c.SHEET_RAW_DATA },
     file: c.FILE_RAW_DATA_30
+  }) 
+
+  await task({
+    sheet: c.SHEET_v31,
+    tabs: { raw_data: c.SHEET_RAW_DATA },
+    file: c.FILE_RAW_DATA_31
   }) 
 
   // uncomment below if v1 sheet has updates

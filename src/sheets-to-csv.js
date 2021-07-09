@@ -43,6 +43,7 @@ const PUBLISHED_SHEET_ID_27 = '2PACX-1vT5IUH2r83DCLWxBkfuiQOmYTi0Re41KYh2H7tq4_J
 const PUBLISHED_SHEET_ID_28 = '2PACX-1vT2QMw9OyjcazyGXuHMj-jQ81oMnDDITU3q7fOLpcZ2-W81sNilWB0GdC5v2yv-0e0aMZnr-ZJAFowz'
 const PUBLISHED_SHEET_ID_29 = '2PACX-1vTu2gcDkpfLS6g2_eYUtLBtQ3AaqC2UaSEHA20eCkgM41np7BZn0tE-mQ1ojcpr6t9R33WlTV4YHfve'
 const PUBLISHED_SHEET_ID_30 = '2PACX-1vSH9k7EkLLVbnIk-whp4A9mx6WDoTQRVDVZGsHU812eHn65Uj08oL7i4kCaE2Mv01SLa1FuaHD35Nf4'
+const PUBLISHED_SHEET_ID_31 = '2PACX-1vRboZ3VJ6RTk0md4CI9cwk-K2QwCkCTsnvMEa4rnK1uSd0WubZgo5hnfReaD2EZ0ZpQHzkRuckJrsHk'
 
 
 const SHEETS_V1 = [
@@ -165,7 +166,11 @@ const SHEETS_V29 = [
 ]
 
 const SHEETS_V30 = [
-  ['raw_data30', '0'],
+  ['raw_data30', '0']
+]
+
+const SHEETS_V31 = [
+  ['raw_data31', '0'],
   ['state_wise', '1896310216'],
   ['state_wise_daily', '1395461826'],
   ['sources_list', '704389477'],
@@ -235,6 +240,7 @@ async function sheetsToCSV (sheets, pubId) {
   // await sheetsToCSV(SHEETS_V26, PUBLISHED_SHEET_ID_26)
   // await sheetsToCSV(SHEETS_V27, PUBLISHED_SHEET_ID_27)
   // await sheetsToCSV(SHEETS_V28, PUBLISHED_SHEET_ID_28)
-  await sheetsToCSV(SHEETS_V29, PUBLISHED_SHEET_ID_29)
+  // await sheetsToCSV(SHEETS_V29, PUBLISHED_SHEET_ID_29)
   await sheetsToCSV(SHEETS_V30, PUBLISHED_SHEET_ID_30)
+  await sheetsToCSV(SHEETS_V31, PUBLISHED_SHEET_ID_31)
 })()
