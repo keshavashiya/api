@@ -44,6 +44,7 @@ const PUBLISHED_SHEET_ID_28 = '2PACX-1vT2QMw9OyjcazyGXuHMj-jQ81oMnDDITU3q7fOLpcZ
 const PUBLISHED_SHEET_ID_29 = '2PACX-1vTu2gcDkpfLS6g2_eYUtLBtQ3AaqC2UaSEHA20eCkgM41np7BZn0tE-mQ1ojcpr6t9R33WlTV4YHfve'
 const PUBLISHED_SHEET_ID_30 = '2PACX-1vSH9k7EkLLVbnIk-whp4A9mx6WDoTQRVDVZGsHU812eHn65Uj08oL7i4kCaE2Mv01SLa1FuaHD35Nf4'
 const PUBLISHED_SHEET_ID_31 = '2PACX-1vRboZ3VJ6RTk0md4CI9cwk-K2QwCkCTsnvMEa4rnK1uSd0WubZgo5hnfReaD2EZ0ZpQHzkRuckJrsHk'
+const PUBLISHED_SHEET_ID_32 = '2PACX-1vTt1y5sQRZfLp0OjGSnDL59oNjDPsEKnrEIlSfpN491LM-f1dtoQGHfNwHFZSkW0-WShT6nWfGpdQzn'
 
 
 const SHEETS_V1 = [
@@ -170,7 +171,11 @@ const SHEETS_V30 = [
 ]
 
 const SHEETS_V31 = [
-  ['raw_data31', '0'],
+  ['raw_data31', '0']
+]
+
+const SHEETS_V32 = [
+  ['raw_data32', '0'],
   ['state_wise', '1896310216'],
   ['state_wise_daily', '1395461826'],
   ['sources_list', '704389477'],
@@ -178,12 +183,12 @@ const SHEETS_V31 = [
   ['statewise_tested_numbers_data', '486127050'],
   ['case_time_series', '387368559'],
   ['tested_numbers_icmr_data', '2143634168'],
-  //     ["travel_history", "1532084277"],
+  // ["travel_history", "1532084277"],
   ['district_list', '1207378023'],
-  ['district_testing', '458610673'],
-  ['icmr_labs_statewise','847799380'],
-  ['icmr_rtpcr_tests_daily','1032515506'],
-  ['vaccine_doses_statewise','1601004575'],
+  // ['district_testing', '458610673'],
+  // ['icmr_labs_statewise','847799380'],
+  // ['icmr_rtpcr_tests_daily','1032515506'],
+  // ['vaccine_doses_statewise','1601004575'],
   ['cowin_vaccine_data_statewise','1770661428'],
   ['cowin_vaccine_data_districtwise','382746758'],
   ['vaccine_doses_statewise_v2','1097927328']
@@ -241,6 +246,7 @@ async function sheetsToCSV (sheets, pubId) {
   // await sheetsToCSV(SHEETS_V27, PUBLISHED_SHEET_ID_27)
   // await sheetsToCSV(SHEETS_V28, PUBLISHED_SHEET_ID_28)
   // await sheetsToCSV(SHEETS_V29, PUBLISHED_SHEET_ID_29)
-  await sheetsToCSV(SHEETS_V30, PUBLISHED_SHEET_ID_30)
+  // await sheetsToCSV(SHEETS_V30, PUBLISHED_SHEET_ID_30)
   await sheetsToCSV(SHEETS_V31, PUBLISHED_SHEET_ID_31)
+  await sheetsToCSV(SHEETS_V32, PUBLISHED_SHEET_ID_32)
 })()
