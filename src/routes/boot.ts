@@ -543,6 +543,7 @@ const loggedInBoot = async ({
         subscriptionFlags: {
           ...includeProperties(user.subscriptionFlags!, [
             'provider',
+            'appAccountToken',
           ]),
         },
       },
